@@ -1,0 +1,11 @@
+{
+  "name": "totopizza",
+  "version": "1.0.0",
+  "description": "totopizza svetaine, skirta atvaizduoti kavines menu",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Danila Grobov, Mantas Aleskevicius",
+  "license": "ISC"
+}
