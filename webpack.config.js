@@ -8,8 +8,19 @@ module.exports = {
     path: path.resolve(__dirname, 'prod'),
   },
   plugins: [
-      new NodemonPlugin(),
+    new NodemonPlugin(),
   ],
   target: "node",
-  devtool: "source-map"
+  devtool: "source-map",
+  module: {
+    rules: [
+      {
+        test: /\.(js|jsx)$/,
+        exclude: /node_modules/,
+        use: {
+          loader: "babel-loader"
+        }
+      }
+    ]
+  }
 };
