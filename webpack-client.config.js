@@ -1,25 +1,32 @@
 const path = require('path');
 const NodemonPlugin = require('nodemon-webpack-plugin');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
-  entry: './dev/app.js',
+  mode: 'development',
+  entry: {
+    index: './dev/index.jsx'
+  },
   output: {
-    filename: 'app.js',
+    filename: 'assets/index.js',
     path: path.resolve(__dirname, 'prod'),
   },
   plugins: [
     new NodemonPlugin(),
+    new HtmlWebpackPlugin({
+      template: "./dev/index.html"
+    })
   ],
-  target: "node",
   devtool: "source-map",
   module: {
     rules: [
       {
         test: /\.(js|jsx)$/,
+        use: 'babel-loader',
         exclude: /node_modules/,
-        use: {
-          loader: "babel-loader"
-        }
+        include: [
+          path.resolve(__dirname, "dev")
+        ]
       }
     ]
   }
