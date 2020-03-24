@@ -12,7 +12,6 @@ module.exports = {
     path: path.resolve(__dirname, 'prod'),
   },
   plugins: [
-    new NodemonPlugin(),
     new HtmlWebpackPlugin({
       template: "./dev/index.html"
     })
@@ -27,7 +26,11 @@ module.exports = {
         include: [
           path.resolve(__dirname, "dev")
         ]
-      }
+      },
+      {
+        test: /\.css$/i,
+        use: ['style-loader', 'css-loader'],
+      },
     ]
   },
   resolve: {

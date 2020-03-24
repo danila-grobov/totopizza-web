@@ -1,5 +1,5 @@
 import React from 'react';
-
+import "../styles/index.css";
 
 export default class App extends React.Component {
     constructor(props) {
@@ -8,7 +8,7 @@ export default class App extends React.Component {
     }
     render() {
         return (
-            <div>
+            <div className="hello_world">
                 Hello World!
             </div>
         );
