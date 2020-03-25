@@ -86,10 +86,10 @@
 /************************************************************************/
 /******/ ({
 
-/***/ "./dev/components/Main.jsx":
-/*!*********************************!*\
-  !*** ./dev/components/Main.jsx ***!
-  \*********************************/
+/***/ "./dev/components/App.jsx":
+/*!********************************!*\
+  !*** ./dev/components/App.jsx ***!
+  \********************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -98,8 +98,9 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return App; });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _styles_index_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../styles/index.css */ "./dev/styles/index.css");
-/* harmony import */ var _styles_index_css__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_styles_index_css__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _styles_App_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../styles/App.css */ "./dev/styles/App.css");
+/* harmony import */ var _styles_App_css__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_styles_App_css__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _images_pizzaBackground_png__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../images/pizzaBackground.png */ "./dev/images/pizzaBackground.png");
 function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -125,27 +126,29 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
 
 
 
+
 var App = /*#__PURE__*/function (_React$Component) {
   _inherits(App, _React$Component);
 
   var _super = _createSuper(App);
 
-  function App(props) {
-    var _this;
-
+  function App() {
     _classCallCheck(this, App);
 
-    _this = _super.call(this, props);
-    _this.state = {};
-    return _this;
+    return _super.apply(this, arguments);
   }
 
   _createClass(App, [{
     key: "render",
     value: function render() {
       return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "hello_world"
-      }, "Hello World!");
+        className: "app"
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+        className: "app__backgroudImage",
+        src: _images_pizzaBackground_png__WEBPACK_IMPORTED_MODULE_2__["default"]
+      }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "app__whiteBlob"
+      }));
     }
   }]);
 
@@ -153,6 +156,19 @@ var App = /*#__PURE__*/function (_React$Component) {
 }(react__WEBPACK_IMPORTED_MODULE_0___default.a.Component);
 
 
+
+/***/ }),
+
+/***/ "./dev/images/pizzaBackground.png":
+/*!****************************************!*\
+  !*** ./dev/images/pizzaBackground.png ***!
+  \****************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony default export */ __webpack_exports__["default"] = (__webpack_require__.p + "assets/c7e44c38beacb57fdf188c2503fb9def.png");
 
 /***/ }),
 
@@ -169,23 +185,23 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-dom */ "./node_modules/react-dom/index.js");
 /* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react_dom__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var _components_Main__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./components/Main */ "./dev/components/Main.jsx");
+/* harmony import */ var _components_App__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./components/App */ "./dev/components/App.jsx");
 
 
 
-react_dom__WEBPACK_IMPORTED_MODULE_1___default.a.render( /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Main__WEBPACK_IMPORTED_MODULE_2__["default"], null), document.getElementById('app'));
+react_dom__WEBPACK_IMPORTED_MODULE_1___default.a.render( /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_App__WEBPACK_IMPORTED_MODULE_2__["default"], null), document.getElementById('app'));
 
 /***/ }),
 
-/***/ "./dev/styles/index.css":
-/*!******************************!*\
-  !*** ./dev/styles/index.css ***!
-  \******************************/
+/***/ "./dev/styles/App.css":
+/*!****************************!*\
+  !*** ./dev/styles/App.css ***!
+  \****************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
 var api = __webpack_require__(/*! ../../node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js */ "./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js");
-            var content = __webpack_require__(/*! !../../node_modules/css-loader/dist/cjs.js!./index.css */ "./node_modules/css-loader/dist/cjs.js!./dev/styles/index.css");
+            var content = __webpack_require__(/*! !../../node_modules/css-loader/dist/cjs.js!./App.css */ "./node_modules/css-loader/dist/cjs.js!./dev/styles/App.css");
 
             content = content.__esModule ? content.default : content;
 
@@ -208,10 +224,10 @@ module.exports = exported;
 
 /***/ }),
 
-/***/ "./node_modules/css-loader/dist/cjs.js!./dev/styles/index.css":
-/*!********************************************************************!*\
-  !*** ./node_modules/css-loader/dist/cjs.js!./dev/styles/index.css ***!
-  \********************************************************************/
+/***/ "./node_modules/css-loader/dist/cjs.js!./dev/styles/App.css":
+/*!******************************************************************!*\
+  !*** ./node_modules/css-loader/dist/cjs.js!./dev/styles/App.css ***!
+  \******************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -219,7 +235,7 @@ module.exports = exported;
 var ___CSS_LOADER_API_IMPORT___ = __webpack_require__(/*! ../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js");
 exports = ___CSS_LOADER_API_IMPORT___(false);
 // Module
-exports.push([module.i, ".hello_world{\r\n    background: red;\r\n}", ""]);
+exports.push([module.i, "body{\r\n    margin: 0;\r\n}\r\n\r\n.app__backgroudImage{\r\n    top: -200px;\r\n    width: 100%;\r\n    position: fixed;\r\n\r\n    background-position: center;\r\n    background-repeat: no-repeat;\r\n    background-size: cover;\r\n}\r\n\r\n.app__whiteBlob{\r\n    max-width: 1100px;\r\n    height: 2000px;\r\n}\r\n\r\n", ""]);
 // Exports
 module.exports = exports;
 
