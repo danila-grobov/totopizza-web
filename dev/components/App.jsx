@@ -6,8 +6,9 @@ export default class App extends React.Component {
     render() {
         return (
             <div className="app"> 
-                <img className="app__backgroudImage" src={image}/>
-                <div className="app__whiteBlob"></div>
+                <div className="app__backgroudImage">
+                    <div className="app__whiteBlob"></div>
+                </div>
             </div>
            
         );

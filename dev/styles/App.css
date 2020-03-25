@@ -5,7 +5,9 @@ body{
 .app__backgroudImage{
     top: -200px;
     width: 100%;
-    position: fixed;
+    background-image: url("../images/pizzaBackground.png");
+    height: 2000px;
+    background-attachment: fixed;
 
     background-position: center;
     background-repeat: no-repeat;
@@ -14,6 +16,8 @@ body{
 
 .app__whiteBlob{
     max-width: 1100px;
-    height: 2000px;
+    height: 100%;
+    background-color: white;
+    margin: 0 auto;
 }
 
