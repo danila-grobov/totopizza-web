@@ -152,7 +152,7 @@ var App = /*#__PURE__*/function (_React$Component) {
       }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
         src: _images_logo_png__WEBPACK_IMPORTED_MODULE_2__["default"],
         alt: "Toto Pizza",
-        className: "logoImage"
+        className: "app__logoImage"
       }))));
     }
   }]);
@@ -173,7 +173,7 @@ var App = /*#__PURE__*/function (_React$Component) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = (__webpack_require__.p + "assets/dc69f6d1f3733aba87464a8e9467875b.png");
+/* harmony default export */ __webpack_exports__["default"] = (__webpack_require__.p + "assets/34b3cd0ef4c6fd49cb2e95efa2a4c5bd.png");
 
 /***/ }),
 
@@ -256,7 +256,7 @@ var ___CSS_LOADER_URL_IMPORT_0___ = __webpack_require__(/*! ../images/pizzaBackg
 exports = ___CSS_LOADER_API_IMPORT___(false);
 var ___CSS_LOADER_URL_REPLACEMENT_0___ = ___CSS_LOADER_GET_URL_IMPORT___(___CSS_LOADER_URL_IMPORT_0___);
 // Module
-exports.push([module.i, "body{\r\n    margin: 0;\r\n}\r\n\r\n.app__backgroudImage{\r\n    top: -200px;\r\n    width: 100%;\r\n    background-image: url(" + ___CSS_LOADER_URL_REPLACEMENT_0___ + ");\r\n    height: 2000px;\r\n    background-attachment: fixed;\r\n\r\n    background-position: center;\r\n    background-repeat: no-repeat;\r\n    background-size: cover;\r\n}\r\n\r\n.app__whiteBlob{\r\n    max-width: 1100px;\r\n    height: 100%;\r\n    background-color: white;\r\n    margin: 0 auto;\r\n}\r\n\r\n\r\n", ""]);
+exports.push([module.i, "body{\r\n    margin: 0;\r\n}\r\n\r\n.app__backgroudImage{\r\n    top: -200px;\r\n    width: 100%;\r\n    background-image: url(" + ___CSS_LOADER_URL_REPLACEMENT_0___ + ");\r\n    height: 2000px;\r\n    background-attachment: fixed;\r\n\r\n    background-position: center;\r\n    background-repeat: no-repeat;\r\n    background-size: cover;\r\n}\r\n\r\n.app__whiteBlob{\r\n    max-width: 1100px;\r\n    height: 100%;\r\n    background-color: white;\r\n    margin: 0 auto;\r\n}\r\n\r\n.app__logoImage{\r\n    margin: 0 auto;\r\n    max-width: 923px;\r\n    display: block;\r\n}\r\n", ""]);
 // Exports
 module.exports = exports;
 

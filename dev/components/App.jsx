@@ -9,7 +9,7 @@ export default class App extends React.Component {
             <div className="app"> 
                 <div className="app__backgroudImage">
                     <div className="app__whiteBlob">
-                        <img src={logo} alt="Toto Pizza" className="logoImage"/>
+                        <img src={logo} alt="Toto Pizza" className="app__logoImage"/>
                     </div>
                 </div>
             </div>
