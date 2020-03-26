@@ -1,4 +1,6 @@
+import React, { Component } from 'react';
 import logo from "../images/toto_logo.png";
+import "../styles/Header.css";
 class Header extends Component {
 
     render() {
