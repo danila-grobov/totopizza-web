@@ -258,6 +258,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _images_suktinukai_png__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../images/suktinukai.png */ "./dev/images/suktinukai.png");
 /* harmony import */ var _styles_PizzaRolls_css__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../styles/PizzaRolls.css */ "./dev/styles/PizzaRolls.css");
 /* harmony import */ var _styles_PizzaRolls_css__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_styles_PizzaRolls_css__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _RollInfoTable__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./RollInfoTable */ "./dev/components/RollInfoTable.jsx");
+/* harmony import */ var _RollInfo__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./RollInfo */ "./dev/components/RollInfo.jsx");
 function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -279,6 +281,8 @@ function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.g
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); if (superClass) _setPrototypeOf(subClass, superClass); }
 
 function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
+
+
 
 
 
@@ -309,7 +313,15 @@ var PizzaRolls = /*#__PURE__*/function (_Component) {
         className: "pizzaRolls__Info"
       }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
         className: "pizzaRolls__title"
-      }, "PIC\u0172 SUKTINUKAI (2 vnt.) 3,89\u20AC")));
+      }, "PIC\u0172 SUKTINUKAI (2 vnt.) 3,89\u20AC"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_RollInfoTable__WEBPACK_IMPORTED_MODULE_3__["default"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "pizzaRolls__komplektas"
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+        className: "pizzaRolls__title pizzaRolls__title--space-after"
+      }, "KOMPLEKTAS 4,75\u20AC"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_RollInfo__WEBPACK_IMPORTED_MODULE_4__["default"], {
+        title: "2 SUKTINUKAI + G\u0116RIMAS",
+        content: "(0,5l Cola/Fanta/Sprite)",
+        vertical: false
+      }))));
     }
   }]);
 
@@ -317,6 +329,167 @@ var PizzaRolls = /*#__PURE__*/function (_Component) {
 }(react__WEBPACK_IMPORTED_MODULE_0__["Component"]);
 
 /* harmony default export */ __webpack_exports__["default"] = (PizzaRolls);
+
+/***/ }),
+
+/***/ "./dev/components/RollInfo.jsx":
+/*!*************************************!*\
+  !*** ./dev/components/RollInfo.jsx ***!
+  \*************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
+
+function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
+
+function _createSuper(Derived) { return function () { var Super = _getPrototypeOf(Derived), result; if (_isNativeReflectConstruct()) { var NewTarget = _getPrototypeOf(this).constructor; result = Reflect.construct(Super, arguments, NewTarget); } else { result = Super.apply(this, arguments); } return _possibleConstructorReturn(this, result); }; }
+
+function _possibleConstructorReturn(self, call) { if (call && (_typeof(call) === "object" || typeof call === "function")) { return call; } return _assertThisInitialized(self); }
+
+function _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
+
+function _isNativeReflectConstruct() { if (typeof Reflect === "undefined" || !Reflect.construct) return false; if (Reflect.construct.sham) return false; if (typeof Proxy === "function") return true; try { Date.prototype.toString.call(Reflect.construct(Date, [], function () {})); return true; } catch (e) { return false; } }
+
+function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); if (superClass) _setPrototypeOf(subClass, superClass); }
+
+function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
+
+
+
+var RollInfo = /*#__PURE__*/function (_Component) {
+  _inherits(RollInfo, _Component);
+
+  var _super = _createSuper(RollInfo);
+
+  function RollInfo() {
+    _classCallCheck(this, RollInfo);
+
+    return _super.apply(this, arguments);
+  }
+
+  _createClass(RollInfo, [{
+    key: "render",
+    value: function render() {
+      var _this$props = this.props,
+          vertical = _this$props.vertical,
+          title = _this$props.title,
+          content = _this$props.content;
+      return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: vertical ? "rollInfo rollInfo--vertical" : "rollInfo"
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+        className: "rollInfo__title"
+      }, title), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+        className: "rollInfo__content"
+      }, content));
+    }
+  }]);
+
+  return RollInfo;
+}(react__WEBPACK_IMPORTED_MODULE_0__["Component"]);
+
+/* harmony default export */ __webpack_exports__["default"] = (RollInfo);
+
+/***/ }),
+
+/***/ "./dev/components/RollInfoTable.jsx":
+/*!******************************************!*\
+  !*** ./dev/components/RollInfoTable.jsx ***!
+  \******************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _RollInfo__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./RollInfo */ "./dev/components/RollInfo.jsx");
+/* harmony import */ var _styles_RollInfoTable_css__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../styles/RollInfoTable.css */ "./dev/styles/RollInfoTable.css");
+/* harmony import */ var _styles_RollInfoTable_css__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_styles_RollInfoTable_css__WEBPACK_IMPORTED_MODULE_2__);
+function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
+
+function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
+
+function _createSuper(Derived) { return function () { var Super = _getPrototypeOf(Derived), result; if (_isNativeReflectConstruct()) { var NewTarget = _getPrototypeOf(this).constructor; result = Reflect.construct(Super, arguments, NewTarget); } else { result = Super.apply(this, arguments); } return _possibleConstructorReturn(this, result); }; }
+
+function _possibleConstructorReturn(self, call) { if (call && (_typeof(call) === "object" || typeof call === "function")) { return call; } return _assertThisInitialized(self); }
+
+function _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
+
+function _isNativeReflectConstruct() { if (typeof Reflect === "undefined" || !Reflect.construct) return false; if (Reflect.construct.sham) return false; if (typeof Proxy === "function") return true; try { Date.prototype.toString.call(Reflect.construct(Date, [], function () {})); return true; } catch (e) { return false; } }
+
+function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); if (superClass) _setPrototypeOf(subClass, superClass); }
+
+function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
+
+
+
+
+
+var RollInfoTable = /*#__PURE__*/function (_Component) {
+  _inherits(RollInfoTable, _Component);
+
+  var _super = _createSuper(RollInfoTable);
+
+  function RollInfoTable() {
+    _classCallCheck(this, RollInfoTable);
+
+    return _super.apply(this, arguments);
+  }
+
+  _createClass(RollInfoTable, [{
+    key: "render",
+    value: function render() {
+      return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "RollInfoTable"
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "RollInfoTable__hWrapper"
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_RollInfo__WEBPACK_IMPORTED_MODULE_1__["default"], {
+        title: "SU KUMPIU",
+        content: "pomidor\u0173 pada\u017Eas, s\u016Bris, pievagrybiai,\r konservuoti kukur\u016Bzai, svog\u016Bnai, \u0161v\u017E.paprika",
+        vertical: true
+      }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "RollInfoTable__vSpacer"
+      }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_RollInfo__WEBPACK_IMPORTED_MODULE_1__["default"], {
+        title: "SU MALTA KIAULIENA",
+        content: "pomidor\u0173 pada\u017Eas, s\u016Bris, kiaulienos kumpis,\r pievagrybiai, konservuoti kukur\u016Bzai",
+        vertical: true
+      }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "RollInfoTable__vSpacer"
+      }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_RollInfo__WEBPACK_IMPORTED_MODULE_1__["default"], {
+        title: "SU JAUTIENA",
+        content: "pomidor\u0173 pada\u017Eas, s\u016Bris, r\u016Bkyta jautiena,\r pievagrybiai, \u0161v\u017E. paprika",
+        vertical: true
+      })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "RollInfoTable__hSpacer"
+      }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_RollInfo__WEBPACK_IMPORTED_MODULE_1__["default"], {
+        title: "VEGETARISKAS",
+        content: "pomidor\u0173 pada\u017Eas, s\u016Bris, malta kiauliena,\r jelapenas, BBQ pada\u017Eas",
+        vertical: false
+      }));
+    }
+  }]);
+
+  return RollInfoTable;
+}(react__WEBPACK_IMPORTED_MODULE_0__["Component"]);
+
+/* harmony default export */ __webpack_exports__["default"] = (RollInfoTable);
 
 /***/ }),
 
@@ -486,6 +659,37 @@ module.exports = exported;
 
 /***/ }),
 
+/***/ "./dev/styles/RollInfoTable.css":
+/*!**************************************!*\
+  !*** ./dev/styles/RollInfoTable.css ***!
+  \**************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+var api = __webpack_require__(/*! ../../node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js */ "./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js");
+            var content = __webpack_require__(/*! !../../node_modules/css-loader/dist/cjs.js!./RollInfoTable.css */ "./node_modules/css-loader/dist/cjs.js!./dev/styles/RollInfoTable.css");
+
+            content = content.__esModule ? content.default : content;
+
+            if (typeof content === 'string') {
+              content = [[module.i, content, '']];
+            }
+
+var options = {};
+
+options.insert = "head";
+options.singleton = false;
+
+var update = api(content, options);
+
+var exported = content.locals ? content.locals : {};
+
+
+
+module.exports = exported;
+
+/***/ }),
+
 /***/ "./node_modules/css-loader/dist/cjs.js!./dev/styles/App.css":
 /*!******************************************************************!*\
   !*** ./node_modules/css-loader/dist/cjs.js!./dev/styles/App.css ***!
@@ -538,7 +742,26 @@ var ___CSS_LOADER_API_IMPORT___ = __webpack_require__(/*! ../../node_modules/css
 exports = ___CSS_LOADER_API_IMPORT___(false);
 exports.push([module.i, "@import url(https://fonts.googleapis.com/css?family=Roboto:900&display=swap);"]);
 // Module
-exports.push([module.i, ".pizzaRolls {\r\n    width: 916px;\r\n    height: 276px;\r\n    margin: 0 auto;\r\n    margin-top: 46px;\r\n    display: grid;\r\n    grid-template-columns: 403px auto;\r\n    column-gap: 50px;\r\n}\r\n\r\n.pizzaRolls__preview {\r\n    grid-column: 1;\r\n    width: 100%;\r\n    height: 100%;\r\n    overflow: hidden;\r\n    background: #FCBD10;\r\n    border-radius: 20px;\r\n    position: relative;\r\n    display: flex;\r\n    justify-content: center;\r\n}\r\n\r\n.pizzaRolls__rollImg {\r\n    width: 542px;\r\n    margin: 0 auto;\r\n    display: block;\r\n    margin-top: 113px;\r\n    height: 252px;\r\n}\r\n\r\n.pizzaRolls__Info {\r\n    font-family: \"Roboto\";\r\n    font-style: normal;\r\n    font-weight: 900;\r\n    font-size: 22px;\r\n    color: #02435A;\r\n}", ""]);
+exports.push([module.i, ".pizzaRolls {\r\n    width: 916px;\r\n    height: 276px;\r\n    margin: 0 auto;\r\n    margin-top: 46px;\r\n    display: grid;\r\n    grid-template-columns: 403px auto;\r\n    column-gap: 50px;\r\n}\r\n\r\n.pizzaRolls__preview {\r\n    grid-column: 1;\r\n    width: 100%;\r\n    height: 100%;\r\n    overflow: hidden;\r\n    background: #FCBD10;\r\n    border-radius: 20px;\r\n    display: flex;\r\n    justify-content: center;\r\n}\r\n\r\n.pizzaRolls__rollImg {\r\n    width: 542px;\r\n    margin: 0 auto;\r\n    display: block;\r\n    margin-top: 113px;\r\n    height: 252px;\r\n}\r\n\r\n.pizzaRolls__title {\r\n    font-family: \"Roboto\";\r\n    font-style: normal;\r\n    font-weight: 900;\r\n    font-size: 22px;\r\n    color: #02435A;\r\n}\r\n\r\n.pizzaRolls__title--space-after {\r\n    margin-bottom: 10px;\r\n    display: block;\r\n}\r\n\r\n.pizzaRolls__Info {\r\n    display: grid;\r\n    align-content: space-between;\r\n    grid-template-rows: repeat(3, min-content);\r\n}", ""]);
+// Exports
+module.exports = exports;
+
+
+/***/ }),
+
+/***/ "./node_modules/css-loader/dist/cjs.js!./dev/styles/RollInfoTable.css":
+/*!****************************************************************************!*\
+  !*** ./node_modules/css-loader/dist/cjs.js!./dev/styles/RollInfoTable.css ***!
+  \****************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+// Imports
+var ___CSS_LOADER_API_IMPORT___ = __webpack_require__(/*! ../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js");
+exports = ___CSS_LOADER_API_IMPORT___(false);
+exports.push([module.i, "@import url(https://fonts.googleapis.com/css?family=Roboto:300,700&display=swap);"]);
+// Module
+exports.push([module.i, ".RollInfoTable__vSpacer {\r\n    height: 92%;\r\n    align-self: center;\r\n    border-left: solid 1px black;\r\n}\r\n\r\n.RollInfoTable__hWrapper {\r\n    display: grid;\r\n    grid-template-columns: repeat(5, min-content);\r\n    justify-content: space-between;\r\n}\r\n\r\n.RollInfoTable__hSpacer {\r\n    width: 100%;\r\n    margin-top:24px;\r\n    margin-bottom:12px;\r\n    border-bottom: solid 1px black;\r\n}\r\n\r\n.rollInfo {\r\n    display: grid;\r\n    grid-template-columns: max-content auto;\r\n    align-items: center;\r\n    column-gap: 6px;\r\n}\r\n\r\n.rollInfo--vertical {\r\n    grid-template-columns: none;\r\n    width: 140px;\r\n    align-items: unset;\r\n    grid-template-rows: min-content auto;\r\n    row-gap: 8px;\r\n}\r\n\r\n.rollInfo__title {\r\n    font-family: \"Roboto\";\r\n    font-style: normal;\r\n    font-weight: bold;\r\n    font-size: 13px;\r\n}\r\n\r\n.rollInfo__content {\r\n    font-family: \"Roboto\";\r\n    font-style: normal;\r\n    font-weight: 300;\r\n    font-size: 12px;\r\n    line-height: 160%;\r\n}\r\n", ""]);
 // Exports
 module.exports = exports;
 

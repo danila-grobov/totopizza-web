@@ -1,5 +1,4 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto:900&display=swap');
-
 .pizzaRolls {
     width: 916px;
     height: 276px;
@@ -17,7 +16,6 @@
     overflow: hidden;
     background: #FCBD10;
     border-radius: 20px;
-    position: relative;
     display: flex;
     justify-content: center;
 }
@@ -30,10 +28,21 @@
     height: 252px;
 }
 
-.pizzaRolls__Info {
+.pizzaRolls__title {
     font-family: "Roboto";
     font-style: normal;
     font-weight: 900;
     font-size: 22px;
     color: #02435A;
+}
+
+.pizzaRolls__title--space-after {
+    margin-bottom: 10px;
+    display: block;
+}
+
+.pizzaRolls__Info {
+    display: grid;
+    align-content: space-between;
+    grid-template-rows: repeat(3, min-content);
 }
