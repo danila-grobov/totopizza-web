@@ -380,7 +380,7 @@ var ___CSS_LOADER_URL_IMPORT_0___ = __webpack_require__(/*! ../images/pizzaBackg
 exports = ___CSS_LOADER_API_IMPORT___(false);
 var ___CSS_LOADER_URL_REPLACEMENT_0___ = ___CSS_LOADER_GET_URL_IMPORT___(___CSS_LOADER_URL_IMPORT_0___);
 // Module
-exports.push([module.i, "body{\r\n    margin: 0;\r\n}\r\n\r\n.app__backgroudImage{\r\n    width: 100%;\r\n    background-image: url(" + ___CSS_LOADER_URL_REPLACEMENT_0___ + ");\r\n    height: 2000px;\r\n    background-attachment: fixed;\r\n    background-position: center;\r\n    background-repeat: no-repeat;\r\n    background-size: cover;\r\n}\r\n\r\n.app__whiteBlob{\r\n    padding:54px;\r\n    max-width: 1100px;\r\n    height: 100%;\r\n    background-color: white;\r\n    margin: 0 auto;\r\n}\r\n\r\n.app__logoImage{\r\n    margin: 0 auto;\r\n    max-width: 923px;\r\n    display: block;\r\n}\r\n", ""]);
+exports.push([module.i, "body{\r\n    margin: 0;\r\n}\r\n\r\n.app__backgroudImage{\r\n    width: 100%;\r\n    background-image: url(" + ___CSS_LOADER_URL_REPLACEMENT_0___ + ");\r\n    height: 2000px;\r\n    background-attachment: fixed;\r\n    background-position: center;\r\n    background-repeat: no-repeat;\r\n    background-size: cover;\r\n}\r\n\r\n.app__whiteBlob{\r\n    padding-top:54px;\r\n    max-width: 1100px;\r\n    height: 100%;\r\n    background-color: white;\r\n    margin: 0 auto;\r\n}\r\n\r\n.app__logoImage{\r\n    margin: 0 auto;\r\n    max-width: 923px;\r\n    display: block;\r\n}\r\n", ""]);
 // Exports
 module.exports = exports;
 
@@ -397,8 +397,9 @@ module.exports = exports;
 // Imports
 var ___CSS_LOADER_API_IMPORT___ = __webpack_require__(/*! ../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js");
 exports = ___CSS_LOADER_API_IMPORT___(false);
+exports.push([module.i, "@import url(https://fonts.googleapis.com/css?family=Roboto&display=swap);"]);
 // Module
-exports.push([module.i, ".header{\r\n    width: 100%;\r\n    position: fixed;\r\n    height: 54px;\r\n    background: white;\r\n    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);\r\n}", ""]);
+exports.push([module.i, ".header {\r\n    width: 100%;\r\n    position: fixed;\r\n    height: 54px;\r\n    background: white;\r\n    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);\r\n}\r\n\r\n.header__wrapper {\r\n    max-width: 1100px;\r\n    margin: 0 auto;\r\n    display: flex;\r\n    align-items: center;\r\n    height: 100%;\r\n    justify-content: flex-end;\r\n}\r\n\r\n.header__logoButton {\r\n    margin-right: auto;\r\n    height: 28px;\r\n    cursor: pointer;\r\n    margin-left:11px;\r\n}\r\n\r\n.header__link {\r\n    font-family: \"Roboto\";\r\n    font-style: normal;\r\n    font-weight: normal;\r\n    font-size: 14px;\r\n    color: black;\r\n    text-decoration: none;\r\n    margin-left: 16px;\r\n    cursor: pointer;\r\n}\r\n.header__link--highlighted{\r\n    color: #AD171C;\r\n}", ""]);
 // Exports
 module.exports = exports;
 
