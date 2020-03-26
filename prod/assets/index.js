@@ -301,11 +301,15 @@ var PizzaRolls = /*#__PURE__*/function (_Component) {
       return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "pizzaRolls"
       }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "pizzaRolls_preview"
+        className: "pizzaRolls__preview"
       }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
         src: _images_suktinukai_png__WEBPACK_IMPORTED_MODULE_1__["default"],
         className: "pizzaRolls__rollImg"
-      })));
+      })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "pizzaRolls__Info"
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+        className: "pizzaRolls__title"
+      }, "PIC\u0172 SUKTINUKAI (2 vnt.) 3,89\u20AC")));
     }
   }]);
 
@@ -532,8 +536,9 @@ module.exports = exports;
 // Imports
 var ___CSS_LOADER_API_IMPORT___ = __webpack_require__(/*! ../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js");
 exports = ___CSS_LOADER_API_IMPORT___(false);
+exports.push([module.i, "@import url(https://fonts.googleapis.com/css?family=Roboto:900&display=swap);"]);
 // Module
-exports.push([module.i, ".pizzaRolls {\r\n    width: 916px;\r\n    height: 276px;\r\n    margin: 0 auto;\r\n    margin-top: 46px;\r\n    display: grid;\r\n    grid-template-columns: 403px auto;\r\n}\r\n\r\n.pizzaRolls_preview {\r\n    grid-column: 1;\r\n    width: 100%;\r\n    height: 100%;\r\n    overflow: hidden;\r\n    background: #FCBD10;\r\n    border-radius: 20px;\r\n    position: relative;\r\n    display: flex;\r\n    justify-content: center;\r\n}\r\n\r\n.pizzaRolls__rollImg {\r\n    width: 542px;\r\n    margin: 0 auto;\r\n    display: block;\r\n    margin-top: 113px;\r\n    height: 252px;\r\n}", ""]);
+exports.push([module.i, ".pizzaRolls {\r\n    width: 916px;\r\n    height: 276px;\r\n    margin: 0 auto;\r\n    margin-top: 46px;\r\n    display: grid;\r\n    grid-template-columns: 403px auto;\r\n    column-gap: 50px;\r\n}\r\n\r\n.pizzaRolls__preview {\r\n    grid-column: 1;\r\n    width: 100%;\r\n    height: 100%;\r\n    overflow: hidden;\r\n    background: #FCBD10;\r\n    border-radius: 20px;\r\n    position: relative;\r\n    display: flex;\r\n    justify-content: center;\r\n}\r\n\r\n.pizzaRolls__rollImg {\r\n    width: 542px;\r\n    margin: 0 auto;\r\n    display: block;\r\n    margin-top: 113px;\r\n    height: 252px;\r\n}\r\n\r\n.pizzaRolls__Info {\r\n    font-family: \"Roboto\";\r\n    font-style: normal;\r\n    font-weight: 900;\r\n    font-size: 22px;\r\n    color: #02435A;\r\n}", ""]);
 // Exports
 module.exports = exports;
 

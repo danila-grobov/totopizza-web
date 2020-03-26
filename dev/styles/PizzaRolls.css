@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:900&display=swap');
+
 .pizzaRolls {
     width: 916px;
     height: 276px;
@@ -5,9 +7,10 @@
     margin-top: 46px;
     display: grid;
     grid-template-columns: 403px auto;
+    column-gap: 50px;
 }
 
-.pizzaRolls_preview {
+.pizzaRolls__preview {
     grid-column: 1;
     width: 100%;
     height: 100%;
@@ -25,4 +28,12 @@
     display: block;
     margin-top: 113px;
     height: 252px;
+}
+
+.pizzaRolls__Info {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 900;
+    font-size: 22px;
+    color: #02435A;
 }
