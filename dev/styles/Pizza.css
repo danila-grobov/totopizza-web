@@ -1,12 +1,113 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto+Slab:400,500,900|Roboto:400,500,900&display=swap');
+
 .pizza{
-    width: 779px;
+    padding-top: 0px;
+    width: 800px;
     height: 143px;
     display: grid;
-    grid-template-columns: 2fr 4fr 1fr 1fr;
-    column-gap: 30px;
+    grid-template-columns: 318px 8fr 2fr 1fr 3fr;
+    border-radius: 10px;
+    box-shadow: 0px 0.73px 11px rgba(0, 0, 0, 0.17);
+}
+.pizza__imageBlob{
+    background-color: #FCBD10;
+    width: 318px;
+    height: 143px;
+    border-radius: 10px 0px 0px 10px;
+    overflow: hidden;
+}
+.pizza__image{
+    margin-left: 31.62px;
 }
 
-.pizza__image{
-    height: 100%;
-    background-color: #FCBD10;
+.pizza__info{
+    display:grid;
+    grid-template-rows: 1fr 1fr;
+    margin-left: 25.52px;
+}
+
+.pizza__info__title{
+    align-self: end;
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 21.7244px;
+    color: #02435A;
+    margin-top: 41.56px;
+    margin-bottom: auto;
+}
+
+.pizza__info__ingredients{
+    align-self: start;
+    margin-top: .5em;
+    font-family: 'Roboto Slab', serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    margin-bottom: 29px;
+    margin-top: auto;
+}
+
+.pizza__small, .pizza__large{
+    display:grid;
+    grid-template-rows: repeat(2,1fr);
+    row-gap: 15px;
+}
+
+.pizza__small__size{
+    justify-self: end;
+    align-self: end;
+    margin-bottom: 0;
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 17.9659px;
+    color: #02435A;
+    margin-bottom: auto;
+    margin-top: 39.46px;
+}
+.pizza__spacer{
+    height: 45%;
+    justify-self: center;
+    align-self: center;
+    width: 1px;
+    border-right: solid 1px #02435A;
+}
+.pizza__large__size{
+    justify-self: start;
+    align-self: end;
+    margin-bottom: 0;
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 17.9659px;
+    color: #02435A;
+    margin-bottom: auto;
+    margin-top: 39.46px;
+}
+
+.pizza__small__price{
+    justify-self: end;
+    align-self: start;
+    margin-top: 0;
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 21.7244px;
+    color: #02435A;
+    margin-bottom: 41.04px;
+    margin-top: auto;
+}
+
+.pizza__large__price{
+    justify-self: start;
+    align-self: start;
+    margin-top: 0;
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 21.7244px;
+    color: #02435A;
+    margin-bottom: 41.04px;
+    margin-top: auto;
 }

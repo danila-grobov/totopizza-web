@@ -1,6 +1,15 @@
+
 .pizzaList{
     max-width: 938px;
-    max-height: 557px;
+    max-height: 600px;
+    display: grid;
+    row-gap: 50px;
+    column-gap: 32px;
+    grid-template-rows: repeat(3,1fr);
+    grid-auto-flow: column;
+    margin-left: 10px;
+    padding-top: 47px;
     margin: 0 auto;
     overflow-x: scroll;
+    margin-top: 47px;
 }
