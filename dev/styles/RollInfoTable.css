@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,700&display=swap');
+.RollInfoTable__vSpacer {
+    height: 92%;
+    align-self: center;
+    border-left: solid 1px black;
+}
+
+.RollInfoTable__hWrapper {
+    display: grid;
+    grid-template-columns: repeat(5, min-content);
+    justify-content: space-between;
+}
+
+.RollInfoTable__hSpacer {
+    width: 100%;
+    margin-top:24px;
+    margin-bottom:12px;
+    border-bottom: solid 1px black;
+}
+
+.rollInfo {
+    display: grid;
+    grid-template-columns: max-content auto;
+    align-items: center;
+    column-gap: 6px;
+}
+
+.rollInfo--vertical {
+    grid-template-columns: none;
+    width: 140px;
+    align-items: unset;
+    grid-template-rows: min-content auto;
+    row-gap: 8px;
+}
+
+.rollInfo__title {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: bold;
+    font-size: 13px;
+}
+
+.rollInfo__content {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 160%;
+}

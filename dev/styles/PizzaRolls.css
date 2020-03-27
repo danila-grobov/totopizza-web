@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:900&display=swap');
+.pizzaRolls {
+    width: 916px;
+    height: 276px;
+    margin: 0 auto;
+    margin-top: 46px;
+    display: grid;
+    grid-template-columns: 403px auto;
+    column-gap: 50px;
+}
+
+.pizzaRolls__preview {
+    grid-column: 1;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background: #FCBD10;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.pizzaRolls__rollImg {
+    width: 542px;
+    margin: 0 auto;
+    display: block;
+    margin-top: 113px;
+    height: 252px;
+}
+
+.pizzaRolls__title {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 900;
+    font-size: 22px;
+    color: #02435A;
+}
+
+.pizzaRolls__title--space-after {
+    margin-bottom: 10px;
+    display: block;
+}
+
+.pizzaRolls__Info {
+    display: grid;
+    align-content: space-between;
+    grid-template-rows: repeat(3, min-content);
+}
