@@ -26,7 +26,7 @@
     margin-left: 25.52px;
 }
 
-.pizza__info__title{
+.pizza__infoTitle{
     align-self: end;
     font-family: 'Roboto', sans-serif;
     font-style: normal;
@@ -37,7 +37,7 @@
     margin-bottom: auto;
 }
 
-.pizza__info__ingredients{
+.pizza__infoIngredients{
     align-self: start;
     margin-top: .5em;
     font-family: 'Roboto Slab', serif;
@@ -54,7 +54,7 @@
     row-gap: 15px;
 }
 
-.pizza__small__size{
+.pizza__smallSize{
     justify-self: end;
     align-self: end;
     margin-bottom: 0;
@@ -73,7 +73,7 @@
     width: 1px;
     border-right: solid 1px #02435A;
 }
-.pizza__large__size{
+.pizza__largeSize{
     justify-self: start;
     align-self: end;
     margin-bottom: 0;
@@ -86,7 +86,7 @@
     margin-top: 39.46px;
 }
 
-.pizza__small__price{
+.pizza__smallPrice{
     justify-self: end;
     align-self: start;
     margin-top: 0;
@@ -99,7 +99,7 @@
     margin-top: auto;
 }
 
-.pizza__large__price{
+.pizza__largePrice{
     justify-self: start;
     align-self: start;
     margin-top: 0;
