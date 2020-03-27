@@ -556,7 +556,7 @@ module.exports = exports;
 var ___CSS_LOADER_API_IMPORT___ = __webpack_require__(/*! ../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js");
 exports = ___CSS_LOADER_API_IMPORT___(false);
 // Module
-exports.push([module.i, "\r\n.pizzaList{\r\n    max-width: 938px;\r\n    max-height: 650px;\r\n    display: grid;\r\n    row-gap: 50px;\r\n    column-gap: 32px;\r\n    grid-template-rows: repeat(3,1fr);\r\n    grid-auto-flow: column;\r\n    margin-left: 10px;\r\n    padding-top: 47px;\r\n    margin: 0 auto;\r\n    overflow-x: scroll;\r\n    margin-top: 47px;\r\n    padding-top:0;\r\n}", ""]);
+exports.push([module.i, "\r\n.pizzaList{\r\n    max-width: 938px;\r\n    max-height: 650px;\r\n    display: grid;\r\n    row-gap: 50px;\r\n    column-gap: 32px;\r\n    grid-template-rows: repeat(3,1fr);\r\n    grid-auto-flow: column;\r\n    margin-left: 10px;\r\n    padding-top: 47px;\r\n    margin: 0 auto;\r\n    overflow-x: scroll;\r\n    margin-top: 47px;\r\n    padding-top:0;\r\n    overflow-y: hidden;\r\n}", ""]);
 // Exports
 module.exports = exports;
 
