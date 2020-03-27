@@ -1,0 +1,6 @@
+.pizzaList{
+    max-width: 938px;
+    max-height: 557px;
+    margin: 0 auto;
+    overflow-x: scroll;
+}

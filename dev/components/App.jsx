@@ -2,6 +2,8 @@ import React from 'react';
 import "../styles/App.css";
 import logo from "../images/logo.png";
 import image from "../images/pizzaBackground.png";
+import PizzaList from "./PizzaList"
+
 
 export default class App extends React.Component {
     render() {
@@ -10,6 +12,7 @@ export default class App extends React.Component {
                 <div className="app__backgroudImage">
                     <div className="app__whiteBlob">
                         <img src={logo} alt="Toto Pizza" className="app__logoImage"/>
+                        <PizzaList />
                     </div>
                 </div>
             </div>
