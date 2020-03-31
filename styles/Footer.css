@@ -23,3 +23,22 @@
     font-weight: 300;
     font-size: 14px;
 }
+.orderButton{
+    width: 210px;
+    height: 56px;
+    background: url("../public/images/balta.png"), #FCBD10;
+    background-size:681px;
+    background-repeat: repeat;
+    border-radius: 5px;
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    cursor: pointer;
+}
+.orderButton__text{
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    color: #fff;
+}
