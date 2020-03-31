@@ -101,13 +101,10 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _styles_App_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../styles/App.css */ "./dev/styles/App.css");
 /* harmony import */ var _styles_App_css__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_styles_App_css__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var _images_logo_png__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../images/logo.png */ "./dev/images/logo.png");
-<<<<<<< HEAD
 /* harmony import */ var _images_pizzaBackground_png__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../images/pizzaBackground.png */ "./dev/images/pizzaBackground.png");
 /* harmony import */ var _PizzaList__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./PizzaList */ "./dev/components/PizzaList.jsx");
-=======
-/* harmony import */ var _Header__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./Header */ "./dev/components/Header.jsx");
-/* harmony import */ var _PizzaRolls__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./PizzaRolls */ "./dev/components/PizzaRolls.jsx");
->>>>>>> 0c1d0ed658799eb93e84a7596b3dbed5361c1338
+/* harmony import */ var _Header__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./Header */ "./dev/components/Header.jsx");
+/* harmony import */ var _PizzaRolls__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./PizzaRolls */ "./dev/components/PizzaRolls.jsx");
 function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -136,6 +133,8 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
 
 
 
+
+
 var App = /*#__PURE__*/function (_React$Component) {
   _inherits(App, _React$Component);
 
@@ -152,7 +151,7 @@ var App = /*#__PURE__*/function (_React$Component) {
     value: function render() {
       return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "app"
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Header__WEBPACK_IMPORTED_MODULE_3__["default"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Header__WEBPACK_IMPORTED_MODULE_5__["default"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "app__backgroudImage"
       }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "app__whiteBlob"
@@ -160,8 +159,7 @@ var App = /*#__PURE__*/function (_React$Component) {
         src: _images_logo_png__WEBPACK_IMPORTED_MODULE_2__["default"],
         alt: "Toto Pizza",
         className: "app__logoImage"
-<<<<<<< HEAD
-      }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_PizzaList__WEBPACK_IMPORTED_MODULE_4__["default"], null))));
+      }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_PizzaList__WEBPACK_IMPORTED_MODULE_4__["default"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_PizzaRolls__WEBPACK_IMPORTED_MODULE_6__["default"], null))));
     }
   }]);
 
@@ -169,6 +167,84 @@ var App = /*#__PURE__*/function (_React$Component) {
 }(react__WEBPACK_IMPORTED_MODULE_0___default.a.Component);
 
 
+
+/***/ }),
+
+/***/ "./dev/components/Header.jsx":
+/*!***********************************!*\
+  !*** ./dev/components/Header.jsx ***!
+  \***********************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _images_toto_logo_png__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../images/toto_logo.png */ "./dev/images/toto_logo.png");
+/* harmony import */ var _styles_Header_css__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../styles/Header.css */ "./dev/styles/Header.css");
+/* harmony import */ var _styles_Header_css__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_styles_Header_css__WEBPACK_IMPORTED_MODULE_2__);
+function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
+
+function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
+
+function _createSuper(Derived) { return function () { var Super = _getPrototypeOf(Derived), result; if (_isNativeReflectConstruct()) { var NewTarget = _getPrototypeOf(this).constructor; result = Reflect.construct(Super, arguments, NewTarget); } else { result = Super.apply(this, arguments); } return _possibleConstructorReturn(this, result); }; }
+
+function _possibleConstructorReturn(self, call) { if (call && (_typeof(call) === "object" || typeof call === "function")) { return call; } return _assertThisInitialized(self); }
+
+function _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
+
+function _isNativeReflectConstruct() { if (typeof Reflect === "undefined" || !Reflect.construct) return false; if (Reflect.construct.sham) return false; if (typeof Proxy === "function") return true; try { Date.prototype.toString.call(Reflect.construct(Date, [], function () {})); return true; } catch (e) { return false; } }
+
+function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); if (superClass) _setPrototypeOf(subClass, superClass); }
+
+function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
+
+
+
+
+
+var Header = /*#__PURE__*/function (_Component) {
+  _inherits(Header, _Component);
+
+  var _super = _createSuper(Header);
+
+  function Header() {
+    _classCallCheck(this, Header);
+
+    return _super.apply(this, arguments);
+  }
+
+  _createClass(Header, [{
+    key: "render",
+    value: function render() {
+      return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "header"
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "header__wrapper"
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+        src: _images_toto_logo_png__WEBPACK_IMPORTED_MODULE_1__["default"],
+        className: "header__logoButton"
+      }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+        href: "/",
+        className: "header__link"
+      }, "Pagrindinis"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+        href: "/",
+        className: "header__link header__link--highlighted"
+      }, "U\u017Esisakyk")));
+    }
+  }]);
+
+  return Header;
+}(react__WEBPACK_IMPORTED_MODULE_0__["Component"]);
+
+/* harmony default export */ __webpack_exports__["default"] = (Header);
 
 /***/ }),
 
@@ -253,9 +329,6 @@ var App = /*#__PURE__*/function (_React$Component) {
       }, "42cm"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
         className: "pizza__largePrice"
       }, this.props.priceLarge)));
-=======
-      }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_PizzaRolls__WEBPACK_IMPORTED_MODULE_4__["default"], null))));
->>>>>>> 0c1d0ed658799eb93e84a7596b3dbed5361c1338
     }
   }]);
 
@@ -266,23 +339,15 @@ var App = /*#__PURE__*/function (_React$Component) {
 
 /***/ }),
 
-<<<<<<< HEAD
 /***/ "./dev/components/PizzaList.jsx":
 /*!**************************************!*\
   !*** ./dev/components/PizzaList.jsx ***!
   \**************************************/
-=======
-/***/ "./dev/components/Header.jsx":
-/*!***********************************!*\
-  !*** ./dev/components/Header.jsx ***!
-  \***********************************/
->>>>>>> 0c1d0ed658799eb93e84a7596b3dbed5361c1338
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-<<<<<<< HEAD
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return PizzaList; });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
@@ -290,13 +355,6 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _styles_PizzaList_css__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_styles_PizzaList_css__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var _Pizza_jsx__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./Pizza.jsx */ "./dev/components/Pizza.jsx");
 /* harmony import */ var _images_SuGrybaisIrSonine_png__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../images/SuGrybaisIrSonine.png */ "./dev/images/SuGrybaisIrSonine.png");
-=======
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _images_toto_logo_png__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../images/toto_logo.png */ "./dev/images/toto_logo.png");
-/* harmony import */ var _styles_Header_css__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../styles/Header.css */ "./dev/styles/Header.css");
-/* harmony import */ var _styles_Header_css__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_styles_Header_css__WEBPACK_IMPORTED_MODULE_2__);
->>>>>>> 0c1d0ed658799eb93e84a7596b3dbed5361c1338
 function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -323,7 +381,6 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
 
 
 
-<<<<<<< HEAD
 
 
 var PizzaList = /*#__PURE__*/function (_React$Component) {
@@ -333,42 +390,47 @@ var PizzaList = /*#__PURE__*/function (_React$Component) {
 
   function PizzaList() {
     _classCallCheck(this, PizzaList);
-=======
-var Header = /*#__PURE__*/function (_Component) {
-  _inherits(Header, _Component);
-
-  var _super = _createSuper(Header);
-
-  function Header() {
-    _classCallCheck(this, Header);
 
     return _super.apply(this, arguments);
   }
 
-  _createClass(Header, [{
+  _createClass(PizzaList, [{
     key: "render",
     value: function render() {
       return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "header"
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "header__wrapper"
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
-        src: _images_toto_logo_png__WEBPACK_IMPORTED_MODULE_1__["default"],
-        className: "header__logoButton"
-      }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-        href: "/",
-        className: "header__link"
-      }, "Pagrindinis"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-        href: "/",
-        className: "header__link header__link--highlighted"
-      }, "U\u017Esisakyk")));
+        className: "pizzaList"
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Pizza_jsx__WEBPACK_IMPORTED_MODULE_2__["default"], {
+        src: _images_SuGrybaisIrSonine_png__WEBPACK_IMPORTED_MODULE_3__["default"],
+        title: "SU \u0160ONINE IR GRYBAIS",
+        ingredients: "grietin\u0117s pada\u017Eas, s\u016Bris, \u0161onin\u0117, pievagrybiai, svog\u016Bnai",
+        priceLarge: "6,89\u20AC",
+        priceSmall: "4,89\u20AC"
+      }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Pizza_jsx__WEBPACK_IMPORTED_MODULE_2__["default"], {
+        src: _images_SuGrybaisIrSonine_png__WEBPACK_IMPORTED_MODULE_3__["default"],
+        title: "SU \u0160ONINE IR GRYBAIS",
+        ingredients: "grietin\u0117s pada\u017Eas, s\u016Bris, \u0161onin\u0117, pievagrybiai, svog\u016Bnai",
+        priceLarge: "6,89\u20AC",
+        priceSmall: "4,89\u20AC"
+      }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Pizza_jsx__WEBPACK_IMPORTED_MODULE_2__["default"], {
+        src: _images_SuGrybaisIrSonine_png__WEBPACK_IMPORTED_MODULE_3__["default"],
+        title: "SU \u0160ONINE IR GRYBAIS",
+        ingredients: "grietin\u0117s pada\u017Eas, s\u016Bris, \u0161onin\u0117, pievagrybiai, svog\u016Bnai",
+        priceLarge: "6,89\u20AC",
+        priceSmall: "4,89\u20AC"
+      }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Pizza_jsx__WEBPACK_IMPORTED_MODULE_2__["default"], {
+        src: _images_SuGrybaisIrSonine_png__WEBPACK_IMPORTED_MODULE_3__["default"],
+        title: "SU \u0160ONINE IR GRYBAIS",
+        ingredients: "grietin\u0117s pada\u017Eas, s\u016Bris, \u0161onin\u0117, pievagrybiai, svog\u016Bnai",
+        priceLarge: "6,89\u20AC",
+        priceSmall: "4,89\u20AC"
+      }));
     }
   }]);
 
-  return Header;
-}(react__WEBPACK_IMPORTED_MODULE_0__["Component"]);
+  return PizzaList;
+}(react__WEBPACK_IMPORTED_MODULE_0___default.a.Component);
 
-/* harmony default export */ __webpack_exports__["default"] = (Header);
+
 
 /***/ }),
 
@@ -423,56 +485,10 @@ var PizzaRolls = /*#__PURE__*/function (_Component) {
 
   function PizzaRolls() {
     _classCallCheck(this, PizzaRolls);
->>>>>>> 0c1d0ed658799eb93e84a7596b3dbed5361c1338
 
     return _super.apply(this, arguments);
   }
 
-<<<<<<< HEAD
-  _createClass(PizzaList, [{
-    key: "render",
-    value: function render() {
-      return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "pizzaList"
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Pizza_jsx__WEBPACK_IMPORTED_MODULE_2__["default"], {
-        src: _images_SuGrybaisIrSonine_png__WEBPACK_IMPORTED_MODULE_3__["default"],
-        title: "SU \u0160ONINE IR GRYBAIS",
-        ingredients: "grietin\u0117s pada\u017Eas, s\u016Bris, \u0161onin\u0117, pievagrybiai, svog\u016Bnai",
-        priceLarge: "6,89\u20AC",
-        priceSmall: "4,89\u20AC"
-      }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Pizza_jsx__WEBPACK_IMPORTED_MODULE_2__["default"], {
-        src: _images_SuGrybaisIrSonine_png__WEBPACK_IMPORTED_MODULE_3__["default"],
-        title: "SU \u0160ONINE IR GRYBAIS",
-        ingredients: "grietin\u0117s pada\u017Eas, s\u016Bris, \u0161onin\u0117, pievagrybiai, svog\u016Bnai",
-        priceLarge: "6,89\u20AC",
-        priceSmall: "4,89\u20AC"
-      }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Pizza_jsx__WEBPACK_IMPORTED_MODULE_2__["default"], {
-        src: _images_SuGrybaisIrSonine_png__WEBPACK_IMPORTED_MODULE_3__["default"],
-        title: "SU \u0160ONINE IR GRYBAIS",
-        ingredients: "grietin\u0117s pada\u017Eas, s\u016Bris, \u0161onin\u0117, pievagrybiai, svog\u016Bnai",
-        priceLarge: "6,89\u20AC",
-        priceSmall: "4,89\u20AC"
-      }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Pizza_jsx__WEBPACK_IMPORTED_MODULE_2__["default"], {
-        src: _images_SuGrybaisIrSonine_png__WEBPACK_IMPORTED_MODULE_3__["default"],
-        title: "SU \u0160ONINE IR GRYBAIS",
-        ingredients: "grietin\u0117s pada\u017Eas, s\u016Bris, \u0161onin\u0117, pievagrybiai, svog\u016Bnai",
-        priceLarge: "6,89\u20AC",
-        priceSmall: "4,89\u20AC"
-      }));
-    }
-  }]);
-
-  return PizzaList;
-}(react__WEBPACK_IMPORTED_MODULE_0___default.a.Component);
-
-
-
-/***/ }),
-
-/***/ "./dev/images/SuGrybaisIrSonine.png":
-/*!******************************************!*\
-  !*** ./dev/images/SuGrybaisIrSonine.png ***!
-=======
   _createClass(PizzaRolls, [{
     key: "render",
     value: function render() {
@@ -579,16 +595,12 @@ var RollInfo = /*#__PURE__*/function (_Component) {
 /***/ "./dev/components/RollInfoTable.jsx":
 /*!******************************************!*\
   !*** ./dev/components/RollInfoTable.jsx ***!
->>>>>>> 0c1d0ed658799eb93e84a7596b3dbed5361c1338
   \******************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-<<<<<<< HEAD
-/* harmony default export */ __webpack_exports__["default"] = (__webpack_require__.p + "assets/455f0496e788aacd28f888468cf302ca.png");
-=======
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _RollInfo__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./RollInfo */ "./dev/components/RollInfo.jsx");
@@ -668,7 +680,19 @@ var RollInfoTable = /*#__PURE__*/function (_Component) {
 }(react__WEBPACK_IMPORTED_MODULE_0__["Component"]);
 
 /* harmony default export */ __webpack_exports__["default"] = (RollInfoTable);
->>>>>>> 0c1d0ed658799eb93e84a7596b3dbed5361c1338
+
+/***/ }),
+
+/***/ "./dev/images/SuGrybaisIrSonine.png":
+/*!******************************************!*\
+  !*** ./dev/images/SuGrybaisIrSonine.png ***!
+  \******************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony default export */ __webpack_exports__["default"] = (__webpack_require__.p + "assets/455f0496e788aacd28f888468cf302ca.png");
 
 /***/ }),
 
@@ -776,26 +800,15 @@ module.exports = exported;
 
 /***/ }),
 
-<<<<<<< HEAD
-/***/ "./dev/styles/Pizza.css":
-/*!******************************!*\
-  !*** ./dev/styles/Pizza.css ***!
-  \******************************/
-=======
 /***/ "./dev/styles/Header.css":
 /*!*******************************!*\
   !*** ./dev/styles/Header.css ***!
   \*******************************/
->>>>>>> 0c1d0ed658799eb93e84a7596b3dbed5361c1338
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
 var api = __webpack_require__(/*! ../../node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js */ "./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js");
-<<<<<<< HEAD
-            var content = __webpack_require__(/*! !../../node_modules/css-loader/dist/cjs.js!./Pizza.css */ "./node_modules/css-loader/dist/cjs.js!./dev/styles/Pizza.css");
-=======
             var content = __webpack_require__(/*! !../../node_modules/css-loader/dist/cjs.js!./Header.css */ "./node_modules/css-loader/dist/cjs.js!./dev/styles/Header.css");
->>>>>>> 0c1d0ed658799eb93e84a7596b3dbed5361c1338
 
             content = content.__esModule ? content.default : content;
 
@@ -818,24 +831,76 @@ module.exports = exported;
 
 /***/ }),
 
-<<<<<<< HEAD
-/***/ "./dev/styles/PizzaList.css":
-/*!**********************************!*\
-  !*** ./dev/styles/PizzaList.css ***!
-  \**********************************/
-=======
-/***/ "./dev/styles/PizzaRolls.css":
-/*!***********************************!*\
-  !*** ./dev/styles/PizzaRolls.css ***!
-  \***********************************/
->>>>>>> 0c1d0ed658799eb93e84a7596b3dbed5361c1338
+/***/ "./dev/styles/Pizza.css":
+/*!******************************!*\
+  !*** ./dev/styles/Pizza.css ***!
+  \******************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
 var api = __webpack_require__(/*! ../../node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js */ "./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js");
-<<<<<<< HEAD
+            var content = __webpack_require__(/*! !../../node_modules/css-loader/dist/cjs.js!./Pizza.css */ "./node_modules/css-loader/dist/cjs.js!./dev/styles/Pizza.css");
+
+            content = content.__esModule ? content.default : content;
+
+            if (typeof content === 'string') {
+              content = [[module.i, content, '']];
+            }
+
+var options = {};
+
+options.insert = "head";
+options.singleton = false;
+
+var update = api(content, options);
+
+var exported = content.locals ? content.locals : {};
+
+
+
+module.exports = exported;
+
+/***/ }),
+
+/***/ "./dev/styles/PizzaList.css":
+/*!**********************************!*\
+  !*** ./dev/styles/PizzaList.css ***!
+  \**********************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+var api = __webpack_require__(/*! ../../node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js */ "./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js");
             var content = __webpack_require__(/*! !../../node_modules/css-loader/dist/cjs.js!./PizzaList.css */ "./node_modules/css-loader/dist/cjs.js!./dev/styles/PizzaList.css");
-=======
+
+            content = content.__esModule ? content.default : content;
+
+            if (typeof content === 'string') {
+              content = [[module.i, content, '']];
+            }
+
+var options = {};
+
+options.insert = "head";
+options.singleton = false;
+
+var update = api(content, options);
+
+var exported = content.locals ? content.locals : {};
+
+
+
+module.exports = exported;
+
+/***/ }),
+
+/***/ "./dev/styles/PizzaRolls.css":
+/*!***********************************!*\
+  !*** ./dev/styles/PizzaRolls.css ***!
+  \***********************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+var api = __webpack_require__(/*! ../../node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js */ "./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js");
             var content = __webpack_require__(/*! !../../node_modules/css-loader/dist/cjs.js!./PizzaRolls.css */ "./node_modules/css-loader/dist/cjs.js!./dev/styles/PizzaRolls.css");
 
             content = content.__esModule ? content.default : content;
@@ -868,7 +933,6 @@ module.exports = exported;
 
 var api = __webpack_require__(/*! ../../node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js */ "./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js");
             var content = __webpack_require__(/*! !../../node_modules/css-loader/dist/cjs.js!./RollInfoTable.css */ "./node_modules/css-loader/dist/cjs.js!./dev/styles/RollInfoTable.css");
->>>>>>> 0c1d0ed658799eb93e84a7596b3dbed5361c1338
 
             content = content.__esModule ? content.default : content;
 
@@ -905,70 +969,79 @@ var ___CSS_LOADER_URL_IMPORT_0___ = __webpack_require__(/*! ../images/pizzaBackg
 exports = ___CSS_LOADER_API_IMPORT___(false);
 var ___CSS_LOADER_URL_REPLACEMENT_0___ = ___CSS_LOADER_GET_URL_IMPORT___(___CSS_LOADER_URL_IMPORT_0___);
 // Module
-<<<<<<< HEAD
-exports.push([module.i, "body{\r\n    margin: 0;\r\n}\r\n\r\n.app__backgroudImage{\r\n    width: 100%;\r\n    background-image: url(" + ___CSS_LOADER_URL_REPLACEMENT_0___ + ");\r\n    height: 2000px;\r\n    background-attachment: fixed;\r\n\r\n    background-position: center;\r\n    background-repeat: no-repeat;\r\n    background-size: cover;\r\n}\r\n\r\n.app__whiteBlob{\r\n    padding-top: 54px;\r\n    max-width: 1100px;\r\n    height: 100%;\r\n    background-color: white;\r\n    margin: 0 auto;\r\n}\r\n\r\n.app__logoImage{\r\n    margin: 0 auto;\r\n    max-width: 923px;\r\n    display: block;\r\n}\r\n", ""]);
-=======
 exports.push([module.i, "body{\r\n    margin: 0;\r\n}\r\n\r\n.app__backgroudImage{\r\n    width: 100%;\r\n    background-image: url(" + ___CSS_LOADER_URL_REPLACEMENT_0___ + ");\r\n    height: 2000px;\r\n    background-attachment: fixed;\r\n    background-position: center;\r\n    background-repeat: no-repeat;\r\n    background-size: cover;\r\n}\r\n\r\n.app__whiteBlob{\r\n    padding-top:54px;\r\n    max-width: 1100px;\r\n    height: 100%;\r\n    background-color: white;\r\n    margin: 0 auto;\r\n}\r\n\r\n.app__logoImage{\r\n    margin: 0 auto;\r\n    max-width: 923px;\r\n    display: block;\r\n}\r\n", ""]);
->>>>>>> 0c1d0ed658799eb93e84a7596b3dbed5361c1338
 // Exports
 module.exports = exports;
 
 
 /***/ }),
 
-<<<<<<< HEAD
-/***/ "./node_modules/css-loader/dist/cjs.js!./dev/styles/Pizza.css":
-/*!********************************************************************!*\
-  !*** ./node_modules/css-loader/dist/cjs.js!./dev/styles/Pizza.css ***!
-  \********************************************************************/
-=======
 /***/ "./node_modules/css-loader/dist/cjs.js!./dev/styles/Header.css":
 /*!*********************************************************************!*\
   !*** ./node_modules/css-loader/dist/cjs.js!./dev/styles/Header.css ***!
   \*********************************************************************/
->>>>>>> 0c1d0ed658799eb93e84a7596b3dbed5361c1338
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
 // Imports
 var ___CSS_LOADER_API_IMPORT___ = __webpack_require__(/*! ../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js");
 exports = ___CSS_LOADER_API_IMPORT___(false);
-<<<<<<< HEAD
-exports.push([module.i, "@import url(https://fonts.googleapis.com/css?family=Roboto+Slab:400,500,900|Roboto:400,500,900&display=swap);"]);
-// Module
-exports.push([module.i, ".pizza{\r\n    padding-top: 0px;\r\n    width: 800px;\r\n    height: 143px;\r\n    display: grid;\r\n    grid-template-columns: 318px 8fr 2fr 1fr 3fr;\r\n    border-radius: 10px;\r\n    box-shadow: 0px 0.73px 11px rgba(0, 0, 0, 0.17);\r\n}\r\n.pizza__imageBlob{\r\n    background-color: #FCBD10;\r\n    width: 318px;\r\n    height: 143px;\r\n    border-radius: 10px 0px 0px 10px;\r\n    overflow: hidden;\r\n}\r\n.pizza__image{\r\n    margin-left: 31.62px;\r\n}\r\n\r\n.pizza__info{\r\n    display:grid;\r\n    grid-template-rows: 1fr 1fr;\r\n    margin-left: 25.52px;\r\n}\r\n\r\n.pizza__infoTitle{\r\n    align-self: end;\r\n    font-family: 'Roboto', sans-serif;\r\n    font-style: normal;\r\n    font-weight: 900;\r\n    font-size: 21.7244px;\r\n    color: #02435A;\r\n    margin-top: 41.56px;\r\n    margin-bottom: auto;\r\n}\r\n\r\n.pizza__infoIngredients{\r\n    align-self: start;\r\n    margin-top: .5em;\r\n    font-family: 'Roboto Slab', serif;\r\n    font-style: normal;\r\n    font-weight: normal;\r\n    font-size: 12px;\r\n    margin-bottom: 29px;\r\n    margin-top: auto;\r\n}\r\n\r\n.pizza__small, .pizza__large{\r\n    display:grid;\r\n    grid-template-rows: repeat(2,1fr);\r\n    row-gap: 15px;\r\n}\r\n\r\n.pizza__smallSize{\r\n    justify-self: end;\r\n    align-self: end;\r\n    margin-bottom: 0;\r\n    font-family: 'Roboto', sans-serif;\r\n    font-style: normal;\r\n    font-weight: 300;\r\n    font-size: 17.9659px;\r\n    color: #02435A;\r\n    margin-bottom: auto;\r\n    margin-top: 39.46px;\r\n}\r\n.pizza__spacer{\r\n    height: 45%;\r\n    justify-self: center;\r\n    align-self: center;\r\n    width: 1px;\r\n    border-right: solid 1px #02435A;\r\n}\r\n.pizza__largeSize{\r\n    justify-self: start;\r\n    align-self: end;\r\n    margin-bottom: 0;\r\n    font-family: 'Roboto', sans-serif;\r\n    font-style: normal;\r\n    font-weight: 300;\r\n    font-size: 17.9659px;\r\n    color: #02435A;\r\n    margin-bottom: auto;\r\n    margin-top: 39.46px;\r\n}\r\n\r\n.pizza__smallPrice{\r\n    justify-self: end;\r\n    align-self: start;\r\n    margin-top: 0;\r\n    font-family: 'Roboto', sans-serif;\r\n    font-style: normal;\r\n    font-weight: 500;\r\n    font-size: 21.7244px;\r\n    color: #02435A;\r\n    margin-bottom: 41.04px;\r\n    margin-top: auto;\r\n}\r\n\r\n.pizza__largePrice{\r\n    justify-self: start;\r\n    align-self: start;\r\n    margin-top: 0;\r\n    font-family: 'Roboto', sans-serif;\r\n    font-style: normal;\r\n    font-weight: 500;\r\n    font-size: 21.7244px;\r\n    color: #02435A;\r\n    margin-bottom: 41.04px;\r\n    margin-top: auto;\r\n}", ""]);
-=======
 exports.push([module.i, "@import url(https://fonts.googleapis.com/css?family=Roboto&display=swap);"]);
 // Module
 exports.push([module.i, ".header {\r\n    width: 100%;\r\n    position: fixed;\r\n    height: 54px;\r\n    background: white;\r\n    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);\r\n}\r\n\r\n.header__wrapper {\r\n    max-width: 1100px;\r\n    margin: 0 auto;\r\n    display: flex;\r\n    align-items: center;\r\n    height: 100%;\r\n    justify-content: flex-end;\r\n}\r\n\r\n.header__logoButton {\r\n    margin-right: auto;\r\n    height: 28px;\r\n    cursor: pointer;\r\n    margin-left:11px;\r\n}\r\n\r\n.header__link {\r\n    font-family: \"Roboto\";\r\n    font-style: normal;\r\n    font-weight: normal;\r\n    font-size: 14px;\r\n    color: black;\r\n    text-decoration: none;\r\n    margin-left: 16px;\r\n    cursor: pointer;\r\n}\r\n.header__link--highlighted{\r\n    color: #AD171C;\r\n}", ""]);
->>>>>>> 0c1d0ed658799eb93e84a7596b3dbed5361c1338
 // Exports
 module.exports = exports;
 
 
 /***/ }),
 
-<<<<<<< HEAD
-/***/ "./node_modules/css-loader/dist/cjs.js!./dev/styles/PizzaList.css":
-/*!************************************************************************!*\
-  !*** ./node_modules/css-loader/dist/cjs.js!./dev/styles/PizzaList.css ***!
-  \************************************************************************/
-=======
-/***/ "./node_modules/css-loader/dist/cjs.js!./dev/styles/PizzaRolls.css":
-/*!*************************************************************************!*\
-  !*** ./node_modules/css-loader/dist/cjs.js!./dev/styles/PizzaRolls.css ***!
-  \*************************************************************************/
->>>>>>> 0c1d0ed658799eb93e84a7596b3dbed5361c1338
+/***/ "./node_modules/css-loader/dist/cjs.js!./dev/styles/Pizza.css":
+/*!********************************************************************!*\
+  !*** ./node_modules/css-loader/dist/cjs.js!./dev/styles/Pizza.css ***!
+  \********************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
 // Imports
 var ___CSS_LOADER_API_IMPORT___ = __webpack_require__(/*! ../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js");
 exports = ___CSS_LOADER_API_IMPORT___(false);
-<<<<<<< HEAD
+exports.push([module.i, "@import url(https://fonts.googleapis.com/css?family=Roboto+Slab:400,500,900|Roboto:400,500,900&display=swap);"]);
 // Module
-exports.push([module.i, "\r\n.pizzaList{\r\n    max-width: 938px;\r\n    max-height: 650px;\r\n    display: grid;\r\n    row-gap: 50px;\r\n    column-gap: 32px;\r\n    grid-template-rows: repeat(3,1fr);\r\n    grid-auto-flow: column;\r\n    margin-left: 10px;\r\n    padding-top: 47px;\r\n    margin: 0 auto;\r\n    overflow-x: scroll;\r\n    margin-top: 47px;\r\n    padding-top:0;\r\n    overflow-y: hidden;\r\n    padding-bottom: 10px;\r\n}", ""]);
-=======
+exports.push([module.i, ".pizza{\r\n    padding-top: 0px;\r\n    width: 800px;\r\n    height: 143px;\r\n    display: grid;\r\n    grid-template-columns: 318px 8fr 2fr 1fr 3fr;\r\n    border-radius: 10px;\r\n    box-shadow: 0px 0.73px 11px rgba(0, 0, 0, 0.17);\r\n}\r\n.pizza__imageBlob{\r\n    background-color: #FCBD10;\r\n    width: 318px;\r\n    height: 143px;\r\n    border-radius: 10px 0px 0px 10px;\r\n    overflow: hidden;\r\n}\r\n.pizza__image{\r\n    margin-left: 31.62px;\r\n}\r\n\r\n.pizza__info{\r\n    display:grid;\r\n    grid-template-rows: 1fr 1fr;\r\n    margin-left: 25.52px;\r\n}\r\n\r\n.pizza__infoTitle{\r\n    align-self: end;\r\n    font-family: 'Roboto', sans-serif;\r\n    font-style: normal;\r\n    font-weight: 900;\r\n    font-size: 21.7244px;\r\n    color: #02435A;\r\n    margin-top: 41.56px;\r\n    margin-bottom: auto;\r\n}\r\n\r\n.pizza__infoIngredients{\r\n    align-self: start;\r\n    margin-top: .5em;\r\n    font-family: 'Roboto Slab', serif;\r\n    font-style: normal;\r\n    font-weight: normal;\r\n    font-size: 12px;\r\n    margin-bottom: 29px;\r\n    margin-top: auto;\r\n}\r\n\r\n.pizza__small, .pizza__large{\r\n    display:grid;\r\n    grid-template-rows: repeat(2,1fr);\r\n    row-gap: 15px;\r\n}\r\n\r\n.pizza__smallSize{\r\n    justify-self: end;\r\n    align-self: end;\r\n    margin-bottom: 0;\r\n    font-family: 'Roboto', sans-serif;\r\n    font-style: normal;\r\n    font-weight: 300;\r\n    font-size: 17.9659px;\r\n    color: #02435A;\r\n    margin-bottom: auto;\r\n    margin-top: 39.46px;\r\n}\r\n.pizza__spacer{\r\n    height: 45%;\r\n    justify-self: center;\r\n    align-self: center;\r\n    width: 1px;\r\n    border-right: solid 1px #02435A;\r\n}\r\n.pizza__largeSize{\r\n    justify-self: start;\r\n    align-self: end;\r\n    margin-bottom: 0;\r\n    font-family: 'Roboto', sans-serif;\r\n    font-style: normal;\r\n    font-weight: 300;\r\n    font-size: 17.9659px;\r\n    color: #02435A;\r\n    margin-bottom: auto;\r\n    margin-top: 39.46px;\r\n}\r\n\r\n.pizza__smallPrice{\r\n    justify-self: end;\r\n    align-self: start;\r\n    margin-top: 0;\r\n    font-family: 'Roboto', sans-serif;\r\n    font-style: normal;\r\n    font-weight: 500;\r\n    font-size: 21.7244px;\r\n    color: #02435A;\r\n    margin-bottom: 41.04px;\r\n    margin-top: auto;\r\n}\r\n\r\n.pizza__largePrice{\r\n    justify-self: start;\r\n    align-self: start;\r\n    margin-top: 0;\r\n    font-family: 'Roboto', sans-serif;\r\n    font-style: normal;\r\n    font-weight: 500;\r\n    font-size: 21.7244px;\r\n    color: #02435A;\r\n    margin-bottom: 41.04px;\r\n    margin-top: auto;\r\n}", ""]);
+// Exports
+module.exports = exports;
+
+
+/***/ }),
+
+/***/ "./node_modules/css-loader/dist/cjs.js!./dev/styles/PizzaList.css":
+/*!************************************************************************!*\
+  !*** ./node_modules/css-loader/dist/cjs.js!./dev/styles/PizzaList.css ***!
+  \************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+// Imports
+var ___CSS_LOADER_API_IMPORT___ = __webpack_require__(/*! ../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js");
+exports = ___CSS_LOADER_API_IMPORT___(false);
+// Module
+exports.push([module.i, "\r\n.pizzaList{\r\n    max-width: 938px;\r\n    max-height: 650px;\r\n    display: grid;\r\n    row-gap: 50px;\r\n    column-gap: 32px;\r\n    grid-template-rows: repeat(3,1fr);\r\n    grid-auto-flow: column;\r\n    margin-left: 10px;\r\n    padding-top: 47px;\r\n    margin: 0 auto;\r\n    overflow-x: scroll;\r\n    margin-top: 47px;\r\n    padding-top:0;\r\n    overflow-y: hidden;\r\n    padding: 20px;\r\n}", ""]);
+// Exports
+module.exports = exports;
+
+
+/***/ }),
+
+/***/ "./node_modules/css-loader/dist/cjs.js!./dev/styles/PizzaRolls.css":
+/*!*************************************************************************!*\
+  !*** ./node_modules/css-loader/dist/cjs.js!./dev/styles/PizzaRolls.css ***!
+  \*************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+// Imports
+var ___CSS_LOADER_API_IMPORT___ = __webpack_require__(/*! ../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js");
+exports = ___CSS_LOADER_API_IMPORT___(false);
 exports.push([module.i, "@import url(https://fonts.googleapis.com/css?family=Roboto:900&display=swap);"]);
 // Module
 exports.push([module.i, ".pizzaRolls {\r\n    width: 916px;\r\n    height: 276px;\r\n    margin: 0 auto;\r\n    margin-top: 46px;\r\n    display: grid;\r\n    grid-template-columns: 403px auto;\r\n    column-gap: 50px;\r\n}\r\n\r\n.pizzaRolls__preview {\r\n    grid-column: 1;\r\n    width: 100%;\r\n    height: 100%;\r\n    overflow: hidden;\r\n    background: #FCBD10;\r\n    border-radius: 20px;\r\n    display: flex;\r\n    justify-content: center;\r\n}\r\n\r\n.pizzaRolls__rollImg {\r\n    width: 542px;\r\n    margin: 0 auto;\r\n    display: block;\r\n    margin-top: 113px;\r\n    height: 252px;\r\n}\r\n\r\n.pizzaRolls__title {\r\n    font-family: \"Roboto\";\r\n    font-style: normal;\r\n    font-weight: 900;\r\n    font-size: 22px;\r\n    color: #02435A;\r\n}\r\n\r\n.pizzaRolls__title--space-after {\r\n    margin-bottom: 10px;\r\n    display: block;\r\n}\r\n\r\n.pizzaRolls__Info {\r\n    display: grid;\r\n    align-content: space-between;\r\n    grid-template-rows: repeat(3, min-content);\r\n}", ""]);
@@ -991,7 +1064,6 @@ exports = ___CSS_LOADER_API_IMPORT___(false);
 exports.push([module.i, "@import url(https://fonts.googleapis.com/css?family=Roboto:300,700&display=swap);"]);
 // Module
 exports.push([module.i, ".RollInfoTable__vSpacer {\r\n    height: 92%;\r\n    align-self: center;\r\n    border-left: solid 1px black;\r\n}\r\n\r\n.RollInfoTable__hWrapper {\r\n    display: grid;\r\n    grid-template-columns: repeat(5, min-content);\r\n    justify-content: space-between;\r\n}\r\n\r\n.RollInfoTable__hSpacer {\r\n    width: 100%;\r\n    margin-top:24px;\r\n    margin-bottom:12px;\r\n    border-bottom: solid 1px black;\r\n}\r\n\r\n.rollInfo {\r\n    display: grid;\r\n    grid-template-columns: max-content auto;\r\n    align-items: center;\r\n    column-gap: 6px;\r\n}\r\n\r\n.rollInfo--vertical {\r\n    grid-template-columns: none;\r\n    width: 140px;\r\n    align-items: unset;\r\n    grid-template-rows: min-content auto;\r\n    row-gap: 8px;\r\n}\r\n\r\n.rollInfo__title {\r\n    font-family: \"Roboto\";\r\n    font-style: normal;\r\n    font-weight: bold;\r\n    font-size: 13px;\r\n}\r\n\r\n.rollInfo__content {\r\n    font-family: \"Roboto\";\r\n    font-style: normal;\r\n    font-weight: 300;\r\n    font-size: 12px;\r\n    line-height: 160%;\r\n}\r\n", ""]);
->>>>>>> 0c1d0ed658799eb93e84a7596b3dbed5361c1338
 // Exports
 module.exports = exports;
 
