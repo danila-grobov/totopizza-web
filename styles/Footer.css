@@ -1,5 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
 .footer{
     max-width: 923px;
     margin: 0 auto;
     max-height: 71px;
+}
+.footer__contacts{
+    display: grid;
+    row-gap: 10px;
+}
+.contacts{
+    display: grid;
+    grid-template-columns: 15px max-content;
+    column-gap: 9px;
+    align-items: center;
+}
+.contacts__logo{
+    width: 100%;
+}
+.contacts__text{
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
 }
