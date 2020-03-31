@@ -14,8 +14,11 @@ class Footer extends Component {
                         UŽSISAKYK
                     </span>
                 </div>
-                <img src="images/fb.svg" className="socialButton"/>
-                <img src="images/insta.svg" className="socialButton"/>
+                <div className="socialMedia">
+                    <img src="images/fb.svg" className="socialMedia__button"/>
+                    <img src="images/insta.svg" className="socialMedia__button"/>
+                </div>
+                
             </div>
         );
     }
