@@ -5,8 +5,9 @@
   "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "webpack --config webpack-server.config.js --watch",
-    "build": "webpack --config webpack-client.config.js --watch"
+    "dev": "next",
+    "build": "next build",
+    "start": "next start"
   },
   "author": "Danila Grobov, Mantas Aleškevičius",
   "license": "ISC",
@@ -26,6 +27,7 @@
     "webpack-cli": "^3.3.11"
   },
   "dependencies": {
+    "next": "^9.3.3",
     "react": "^16.13.1",
     "react-dom": "^16.13.1"
   }

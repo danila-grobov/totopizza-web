@@ -1,0 +1,11 @@
+import "../styles/Header.css";
+import "../styles/Pizza.css";
+import "../styles/PizzaList.css";
+import "../styles/PizzaRolls.css";
+import "../styles/RollInfoTable.css";
+import "../styles/App.css";
+import React from 'react';
+
+export default function MyApp({ Component, pageProps }) {
+  return <Component {...pageProps} />
+}

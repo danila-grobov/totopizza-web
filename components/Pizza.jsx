@@ -1,5 +1,4 @@
 import React from 'react';
-import "../styles/Pizza.css";
 
 export default class App extends React.Component {
     render() {

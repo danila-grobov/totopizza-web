@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import RollInfo from './RollInfo';
-import "../styles/RollInfoTable.css";
 class RollInfoTable extends Component {
     render() {
         return (

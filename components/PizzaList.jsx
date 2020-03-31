@@ -1,9 +1,8 @@
 import React from 'react';
-import "../styles/PizzaList.css";
 import Pizza from "./Pizza.jsx"
-import SuLasisa from "../images/SuGrybaisIrSonine.png";
-import SuSaliami from "../images/SuGrybaisIrSonine.png"
 
+const SuLasisa = "images/SuGrybaisIrSonine.png";
+const SuSaliami = "images/SuGrybaisIrSonine.png";
 
 export default class PizzaList extends React.Component {
 

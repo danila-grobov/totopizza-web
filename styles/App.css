@@ -4,7 +4,7 @@ body{
 
 .app__backgroudImage{
     width: 100%;
-    background-image: url("../images/pizzaBackground.png");
+    background-image: url("../public/images/pizzaBackground.png");
     height: 2000px;
     background-attachment: fixed;
     background-position: center;
