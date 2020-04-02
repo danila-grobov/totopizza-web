@@ -33,6 +33,7 @@
     text-decoration: none;
     margin-left: 16px;
     cursor: pointer;
+    padding-right: 10px;
 }
 .header__link--highlighted{
     color: #AD171C;
