@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+.footer{
+    max-width: 923px;
+    margin: 0 auto;
+    margin-top:54px;
+    max-height: 71px;
+    display: grid;
+    grid-template-columns: repeat(3,min-content);
+    justify-content: space-between;
+}
+.footer__contacts{
+    display: grid;
+    align-self: center;
+    row-gap: 10px;
+}
+.contacts{
+    display: grid;
+    grid-template-columns: 15px max-content;
+    column-gap: 9px;
+    align-items: center;
+}
+.contacts__logo{
+    width: 100%;
+}
+.contacts__text{
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+}
+.orderButton{
+    align-self: center;
+    width: 210px;
+    height: 56px;
+    background: url("../public/images/balta.png"), #FCBD10;
+    background-size:681px;
+    background-repeat: repeat;
+    border-radius: 5px;
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    cursor: pointer;
+}
+.orderButton__text{
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    color: #fff;
+}
+.socialMedia{
+    align-self: flex-end;
+    display: grid;
+    column-gap: 15px;
+    grid-template-columns: min-content min-content;
+}
+.socialMedia__button{
+    width: 25px;
+}
