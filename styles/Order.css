@@ -1,6 +1,19 @@
-.app__blob--granite{
+.app__blob--granite {
     background-image: url("../public/images/granite.jpg");
 }
-.app__backgroudImage--orderPage{
-    height:  802px;
+
+.app__backgroudImage--orderPage {
+    height: 802px;
+}
+
+.orderInfo {
+    max-width: 922px;
+    max-height: 481px;
+    margin: 0 auto;
+    margin-top: 69px;
+}
+
+.orderInfo__carImage {
+    width: 447px;
+    margin-left: 28.5px;
 }

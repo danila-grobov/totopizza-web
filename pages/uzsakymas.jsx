@@ -7,7 +7,9 @@ class uzsakymas extends Component {
                 <Header />
                 <div className="app__backgroudImage app__backgroudImage--orderPage">
                     <div className="app__blob app__blob--granite">
-                        
+                        <div className="orderInfo">
+                            <img src="images/Tacka.png" className="orderInfo__carImage"/>
+                        </div>
                     </div>
                 </div>
             </div>
