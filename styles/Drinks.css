@@ -1,0 +1,21 @@
+.drinks{
+    display: grid;
+    grid-template-columns: auto 103.81px;
+    column-gap: 20.96px;
+}
+
+.drinks__title{
+    margin-bottom: 15.11px;
+    margin-top: 18.08px;
+}
+
+.drinks__prices{
+    display: grid;
+    grid-template-columns: auto 29.95px auto;
+}
+
+.drinks__title, .drinks__smallSize, .drinks__smallPrice, .drinks__largeSize, .drinks__largePrice{
+    justify-self: center;
+    align-self: center;
+    text-align: center;
+}

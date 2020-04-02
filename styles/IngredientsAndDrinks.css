@@ -1,0 +1,38 @@
+.ingredientsAndDrinks{
+    max-width: 929.32px;
+    height: 155.08px;
+    display: grid;
+    grid-template-columns: 327.41px 87.84px 260.53px 253.32px;
+    margin: 0 auto;
+}
+.ingredientsAndDrinks__extraTitle{
+    margin-bottom: 21.15px;
+    margin-top: auto;
+}
+
+.ingredientsAndDrinks__extra{
+    height: 146.02px;
+    align-self: center;
+}
+
+
+.ingredientsAndDrinks__extraS{
+    display:grid;
+    grid-template-rows: 1fr 1fr 1fr;
+}
+
+.smallText{
+    display:grid;
+    grid-template-columns: 192.65px auto;
+}
+
+.smallText__name{
+    margin: 0;
+    align-self: center;
+}
+
+.smallText__price{
+    justify-self:end;
+    align-self: center;
+    margin: 0;
+}

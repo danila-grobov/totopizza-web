@@ -4,6 +4,8 @@ import "../styles/PizzaList.css";
 import "../styles/PizzaRolls.css";
 import "../styles/RollInfoTable.css";
 import "../styles/App.css";
+import "../styles/IngredientsAndDrinks.css";
+import "../styles/Drinks.css";
 import React from 'react';
 
 export default function MyApp({ Component, pageProps }) {
