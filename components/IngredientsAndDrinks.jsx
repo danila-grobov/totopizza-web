@@ -27,8 +27,8 @@ export default class IngredientsAndDrinks extends React.Component {
                     </div>   
                 </div>
                 <div className="ingredientsAndDrinks__spacer"/>
-                <Drinks className="coldDrinks" sec={ColdDrinks} title="GAIVIEJI GĖRIMAI" priceLarge="1,70€" priceSmall="1,10€"/>
-                <Drinks className="coldDrinks" sec={Tea} title="ŠALTA ARBATA" priceLarge="1,80€" priceSmall="1,30€"/>
+                <Drinks className="coldDrinks" src={ColdDrinks} title="GAIVIEJI GĖRIMAI" priceLarge="1,70€" priceSmall="1,10€"/>
+                <Drinks className="coldDrinks" src={Tea} title="ŠALTA ARBATA" priceLarge="1,80€" priceSmall="1,30€"/>
             </div>
         );
     }
