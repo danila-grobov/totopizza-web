@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto+Slab:400,500,900|Roboto:400,500,900&display=swap');
+
+.drinks{
+    
+    display: grid;
+    grid-template-columns: auto 103.81px;
+    column-gap: 20.96px;
+}
+
+.drinks__image{
+    align-self: center;
+    justify-self: end;
+}
+
+.drinks__title{
+    margin-bottom: 15.11px;
+    margin-top: 18.08px;
+    font-family:  'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 21.7244px;
+    color: #02435A;
+}
+
+.drinks__prices{
+    display: grid;
+    grid-template-columns: auto 29.95px auto;
+}
+
+.drinks__title, .drinks__smallSize, .drinks__smallPrice, .drinks__largeSize, .drinks__largePrice{
+    justify-self: center;
+    align-self: center;
+    text-align: center;
+}
+.drinks__smallSize,.drinks__largeSize{
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+}
+
+.drinks__smallPrice,.drinks__largePrice{
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 14px;
+}
+
+.drinks__spacer{
+    height: 52.37px;
+    justify-self: center;
+    align-self: center;
+    width: 1px;
+    border-right: solid 1px black;
+}
