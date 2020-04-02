@@ -4,9 +4,11 @@
     margin: 0 auto;
     margin-top: 62px;
     max-width: 929.32px;
-    height: 155.08px;
+    max-height: 155.08px;
     display: grid;
-    grid-template-columns: 327.41px 87.84px 260.53px 253.32px;
+    grid-template-columns: 327.41px 87.84px 513.85px;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 .ingredientsAndDrinks__extraTitle{
     margin-bottom: 21.15px;
@@ -53,6 +55,10 @@
     font-weight: 300;
     font-size: 16px;
 }
+.drinkChoices{
+    display:grid;
+    grid-template-columns: 260.54px auto;
+}
 
 .ingredientsAndDrinks__spacer{
     height: 100%;
@@ -61,3 +67,4 @@
     width: 1px;
     border-right: solid 1px black;
 }
+
