@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
 .app__blob--granite {
     background-image: url("../public/images/granite.jpg");
 }
@@ -11,9 +13,37 @@
     max-height: 481px;
     margin: 0 auto;
     margin-top: 69px;
+    display: grid;
+    grid-template-columns: min-content min-content;
+    column-gap: 55px;
 }
 
 .orderInfo__carImage {
     width: 447px;
     margin-left: 28.5px;
+}
+
+.payment{
+    display: grid;
+    grid-template-rows: repeat(3,min-content);
+    width: 317px;
+    row-gap: 40px;
+    align-content: center
+}
+.payment__info{
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 120%;
+}
+.orderInfo__phoneInfo{
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+}
+.orderInfo__phoneInfo--bold{
+    font-weight: 900;
+    font-size: 22px;
 }
