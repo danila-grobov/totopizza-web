@@ -15,7 +15,10 @@ body{
 }
 
 .app__blob{
-    padding: 54px 0;
+    border-bottom-left-radius: 12px;
+    border-bottom-right-radius: 12px;
+    padding-top: 54px;
+    padding-bottom: 46px;
     max-width: 1100px;
     height: calc(100% - 74px);
     margin: 0 auto;
