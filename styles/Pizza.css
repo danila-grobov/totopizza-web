@@ -7,7 +7,7 @@
     display: grid;
     grid-template-columns: 318px 8fr 2fr 50px 3fr;
     border-radius: 10px;
-    box-shadow: 0px 0.73px 11px rgba(0, 0, 0, 0.17);
+    background: white;
 }
 .pizza__imageBlob{
     background-color: #FCBD10;
