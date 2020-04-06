@@ -12,5 +12,5 @@
     margin-top: 47px;
     overflow-y: hidden; 
     padding-bottom: 20px;
-    filter: drop-shadow(0px 1px 5px rgba(0, 0, 0, 0.1));
+    filter: drop-shadow(0px 2px 1px rgba(0, 0, 0, 0.14)) drop-shadow(0px 1px 1px rgba(0, 0, 0, 0.14)) drop-shadow(0px 1px 3px rgba(0,0,0,.12));
 }
