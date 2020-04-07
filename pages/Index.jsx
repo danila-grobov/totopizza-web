@@ -13,11 +13,11 @@ export default class Index extends React.Component {
                 <Header />
                 <div className="app__backgroudImage">
                     <div className="app__whiteBlob">
-                        <img src="images/logo.png" alt="Toto Pizza" className="app__logoImage"/>
+                        <div className="app__logoImage"/>
                         <PizzaList />
                         <PizzaRolls />
-                        <IngredientsAndDrinks/>
-                        <Footer />
+                        {/* <IngredientsAndDrinks/> */}
+                        {/* <Footer /> */}
                     </div>
                 </div>
             </div>

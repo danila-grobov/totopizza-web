@@ -1,6 +1,6 @@
 
 .pizzaList{
-    max-width: 938px;
+    width: 90%;
     max-height: 650px;
     display: grid;
     row-gap: 50px;
@@ -15,4 +15,16 @@
     padding-top:0;
     overflow-y: hidden;
     padding: 20px;
+}
+
+
+@media screen and (max-width: 950px) {
+    .pizzaList{
+        column-gap: 19px;
+        grid-auto-flow: column;
+        grid-template-rows: 1fr;
+        padding: 17px;
+        margin-left: 0px;
+        margin-right: 17px;
+    }
 }
