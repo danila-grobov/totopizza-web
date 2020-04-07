@@ -4,9 +4,9 @@ class Header extends Component {
         return (
             <div className="header">
                     <div className="header__wrapper">
-                        <img src="images/toto_logo.png" className="header__logoButton"/>
+                        <img src="images/logo.svg" className="header__logoButton"  onClick={() => { window.location.replace("/") }}/>
                         <a href="/" className="header__link">Pagrindinis</a>
-                        <a href="/" className="header__link header__link--highlighted">Užsisakyk</a>
+                        <a href="/uzsakymas" className="header__link header__link--highlighted">Užsisakyk</a>
                     </div>
             </div>
         );

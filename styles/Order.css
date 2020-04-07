@@ -58,6 +58,7 @@
     font-weight: bold;
     font-size: 18px;
     color: #02435A;
+    cursor: pointer;
 }
 
 .phoneInfo__text--bold {
@@ -79,6 +80,7 @@
     color: #000000;
     margin: 0 auto;
     margin-top: 15px;
+    cursor: pointer;
 }
 
 .socialInfo {
@@ -96,6 +98,7 @@
     font-style: normal;
     font-weight: 500;
     font-size: 18px;
+    cursor: pointer;
 }
 
 .socialInfo__spacer {

@@ -15,15 +15,15 @@ class uzsakymas extends Component {
                         </div>
                         <Payment />
                         <PhoneInfo />
-                        <span className="orderInfo__address">
+                        <span className="orderInfo__address" onClick={() => { window.open("https://g.page/totopizza-lt?share") }}>
                             Adresas: Tilžės g. 5, Šilutė
                         </span>
                         <div className="socialInfo">
-                            <span className="socialInfo__text">
+                            <span className="socialInfo__text" onClick={() => { window.open("https://instagram.com/totopizza.lt") }}>
                                 www.instagram.com/totopizza.lt
                             </span>
                             <div className="socialInfo__spacer" />
-                            <span className="socialInfo__text">
+                            <span className="socialInfo__text" onClick={() => { window.open("https://fb.com/totopizza.lt") }}>
                                 www.fb.com/totopizza.lt
                             </span>
                         </div>
