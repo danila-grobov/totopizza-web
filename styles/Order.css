@@ -5,17 +5,21 @@
 }
 
 .orderInfo {
-    max-width: 922px;
+    width: min-content;
     margin: 0 auto;
     margin-top: 69px;
     display: grid;
-    grid-template-columns: min-content min-content;
+    grid-template-columns: max-content min-content;
     column-gap: 55px;
 }
 
-.orderInfo__carImage {
-    width: 447px;
+.orderInfo__car {
+    max-width: 447px;
     margin-left: 28.5px;
+}
+
+.orderInfo__carImage {
+    width: 100%;
 }
 
 .payment {
@@ -97,4 +101,58 @@
 .socialInfo__spacer {
     border-left: 1.5px solid;
     height: 15px;
+}
+
+@media only screen and (max-width: 880px) {
+    .orderInfo {
+        grid-template-columns: 100%;
+        justify-items: center;
+        width: 100%;
+    }
+    .phoneInfo {
+        width: 100%;
+        grid-column: 1;
+    }
+    .orderInfo__address {
+        grid-column: 1;
+    }
+    .socialInfo {
+        grid-column: 1;
+    }
+    .payment {
+        padding-left: 84px;
+        width: 447px;
+        margin: 28px 0;
+    }
+}
+
+@media only screen and (max-width: 530px) {
+    .socialInfo {
+        grid-template-columns: min-content;
+        justify-items: center;
+    }
+    .socialInfo__spacer{
+        border-left: none;
+        border-bottom: 1.5px solid;
+        width: 20px;
+        height: 17px;
+        margin-bottom: 17px;
+    }
+    .payment {
+        width: 72.8%;
+        padding-left: 0;
+    }
+    .orderInfo__car {
+        width: 86.4%;
+        margin: 0;
+    }
+    .orderInfo{
+        margin-top: 41px;
+    }
+}
+@media only screen and (max-width:335px) {
+    .phoneInfo__textWrapper{
+        grid-template-columns: auto;
+        justify-items: center;
+    }
 }
