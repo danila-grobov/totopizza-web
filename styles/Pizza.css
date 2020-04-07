@@ -22,8 +22,9 @@
 
 .pizza__info{
     display:grid;
-    grid-template-rows: 1fr 1fr;
+    grid-template-rows: auto auto;
     margin-left: 25.52px;
+    row-gap: 14px;
 }
 
 .pizza__infoTitle{
@@ -33,19 +34,14 @@
     font-weight: 900;
     font-size: 21.7244px;
     color: #02435A;
-    margin-top: 41.56px;
-    margin-bottom: auto;
 }
 
 .pizza__infoIngredients{
     align-self: start;
-    margin-top: .5em;
     font-family: 'Roboto Slab', serif;
     font-style: normal;
     font-weight: normal;
     font-size: 12px;
-    margin-bottom: 29px;
-    margin-top: auto;
 }
 
 .pizza__small, .pizza__large{

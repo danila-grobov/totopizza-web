@@ -13,18 +13,18 @@ export default class App extends React.Component {
                     <img className="pizza__image" src={src}/>
                 </div>   
                 <div className="pizza__info">
-                    <h3 className="pizza__infoTitle">{title}</h3>
-                    <p className="pizza__infoIngredients">{ingredients}</p>
+                    <span className="pizza__infoTitle">{title}</span>
+                    <span className="pizza__infoIngredients">{ingredients}</span>
                 </div>
                 <div className="pizza__small">
-                    <p className="pizza__smallSize">32cm</p>
+                    <span className="pizza__smallSize">32cm</span>
                     
-                    <p className="pizza__smallPrice">{expensive ? expensive_small : cheap_small}</p>
+                    <span className="pizza__smallPrice">{expensive ? expensive_small : cheap_small}</span>
                 </div>
                 <div className="pizza__spacer"/>
                 <div className="pizza__large">
-                    <p className="pizza__largeSize">42cm</p>
-                    <p className="pizza__largePrice">{expensive ? expensive_large : cheap_large}</p>
+                    <span className="pizza__largeSize">42cm</span>
+                    <span className="pizza__largePrice">{expensive ? expensive_large : cheap_large}</span>
                 </div>
             </div>
         );
