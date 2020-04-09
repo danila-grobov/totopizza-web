@@ -8,7 +8,6 @@ class RollInfo extends Component {
                 <span className="rollInfo__content">{content}</span>
             </div>
         )
-
     }
 }
 

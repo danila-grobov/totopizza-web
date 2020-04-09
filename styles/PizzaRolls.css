@@ -46,3 +46,38 @@
     align-content: space-between;
     grid-template-rows: repeat(3, min-content);
 }
+
+@media screen and (max-width: 950px) {
+    .pizzaRolls {
+        grid-template-columns: unset;
+        grid-template-rows: auto 154px;
+        width: calc(100% - 40px);
+        height: unset;
+    }
+
+    .pizzaRolls__preview {
+        grid-row: 2;
+        width: 100%;
+        margin: 0 auto;
+        padding-top: 46%; 
+        position: relative;
+        height: 0;
+        border-radius: 10px;
+    }
+
+    .pizzaRolls__rollImg{
+        top:29%;
+        position: absolute;
+        width: 116%;
+        height: auto;
+        margin-top: 0;
+    }
+
+    .pizzaRolls__title {
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: 900;
+        font-size: 18px;
+        margin-bottom: 32px;
+    }
+}
