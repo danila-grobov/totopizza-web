@@ -1,30 +1,71 @@
-
-.pizzaList{
+.pizzaList {
     width: 90%;
     max-height: 650px;
     display: grid;
     row-gap: 50px;
     column-gap: 32px;
-    grid-template-rows: repeat(3,1fr);
+    grid-template-rows: repeat(3, 1fr);
     grid-auto-flow: column;
     margin-left: 10px;
     padding-top: 47px;
     margin: 0 auto;
     overflow-x: scroll;
     margin-top: 47px;
-    padding-top:0;
+    padding-top: 0;
     overflow-y: hidden;
     padding: 20px;
+    filter: drop-shadow(0px 2px 1px rgba(0, 0, 0, 0.14)) drop-shadow(0px 1px 1px rgba(0, 0, 0, 0.14)) drop-shadow(0px 1px 3px rgba(0,0,0,.12));
 }
 
-
 @media screen and (max-width: 950px) {
-    .pizzaList{
+    .pizzaList {
         column-gap: 19px;
         grid-auto-flow: column;
         grid-template-rows: 1fr;
-        padding: 17px;
-        margin-left: 0px;
-        margin-right: 17px;
+        padding: 0px;
+        margin: 0 auto;
+        margin-top: 46px;
+        justify-items: center;
+        overflow: unset;
+        row-gap: 25px;
+        grid-template-columns: repeat(2, min-content);
+        width: min-content;
+    }
+    .pizzaList__button {
+        grid-column: 1/3;
+        grid-row: 2;
+        width: 100%;
+        height: 33px;
+        font-family: "Roboto";
+        color: #02435A;
+        align-items: center;
+        display: grid;
+        grid-template-columns: min-content auto;
+        justify-items: center;
+        background: white;
+        cursor: pointer;
+        border-radius: 7px;
+        font-size:14px;
+    }
+    .pizzaList__buttonIcon {
+        width: 10px;
+        margin-left: 13px;
+    }
+}
+
+@media screen and (max-width: 660px) {
+    .pizzaList__button{
+        grid-column: 1/2;
+    }
+    .pizzaList {
+        grid-template-columns: max-content;
+    }
+}
+
+@media screen and (max-width: 340px) {
+    .pizzaList {
+        width: calc(100% - 34px);
+        margin: 0 auto;
+        grid-template-columns: auto;
     }
 }

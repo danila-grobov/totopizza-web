@@ -6,7 +6,7 @@
     display: grid;
     grid-template-columns: 318px 285.21px 216.14px;
     border-radius: 10px;
-    box-shadow: 0px 0.73px 11px rgba(0, 0, 0, 0.17);
+    background: white;
 }
 
 .pizza__orderDetails {
@@ -134,6 +134,10 @@
         width: 301px;
         grid-template-columns: 100%;
         grid-template-rows: 109px min-content min-content;
+        display: none;
+    }
+    .pizza:first-child,.pizza:nth-child(2) {
+        display: grid;
     }
     .pizza__infoIngredients {
         margin-bottom: 0px;
@@ -174,5 +178,17 @@
     }
     .pizza__small, .pizza__large {
         row-gap: 6.4px;
+    }
+}
+
+@media screen and (max-width: 660px) {
+    .pizza:nth-child(2) {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 340px) {
+    .pizza {
+        width: 100%;
     }
 }

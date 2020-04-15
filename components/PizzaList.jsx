@@ -13,6 +13,12 @@ export default class PizzaList extends React.Component {
                 <Pizza src={SuSaliami} title="SU ŠONINE IR GRYBAIS" ingredients="grietinės padažas, sūris, šoninė, pievagrybiai, svogūnai" priceLarge="6,89€" priceSmall="4,89€"/>
                 <Pizza src={SuLasisa} title="SU ŠONINE IR GRYBAIS" ingredients="grietinės padažas, sūris, šoninė, pievagrybiai, svogūnai" priceLarge="6,89€" priceSmall="4,89€"/>
                 <Pizza src={SuSaliami} title="SU ŠONINE IR GRYBAIS" ingredients="grietinės padažas, sūris, šoninė, pievagrybiai, svogūnai" priceLarge="6,89€" priceSmall="4,89€"/>
+                <div className="pizzaList__button">
+                    <img src="images/expand.svg" className="pizzaList__buttonIcon"/>
+                    <span className="pizzaList_buttonText">
+                        Daugiau picų
+                    </span>
+                </div>
             </div>
         );
     }
