@@ -125,7 +125,7 @@
         font-size: 16px;
     }
     .pizza {
-        height: 253px;
+        height: max-content;
         width: 301px;
         grid-template-columns: 100%;
         grid-template-rows: 109px min-content min-content;
@@ -159,11 +159,12 @@
         font-size: 16px;
     }
     .pizza__orderDetails {
-        height: 100%;
+        height: max-content;
         grid-template-columns: repeat(3, min-content);
         column-gap: 15px;
         margin-left: 20px;
         margin-top: 15px;
+        margin-bottom: 22px;
     }
     .pizza__small, .pizza__large, .pizza__spacer {
         height: 38.28px;
@@ -175,7 +176,6 @@
         row-gap: 6.4px;
     }
 }
-
 @media screen and (max-width: 660px) {
     .pizza:nth-child(2) {
         display: none;
@@ -186,4 +186,7 @@
     .pizza {
         width: 100%;
     }
+}
+.pizzaList--expanded .pizza {
+    display: grid;
 }
