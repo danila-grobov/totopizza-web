@@ -1,18 +1,12 @@
 import React from 'react';
 import Pizza from "./Pizza.jsx"
-
-const SuLasisa = "images/SuGrybaisIrSonine.png";
-const SuSaliami = "images/SuGrybaisIrSonine.png";
-
+import pizzas from "../data/pizzas"
 export default class PizzaList extends React.Component {
 
     render() {
         return (
             <div className="pizzaList">
-                <Pizza src={SuLasisa} title="SU ŠONINE IR GRYBAIS" ingredients="grietinės padažas, sūris, šoninė, pievagrybiai, svogūnai" priceLarge="6,89€" priceSmall="4,89€"/>
-                <Pizza src={SuSaliami} title="SU ŠONINE IR GRYBAIS" ingredients="grietinės padažas, sūris, šoninė, pievagrybiai, svogūnai" priceLarge="6,89€" priceSmall="4,89€"/>
-                <Pizza src={SuLasisa} title="SU ŠONINE IR GRYBAIS" ingredients="grietinės padažas, sūris, šoninė, pievagrybiai, svogūnai" priceLarge="6,89€" priceSmall="4,89€"/>
-                <Pizza src={SuSaliami} title="SU ŠONINE IR GRYBAIS" ingredients="grietinės padažas, sūris, šoninė, pievagrybiai, svogūnai" priceLarge="6,89€" priceSmall="4,89€"/>
+                {pizzas}
                 <div className="pizzaList__button">
                     <img src="images/expand.svg" className="pizzaList__buttonIcon"/>
                     <span className="pizzaList_buttonText">

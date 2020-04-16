@@ -18,6 +18,7 @@
     grid-template-columns: 15px max-content;
     column-gap: 9px;
     align-items: center;
+    cursor: pointer;
 }
 .contacts__logo{
     width: 100%;
@@ -56,4 +57,5 @@
 }
 .socialMedia__button{
     width: 25px;
+    cursor: pointer;
 }

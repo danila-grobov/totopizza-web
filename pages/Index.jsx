@@ -11,8 +11,8 @@ export default class Index extends React.Component {
         return (
             <div className="app">
                 <Header />
-                <div className="app__backgroudImage">
-                    <div className="app__whiteBlob">
+                <div className="app__backgroudImage" />
+                <div className="app__blob app__blob--white">
                         <div className="app__logoImage"/>
                         <PizzaList />
                         <PizzaRolls />
@@ -20,7 +20,6 @@ export default class Index extends React.Component {
                         {/* <Footer /> */}
                     </div>
                 </div>
-            </div>
         );
     }
 }
