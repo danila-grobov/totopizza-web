@@ -31,7 +31,7 @@
     display:grid;
     grid-template-rows: auto auto;
     margin-left: 25.52px;
-    row-gap: 14px;
+    row-gap: 2px;
 }
 
 .pizza__infoTitle{
