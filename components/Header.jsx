@@ -10,7 +10,7 @@ class Header extends Component {
                     <a href="/uzsakymas" className="header__link header__link--highlighted">Užsisakyk</a>
                 </div>
                 {
-                    getMenuStatus() ?
+                    getMenuStatus && getMenuStatus() ?
                         <div className="menuHeader">
                             <span className="menuHeader__title">Menu</span>
                             <img src="images/close.svg" className="menuHeader__close" onClick={()=>closeMenu()} />
