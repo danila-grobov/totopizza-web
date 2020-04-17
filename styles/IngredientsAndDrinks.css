@@ -9,6 +9,7 @@
     padding-left: 10px;
     padding-right: 10px;
 }
+
 .ingredientsAndDrinks__extraTitle{
     margin-bottom: 21.15px;
     margin-top: auto;
@@ -54,6 +55,7 @@
     font-weight: 300;
     font-size: 16px;
 }
+
 .drinkChoices{
     display:grid;
     grid-template-columns: 260.54px auto;
@@ -72,22 +74,41 @@
         display: none;
     }
 
+    .ingredientsAndDrinks__extraTitle{
+        font-style: normal;
+        font-weight: 900;
+        font-size: 16px;
+    }
+
+    .smallText__name, .smallText__price{
+        font-style: normal;
+        font-weight: normal;
+        font-size: 12px;
+    }
+
     .ingredientsAndDrinks{
         display: grid;
         grid-template-columns: 100%;
-        max-width: 513.85px;
-        margin-left: 30%;
+        width: calc(100% - 40px);
+        margin-top: 30px;
+        padding-left: unset;
+        padding-right: unset;
     }
 
     .ingredientsAndDrinks__extra{
-        padding-left: 20px;
         width: 100%;
         justify-self: start;
-
     }
 
     .drinkChoices{
-        padding-left: 20px;
         width: 100%;
+        grid-template-columns: 50% 50%;
+    }
+
+    @media screen and (max-width: 320px) {
+        .drinkChoices{
+            width: 100%;
+            grid-template-columns: 100%;
+        }  
     }
 }
