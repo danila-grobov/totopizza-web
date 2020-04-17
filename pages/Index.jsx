@@ -7,17 +7,30 @@ import Footer from '../components/Footer';
 
 
 export default class Index extends React.Component {
+    constructor(props) {
+        super(props);
+        this.state = { menuOpen: false };
+    }
+    openMenu = () => {
+        this.setState({ menuOpen: true })
+    }
+    closeMenu = () => {
+        this.setState({ menuOpen: false })
+    }
+    getMenuStatus = () => {
+        return this.state.menuOpen;
+    }
     render() {
         return (
-            <div className="app">
-                <Header />
+            <div className={this.getMenuStatus() ? "app app--fixed" : "app"}>
+                <Header getMenuStatus={this.getMenuStatus} closeMenu={this.closeMenu}/>
                 <div className="app__backgroudImage" />
                 <div className="app__blob app__blob--white">
-                    <img src="images/logo.png" alt="Toto Pizza" className="app__logoImage"/>
-                    <PizzaList />
+                    <div className="app__logoImage" />
+                    <PizzaList getMenuStatus={this.getMenuStatus} openMenu={this.openMenu}/>
                     <PizzaRolls />
-                    <IngredientsAndDrinks/>
-                    <Footer />
+                    {/* <IngredientsAndDrinks/> */}
+                    {/* <Footer /> */}
                 </div>
             </div>
         );

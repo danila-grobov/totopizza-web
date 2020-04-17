@@ -17,14 +17,16 @@ export default class App extends React.Component {
                     <span className="pizza__infoTitle">{title}</span>
                     <span className="pizza__infoIngredients">{ingredients}</span>
                 </div>
-                <div className="pizza__small">
-                    <span className="pizza__smallSize">32cm</span>
-                    <span className="pizza__smallPrice">{expensive ? expensive_small : cheap_small}{currency}</span>
-                </div>
-                <div className="pizza__spacer" />
-                <div className="pizza__large">
-                    <span className="pizza__largeSize">42cm</span>
-                    <span className="pizza__largePrice">{expensive ? expensive_large : cheap_large}{currency}</span>
+                <div className="pizza__orderDetails">
+                    <div className="pizza__small">
+                        <span className="pizza__smallSize">32cm</span>
+                        <span className="pizza__smallPrice">{expensive ? expensive_small : cheap_small}{currency}</span>
+                    </div>
+                    <div className="pizza__spacer" />
+                    <div className="pizza__large">
+                        <span className="pizza__largeSize">42cm</span>
+                        <span className="pizza__largePrice">{expensive ? expensive_large : cheap_large}{currency}</span>
+                    </div>
                 </div>
             </div>
         );

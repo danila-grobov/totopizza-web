@@ -1,6 +1,9 @@
 body{
     margin: 0;
+
 }
+
+
 
 .app__backgroudImage{
     position: fixed;
@@ -30,6 +33,24 @@ body{
 
 .app__logoImage{
     margin: 0 auto;
-    max-width: 923px;
+    max-width: 100%;
+    padding-top: 50%;
     display: block;
+    background-image: url(../public/images/logo.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    margin-left: 15.5%;
+    margin-right: 15.5%;
+}
+
+.app--fixed{
+    position: fixed;
+}
+
+@media screen and (max-width: 950px) {
+    .app__logoImage{
+        margin-left: 17px;
+        margin-right: 17px;
+        padding-top: 68%;
+    }
 }
