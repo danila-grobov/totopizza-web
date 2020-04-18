@@ -65,7 +65,7 @@
         width: calc(100% - 40px);
         max-height: 100%;
     }
-    @media screen and (max-width: 425px) {
+    @media screen and (max-width: 550px) {
         .footer{
             grid-template-columns: 100%;
             row-gap: 36px;
