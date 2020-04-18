@@ -75,7 +75,6 @@
 @media screen and (max-width: 660px) {
     .pizzaList__button{
         grid-column: 1/2;
-        width: 90%;
     }
     .pizzaList {
         width: calc(100% - 34px);
