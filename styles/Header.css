@@ -60,8 +60,8 @@
     .header {
         box-shadow: 0px 0px 4.16667px rgba(0, 0, 0, 0.25);
     }
-    .header__wrapper {
-        height: 45px;
+    .menuHeader__title {
+        font-size: 16px;
     }
     .header__logoButton{
         height: 23px;
