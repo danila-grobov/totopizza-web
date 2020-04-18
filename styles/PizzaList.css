@@ -78,15 +78,13 @@
         width: 90%;
     }
     .pizzaList {
+        width: calc(100% - 34px);
         grid-template-columns: 100%;
-        width: 100%;
     }
 }
 
 @media screen and (max-width: 340px) {
     .pizzaList {
-        width: calc(100% - 34px);
-        margin: 0 auto;
         grid-template-columns: auto;
     }
 }

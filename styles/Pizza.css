@@ -177,6 +177,10 @@
     }
 }
 @media screen and (max-width: 660px) {
+    .pizza {
+        width: 100%;
+        max-width: 401px;
+    }
     .pizza:nth-child(4) {
         display: none;
     }
