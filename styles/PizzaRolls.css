@@ -50,7 +50,7 @@
 @media screen and (max-width: 950px) {
     .pizzaRolls {
         grid-template-columns: unset;
-        grid-template-rows: auto 154px;
+        grid-template-rows: auto min-content;
         width: calc(100% - 40px);
         height: unset;
     }
