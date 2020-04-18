@@ -69,7 +69,7 @@
     border-right: solid 1px black;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 950px) {
     .ingredientsAndDrinks__spacer{
         display: none;
     }
