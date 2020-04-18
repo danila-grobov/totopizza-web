@@ -131,7 +131,7 @@
         grid-template-rows: 109px min-content min-content;
         display: none;
     }
-    .pizza:first-child,.pizza:nth-child(2) {
+    .pizza:first-child,.pizza:nth-child(2),.pizza:nth-child(3),.pizza:nth-child(4) {
         display: grid;
     }
     .pizza__infoIngredients {
@@ -177,7 +177,11 @@
     }
 }
 @media screen and (max-width: 660px) {
-    .pizza:nth-child(2) {
+    .pizza {
+        width: 100%;
+        max-width: 401px;
+    }
+    .pizza:nth-child(4) {
         display: none;
     }
 }
