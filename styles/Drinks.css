@@ -70,22 +70,7 @@
      
     .drinks__title{
         margin-left: -50%;
-        font-style: normal;
-        font-weight: 900;
-        font-size: 16px;
         text-align: start;
-    }
-
-    .drinks__smallSize,.drinks__largeSize{
-        font-style: normal;
-        font-weight: normal;
-        font-size: 14px;
-    }
-
-    .drinks__smallPrice,.drinks__largePrice{
-        font-style: normal;
-        font-weight: 900;
-        font-size: 14px;
     }
 
     .drinks__prices{
@@ -98,6 +83,24 @@
         width: 100%;
     }
     @media screen and (max-width: 425px) {
+        .drinks__title{
+            font-style: normal;
+            font-weight: 900;
+            font-size: 16px;
+        }
+    
+        .drinks__smallSize,.drinks__largeSize{
+            font-style: normal;
+            font-weight: normal;
+            font-size: 14px;
+        }
+    
+        .drinks__smallPrice,.drinks__largePrice{
+            font-style: normal;
+            font-weight: 900;
+            font-size: 14px;
+        }
+
         .drinks__image{
             padding-bottom: 20%;
         }

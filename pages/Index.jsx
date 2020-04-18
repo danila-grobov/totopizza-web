@@ -17,7 +17,7 @@ export default class Index extends React.Component {
                         <PizzaList />
                         <PizzaRolls />
                         <IngredientsAndDrinks/>
-                        {/* <Footer /> */}
+                        <Footer />
                     </div>
                 </div>
             </div>
