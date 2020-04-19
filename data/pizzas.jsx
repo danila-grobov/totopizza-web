@@ -56,11 +56,6 @@ export default [
         ingredients="pomidorų padažas, sūris, jautiena, kiaulienos šoninė, svogūnai, konservuoti agurkėliai"
         expensive={false}
         key="SuJautienaIrSonine" />,
-    <Pizza src="images/pizzas/SusikurkPats.png"
-        title="SUSIKURK PATS"
-        ingredients="pomidorų padažas, sūris, +1 ingredientas pasirinktinai (išskyrus vytintą kumpį, rūkytą lašišą, jūros gėrybes, bei chorizo saliamį)"
-        expensive={false}
-        key="SusikurkPats" />,
     <Pizza src="images/pizzas/TotoPizza.png"
         title="TOTO PIZZA"
         ingredients="česnakinio aliejaus padažas, sūris, saliami, vištiena, paprika, jelapenas"
