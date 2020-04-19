@@ -130,9 +130,7 @@ var Drinks = /*#__PURE__*/function (_React$Component) {
       }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
         className: "drinks__image",
         src: this.props.src
-      }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "drinks__text"
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
+      }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
         className: "drinks__title"
       }, this.props.title), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "drinks__prices"
@@ -150,7 +148,7 @@ var Drinks = /*#__PURE__*/function (_React$Component) {
         className: "drinks__largeSize"
       }, "1.5L"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
         className: "drinks__largePrice"
-      }, this.props.priceLarge)))));
+      }, this.props.priceLarge))));
     }
   }]);
 
@@ -1062,10 +1060,10 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
-/***/ "./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2F&absolutePagePath=C%3A%5CUsers%5Canime%5CDesktop%5CTest%20site%5Ctotopizza-web%5Cpages%5Cindex.jsx!./":
-/*!*********************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2F&absolutePagePath=C%3A%5CUsers%5Canime%5CDesktop%5CTest%20site%5Ctotopizza-web%5Cpages%5Cindex.jsx ***!
-  \*********************************************************************************************************************************************************************************************/
+/***/ "./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2F&absolutePagePath=C%3A%5CUsers%5CUser%5CDesktop%5Ctotopizza%5Cpages%5Cindex.jsx!./":
+/*!**************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2F&absolutePagePath=C%3A%5CUsers%5CUser%5CDesktop%5Ctotopizza%5Cpages%5Cindex.jsx ***!
+  \**************************************************************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -1179,6 +1177,11 @@ var Index = /*#__PURE__*/function (_React$Component) {
   }
 
   _createClass(Index, [{
+    key: "componentDidMount",
+    value: function componentDidMount() {
+      document.title = "TotoPizza | Šilutė";
+    }
+  }, {
     key: "render",
     value: function render() {
       return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
@@ -1191,11 +1194,13 @@ var Index = /*#__PURE__*/function (_React$Component) {
       }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "app__blob app__blob--white"
       }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "app__elementWrapper"
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "app__logoImage"
       }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_PizzaList__WEBPACK_IMPORTED_MODULE_1__["default"], {
         getMenuStatus: this.getMenuStatus,
         openMenu: this.openMenu
-      }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_PizzaRolls__WEBPACK_IMPORTED_MODULE_3__["default"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_IngredientsAndDrinks__WEBPACK_IMPORTED_MODULE_4__["default"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Footer__WEBPACK_IMPORTED_MODULE_5__["default"], null)));
+      }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_PizzaRolls__WEBPACK_IMPORTED_MODULE_3__["default"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_IngredientsAndDrinks__WEBPACK_IMPORTED_MODULE_4__["default"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Footer__WEBPACK_IMPORTED_MODULE_5__["default"], null))));
     }
   }]);
 
@@ -1206,14 +1211,14 @@ var Index = /*#__PURE__*/function (_React$Component) {
 
 /***/ }),
 
-/***/ 2:
-/*!*************************************************************************************************************************************************!*\
-  !*** multi next-client-pages-loader?page=%2F&absolutePagePath=C%3A%5CUsers%5Canime%5CDesktop%5CTest%20site%5Ctotopizza-web%5Cpages%5Cindex.jsx ***!
-  \*************************************************************************************************************************************************/
+/***/ 1:
+/*!******************************************************************************************************************************!*\
+  !*** multi next-client-pages-loader?page=%2F&absolutePagePath=C%3A%5CUsers%5CUser%5CDesktop%5Ctotopizza%5Cpages%5Cindex.jsx ***!
+  \******************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! next-client-pages-loader?page=%2F&absolutePagePath=C%3A%5CUsers%5Canime%5CDesktop%5CTest%20site%5Ctotopizza-web%5Cpages%5Cindex.jsx! */"./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2F&absolutePagePath=C%3A%5CUsers%5Canime%5CDesktop%5CTest%20site%5Ctotopizza-web%5Cpages%5Cindex.jsx!./");
+module.exports = __webpack_require__(/*! next-client-pages-loader?page=%2F&absolutePagePath=C%3A%5CUsers%5CUser%5CDesktop%5Ctotopizza%5Cpages%5Cindex.jsx! */"./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2F&absolutePagePath=C%3A%5CUsers%5CUser%5CDesktop%5Ctotopizza%5Cpages%5Cindex.jsx!./");
 
 
 /***/ }),
@@ -1229,5 +1234,5 @@ module.exports = dll_2adc2403d89adc16ead0;
 
 /***/ })
 
-},[[2,"static/runtime/webpack.js"]]]);
+},[[1,"static/runtime/webpack.js"]]]);
 //# sourceMappingURL=index.js.map
