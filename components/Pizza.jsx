@@ -2,12 +2,14 @@ import React from 'react';
 
 export default class App extends React.Component {
     render() {
-        const { src, title, ingredients, expensive } = this.props;
+        const { src, title, ingredients, expensive, ignoreSmallPrice} = this.props;
         const expensive_large = 7.49;
         const expensive_small = 5.49;
         const cheap_large = 6.89;
         const cheap_small = 4.89;
+        const notThere = "N\\A";
         const currency = "€";
+        const priceSmall = (expensive ? expensive_small : cheap_small) + currency;
         return (
             <div className="pizza">
                 <div className="pizza__imageBlob">
@@ -20,7 +22,7 @@ export default class App extends React.Component {
                 <div className="pizza__orderDetails">
                     <div className="pizza__small">
                         <span className="pizza__smallSize">32cm</span>
-                        <span className="pizza__smallPrice">{expensive ? expensive_small : cheap_small}{currency}</span>
+                        <span className="pizza__smallPrice">{ignoreSmallPrice ? notThere : priceSmall}</span>
                     </div>
                     <div className="pizza__spacer" />
                     <div className="pizza__large">

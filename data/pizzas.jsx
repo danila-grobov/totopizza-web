@@ -105,6 +105,7 @@ export default [
         title="UŽDARA (Tik 42cm)"
         ingredients="pomidorų padažas, sūris, jautiena, kiaulienos kumpis, malta kiauliena, BBQ padažas"
         expensive={true}
+        ignoreSmallPrice={true}
         key="Uzdara" />,
     <Pizza src="images/pizzas/SuJautienaIrKiausiniais.png"
         title="SU JAUTIENA IR KIAUŠINIAIS"
