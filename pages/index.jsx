@@ -20,6 +20,9 @@ export default class Index extends React.Component {
     getMenuStatus = () => {
         return this.state.menuOpen;
     }
+    componentDidMount(){
+        document.title = "TotoPizza | Šilutė"
+    }
     render() {
         return (
             <div className={this.getMenuStatus() ? "app app--fixed" : "app"}>
