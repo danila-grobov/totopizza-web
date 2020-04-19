@@ -1,43 +1,40 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto+Slab:400,500,900|Roboto:400,500,900&display=swap');
-
-.ingredientsAndDrinks{
+.ingredientsAndDrinks {
     margin: 0 auto;
     margin-top: 62px;
-    width: 929.32px;
     display: grid;
     grid-template-columns: 327.41px 87.84px 513.85px;
     padding-left: 10px;
     padding-right: 10px;
 }
 
-.ingredientsAndDrinks__extraTitle{
+.ingredientsAndDrinks__extraTitle {
     margin-bottom: 21.15px;
     margin-top: auto;
-    font-family:  'Roboto', sans-serif;
+    font-family: 'Roboto', sans-serif;
     font-style: normal;
     font-weight: 900;
     font-size: 21.7244px;
     color: #02435A;
 }
 
-.ingredientsAndDrinks__extra{
+.ingredientsAndDrinks__extra {
     height: 146.02px;
     align-self: center;
 }
 
-
-.ingredientsAndDrinks__extraS{
-    display:grid;
+.ingredientsAndDrinks__extraS {
+    display: grid;
     grid-template-rows: min-content min-content min-content;
     row-gap: 11.5px;
 }
 
-.smallText{
-    display:grid;
+.smallText {
+    display: grid;
     grid-template-columns: 192.65px auto;
 }
 
-.smallText__name{
+.smallText__name {
     margin: 0;
     align-self: center;
     font-family: 'Roboto', sans-serif;
@@ -46,8 +43,8 @@
     font-size: 16px;
 }
 
-.smallText__price{
-    justify-self:end;
+.smallText__price {
+    justify-self: end;
     align-self: end;
     margin: 0;
     font-family: 'Roboto', sans-serif;
@@ -56,12 +53,13 @@
     font-size: 16px;
 }
 
-.drinkChoices{
-    display:grid;
+.drinkChoices {
+    display: grid;
     grid-template-columns: 260.54px auto;
+    justify-content: space-between;
 }
 
-.ingredientsAndDrinks__spacer{
+.ingredientsAndDrinks__spacer {
     height: 100%;
     justify-self: center;
     align-self: center;
@@ -70,23 +68,20 @@
 }
 
 @media screen and (max-width: 950px) {
-    .ingredientsAndDrinks__spacer{
+    .ingredientsAndDrinks__spacer {
         display: none;
     }
-
-    .ingredientsAndDrinks__extraTitle{
+    .ingredientsAndDrinks__extraTitle {
         font-style: normal;
         font-weight: 900;
         font-size: 16px;
     }
-
-    .smallText__name, .smallText__price{
+    .smallText__name, .smallText__price {
         font-style: normal;
         font-weight: normal;
         font-size: 12px;
     }
-
-    .ingredientsAndDrinks{
+    .ingredientsAndDrinks {
         display: grid;
         grid-template-columns: 100%;
         width: calc(100% - 40px);
@@ -94,21 +89,21 @@
         padding-left: unset;
         padding-right: unset;
     }
-
-    .ingredientsAndDrinks__extra{
+    .ingredientsAndDrinks__extra {
         width: 100%;
         justify-self: start;
     }
-
-    .drinkChoices{
+    .drinkChoices {
         width: 100%;
-        grid-template-columns: 50% 50%;
+        grid-template-columns: min-content min-content;
+        justify-content: space-between;
     }
+}
 
-    @media screen and (max-width: 355px) {
-        .drinkChoices{
-            width: 100%;
-            grid-template-columns: 100%;
-        }  
+@media screen and (max-width: 370px) {
+    .drinkChoices {
+        max-width: 270px;
+        grid-template-columns: 100%;
+        justify-content: center;
     }
 }

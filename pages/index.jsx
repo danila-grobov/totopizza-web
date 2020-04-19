@@ -26,11 +26,13 @@ export default class Index extends React.Component {
                 <Header getMenuStatus={this.getMenuStatus} closeMenu={this.closeMenu}/>
                 <div className="app__backgroudImage" />
                 <div className="app__blob app__blob--white">
-                    <div className="app__logoImage" />
-                    <PizzaList getMenuStatus={this.getMenuStatus} openMenu={this.openMenu}/>
-                    <PizzaRolls />
-                    <IngredientsAndDrinks/> 
-                    <Footer />
+                    <div className="app__elementWrapper">
+                        <div className="app__logoImage" />
+                        <PizzaList getMenuStatus={this.getMenuStatus} openMenu={this.openMenu}/>
+                        <PizzaRolls />
+                        <IngredientsAndDrinks/> 
+                        <Footer />
+                    </div>
                 </div>
             </div>
         );

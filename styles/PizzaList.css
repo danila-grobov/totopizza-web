@@ -1,5 +1,4 @@
 .pizzaList{
-    max-width: 919px;
     max-height: 650px;
     display: grid;
     row-gap: 50px;
