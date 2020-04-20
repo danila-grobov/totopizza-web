@@ -3,6 +3,9 @@ import Header from '../components/Header';
 import Payment from '../components/Payment';
 import PhoneInfo from '../components/PhoneInfo';
 class uzsakymas extends Component {
+    componentDidMount(){
+        document.title = "TotoPizza | Šilutė"
+    }
     render() {
         return (
             <div className="app">
