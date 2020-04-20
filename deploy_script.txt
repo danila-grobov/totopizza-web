@@ -1,0 +1,5 @@
+open totopizza
+rm *
+put out\*
+put .htaccess
+exit
