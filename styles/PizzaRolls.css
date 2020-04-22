@@ -23,7 +23,7 @@
     width: 135%;
     margin: 0 auto;
     display: block;
-    margin-top: 113px;
+    margin-top: 126px;
     height: 252px;
 }
 
@@ -42,7 +42,7 @@
 
 .pizzaRolls__Info {
     display: grid;
-    align-content: space-between;
+    row-gap: 15px;
     grid-template-rows: repeat(3, min-content);
 }
 
