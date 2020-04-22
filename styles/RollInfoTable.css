@@ -22,14 +22,10 @@
 
 .rollInfo {
     display: grid;
-    grid-template-columns: max-content;
+    grid-template-columns: max-content auto;
     align-items: center;
     column-gap: 6px;
 }
-.pizzaRolls__komplektas .rollInfo {
-    grid-template-columns: max-content auto;
-}
-
 .rollInfo--vertical {
     grid-template-columns: none;
     width: 100%;
