@@ -7,14 +7,12 @@ class RollInfoTable extends Component {
                 <div className="RollInfoTable__hWrapper">
                     <RollInfo
                         title="SU KUMPIU"
-                        content="pomidorų padažas, sūris, pievagrybiai,
-                        konservuoti kukurūzai, svogūnai, švž.paprika" 
+                        content="pomidorų padažas, sūris, kiaulienos kumpis, pievagrybiai, konservuoti kukurūzai" 
                         vertical={true}/>
                     <div className="RollInfoTable__vSpacer" />
                     <RollInfo
                         title="SU MALTA KIAULIENA"
-                        content="pomidorų padažas, sūris, kiaulienos kumpis,
-                        pievagrybiai, konservuoti kukurūzai"
+                        content="pomidorų padažas, sūris, malta kiauliena, jelapenas, BBQ padažas"
                         vertical={true}/>
                     <div className="RollInfoTable__vSpacer" />
                     <RollInfo
@@ -26,8 +24,7 @@ class RollInfoTable extends Component {
                 <div className="RollInfoTable__hSpacer" />
                 <RollInfo
                     title="VEGETARISKAS"
-                    content="pomidorų padažas, sūris, malta kiauliena,
-                    jelapenas, BBQ padažas" 
+                    content="pomidorų padažas, sūris, pievagrybiai, konservuoti kukurūzai, svogūnai, švž.paprika" 
                     vertical={false}/>
             </div>
         );
