@@ -10,6 +10,7 @@ export default [
         title="SU JELAPENU"
         ingredients="pomidorų padažas, sūris, malta kiauliena, svogūnai, alyvuogės, jelapenas"
         expensive={false}
+        spiceLvl={1}
         key="SuJelapenu" />,
     <Pizza src="images/pizzas/SuKumpiuIrGrybais.png"
         title="SU KUMPIU IR GRYBAIS"
@@ -20,6 +21,7 @@ export default [
         title="VEGETARIŠKA"
         ingredients="pomidorų padažas, sūris, pievagrybiai, svogūnai, konservuota paprika, alyvuogės"
         expensive={false}
+        vegie={true}
         key="Vegetariska" />,
     <Pizza src="images/pizzas/SuKumpiu.png"
         title="SU KUMPIU"
@@ -45,6 +47,7 @@ export default [
         title="SU JAUTIENA  / AŠTRI"
         ingredients="pomidorų padažas, sūris, jautiena, pievagrybiai, konservuotos aitriosios paprikos, aštrus padažas"
         expensive={false}
+        spiceLvl={1}
         key="SuJautienaAstri" />,
     <Pizza src="images/pizzas/SuDesrelemis.png"
         title="SU DEŠRELĖMIS"
@@ -60,6 +63,7 @@ export default [
         title="TOTO PIZZA"
         ingredients="česnakinio aliejaus padažas, sūris, saliami, vištiena, paprika, jelapenas"
         expensive={true}
+        spiceLvl={1}
         key="TotoPizza" />,
     <Pizza src="images/pizzas/SuVistienaIrGrybais.png"
         title="SU VIŠTIENA IR GRYBAIS"
@@ -90,11 +94,13 @@ export default [
         title="SU VIŠTIENA / SALDŽIAI AŠTRI"
         ingredients="pomidorų padažas, sūris, vištiena, konservuota paprika, jelapenas, konservuoti ananasai, BBQ padažas"
         expensive={true}
+        spiceLvl={1}
         key="SuVistienaSaldziaiAstri" />,
     <Pizza src="images/pizzas/Astrioji.png"
         title="AŠTRIOJI"
         ingredients="pomidorų padažas, sūris, kiaulienos kumpis, saliami, jelapenas, aštrus padažas, čili pipirų prieskoniai"
         expensive={true}
+        spiceLvl={2}
         key="Astrioji" />,
     <Pizza src="images/pizzas/SuSonine.png"
         title="SU ŠONINE"
@@ -126,5 +132,6 @@ export default [
         title="SU “CHORIZO” SALIAMI"
         ingredients="pomidorų padažas, sūris, chorizo saliami, konservuotos aitriosios paprikos"
         expensive={true}
+        spiceLvl={1}
         key="SuChorizoSaliami" />,
 ]
