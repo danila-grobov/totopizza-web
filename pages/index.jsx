@@ -4,6 +4,7 @@ import Header from '../components/Header';
 import PizzaRolls from '../components/PizzaRolls';
 import IngredientsAndDrinks from "../components/IngredientsAndDrinks"
 import Footer from '../components/Footer';
+import Sandwiches from '../components/Sandwiches';
 
 
 export default class Index extends React.Component {
@@ -34,6 +35,7 @@ export default class Index extends React.Component {
                         <PizzaList getMenuStatus={this.getMenuStatus} openMenu={this.openMenu}/>
                         <PizzaRolls />
                         <IngredientsAndDrinks/> 
+                        <Sandwiches />
                         <Footer />
                     </div>
                 </div>
