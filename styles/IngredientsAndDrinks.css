@@ -3,9 +3,7 @@
     margin: 0 auto;
     margin-top: 62px;
     display: grid;
-    grid-template-columns: 327.41px 87.84px 513.85px;
-    padding-left: 10px;
-    padding-right: 10px;
+    grid-template-columns: 327.41px auto 513.85px;
 }
 
 .ingredientsAndDrinks__extraTitle {
