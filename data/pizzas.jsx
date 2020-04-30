@@ -44,7 +44,7 @@ export default [
         expensive={false}
         key="SuSaliami" />,
     <Pizza src="images/pizzas/SuJautienaAstri.png"
-        title="SU JAUTIENA  / AŠTRI"
+        title="SU JAUTIENA AŠTRI"
         ingredients="pomidorų padažas, sūris, jautiena, pievagrybiai, konservuotos aitriosios paprikos, aštrus padažas"
         expensive={false}
         spiceLvl={1}
@@ -91,7 +91,7 @@ export default [
         expensive={true}
         key="SuJurosGerybemis" />,
     <Pizza src="images/pizzas/SuVistienaSaldziaiAstri.png"
-        title="SU VIŠTIENA / SALDŽIAI AŠTRI"
+        title="SU VIŠTIENA SALDŽIAI AŠTRI"
         ingredients="pomidorų padažas, sūris, vištiena, konservuota paprika, jelapenas, konservuoti ananasai, BBQ padažas"
         expensive={true}
         spiceLvl={1}
@@ -103,12 +103,12 @@ export default [
         spiceLvl={2}
         key="Astrioji" />,
     <Pizza src="images/pizzas/SuSonine.png"
-        title="SU ŠONINE"
+        title="SU ŠONINE IR KELMUČIAIS"
         ingredients="pomidorų padažas, sūris, kiaulienos šoninė, konservuoti kelmučiai, svogūnai, garstyčių padažas"
         expensive={true}
         key="SuSonine" />,
     <Pizza src="images/pizzas/Uzdara.png"
-        title="UŽDARA (Tik 42cm)"
+        title="UŽDARA"
         ingredients="pomidorų padažas, sūris, jautiena, kiaulienos kumpis, malta kiauliena, BBQ padažas"
         expensive={true}
         ignoreSmallPrice={true}
