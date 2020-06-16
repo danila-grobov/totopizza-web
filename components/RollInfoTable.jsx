@@ -26,7 +26,7 @@ class RollInfoTable extends Component {
                 <div className="RollInfoTable__hSpacer" />
                 <div className="RollInfoTable__hWrapper RollInfoTable__hWrapper--3c">
                     <RollInfo
-                        title="VEGETARISKAS"
+                        title="VEGETARIŠKAS"
                         content="pomidorų padažas, sūris, pievagrybiai, konservuoti kukurūzai, svogūnai, švž.paprika"
                         vertical={true} />
                     <div className="RollInfoTable__vSpacer" />  

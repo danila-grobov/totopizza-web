@@ -4,6 +4,7 @@ import Header from '../components/Header';
 import PizzaRolls from '../components/PizzaRolls';
 import IngredientsAndDrinks from "../components/IngredientsAndDrinks"
 import Footer from '../components/Footer';
+import Sandwiches from '../components/Sandwiches';
 
 
 export default class Index extends React.Component {
@@ -20,20 +21,29 @@ export default class Index extends React.Component {
     getMenuStatus = () => {
         return this.state.menuOpen;
     }
-    componentDidMount(){
+    componentDidMount() {
         document.title = "TotoPizza | Šilutė"
     }
     render() {
         return (
             <div className={this.getMenuStatus() ? "app app--fixed" : "app"}>
-                <Header getMenuStatus={this.getMenuStatus} closeMenu={this.closeMenu}/>
+                <Header getMenuStatus={this.getMenuStatus} closeMenu={this.closeMenu} />
                 <div className="app__backgroudImage" />
                 <div className="app__blob app__blob--white">
                     <div className="app__elementWrapper">
                         <div className="app__logoImage" />
-                        <PizzaList getMenuStatus={this.getMenuStatus} openMenu={this.openMenu}/>
+                    </div>
+                    <div className="app__elementWrapper">
+                        <PizzaList getMenuStatus={this.getMenuStatus} openMenu={this.openMenu} />
+                    </div>
+                    <div className="app__elementWrapper">
                         <PizzaRolls />
-                        <IngredientsAndDrinks/> 
+                    </div>
+                    <Sandwiches />
+                    <div className="app__elementWrapper">
+                        <IngredientsAndDrinks />
+                    </div>
+                    <div className="app__elementWrapper">
                         <Footer />
                     </div>
                 </div>
@@ -41,4 +51,3 @@ export default class Index extends React.Component {
         );
     }
 }
-//testing out hooks
