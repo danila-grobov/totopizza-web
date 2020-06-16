@@ -4,7 +4,10 @@ export default props => {
     const waveposition = id * -100;
     return (
         <div className="sandwichInfo">
-            <span className="sandwichInfo__title">{title}</span>
+            <div className="sandwichInfo__titlewrapper">
+                <div className="sandwichinfo__orangeBlob"/>
+                <span className="sandwichInfo__title">{title}</span>
+            </div>
             <span className="sandwichInfo__desc">{desc}</span>
             <div className="sandwichInfo__imgWrapper">
                 <div className="sandwichInfo__wave" style={{backgroundPositionX:`calc(${waveposition}% - 4px)`}}/>
