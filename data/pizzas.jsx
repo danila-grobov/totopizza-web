@@ -1,6 +1,34 @@
 import React from "react";
 import Pizza from "../components/Pizza";
 export default [
+    <Pizza src="images/pizzas/KebabuPica.png"
+        title="KEBABŲ PICA"
+        ingredients="česnakinis aliejus, sūris, ant iešmo kepta vištiena, švž. pomidorai, konservuoti agurkėliai, konservuota paprika, garstyčių padažas, švž. svogūnų laiškai."
+        expensive={true}
+        naujiena={true}
+        key="Kebabu" />,
+
+    <Pizza src="images/pizzas/StudentuPica.png"
+        title="STUDENTŲ"
+        ingredients="pomidorų padažas, sūris, ant iešmo kepta vištiena, gruzdintos bulvytės, BBQ padažas, švž. svogūnų laiškai."
+        expensive={true}
+        naujiena={true}
+        key="Studentu" />,
+
+    <Pizza src="images/pizzas/VezuvijausPica.png"
+        title="VEZUVIJAUS"
+        ingredients="grietinės padažas, sūris, k/r šoninė, vištiena, artišokai, BBQ padažas, garstyčių padažas."
+        expensive={true}
+        naujiena={true}
+        key="Vezuvijaus" />,
+
+    <Pizza src="images/pizzas/MilanoPica.png"
+        title="MILANO"
+        ingredients="pomidorų padažas, sūris, saliamis, kiaulienos kumpis, artišokai, saulėje džiovinti pomidorai, svogūnai, garstyčių padažas."
+        expensive={true}
+        naujiena={true}
+        key="Milano" />,
+
     <Pizza src="images/pizzas/SuGrybaisIrSonine.png"
         title="SU ŠONINE IR GRYBAIS"
         ingredients="grietinės padažas, sūris, šoninė, pievagrybiai, svogūnai"

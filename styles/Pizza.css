@@ -122,6 +122,14 @@
     margin-bottom:11px;
 }
 
+
+.pizza__imageModIcon{
+    position: absolute;
+    z-index: +1;
+    height: 30px;
+    margin-top: 10px;
+}
+
 @media screen and (max-width: 950px) {
     .pizza__smallSize, .pizza__largeSize {
         font-size: 14px;
