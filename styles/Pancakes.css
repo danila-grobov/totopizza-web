@@ -160,7 +160,7 @@
         .pancakesTitle{
             grid-column: span 2;
             padding-left: 10px;
-            height: fit-content;
+            height: 50xp;
             padding-right: 5px;
             justify-self: start;
         }
@@ -177,7 +177,7 @@
             margin: 0 0 0 0;
             justify-self: start;
             padding-right: 5px; 
-            height:fit-content;   
+            height: 50xp;  
             width: 90%;      
             
         }
