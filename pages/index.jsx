@@ -5,6 +5,7 @@ import PizzaRolls from '../components/PizzaRolls';
 import IngredientsAndDrinks from "../components/IngredientsAndDrinks"
 import Footer from '../components/Footer';
 import Sandwiches from '../components/Sandwiches';
+import Pancakes from '../components/Pancakes';
 
 
 export default class Index extends React.Component {
@@ -40,6 +41,9 @@ export default class Index extends React.Component {
                         <PizzaRolls />
                     </div>
                     <Sandwiches />
+                    <div className="app__elementWrapper">
+                        <Pancakes/>
+                    </div>
                     <div className="app__elementWrapper">
                         <IngredientsAndDrinks />
                     </div>

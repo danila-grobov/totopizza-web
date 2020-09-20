@@ -1,0 +1,209 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;900&display=swap');
+
+.others{
+    display:grid;
+    grid-template-columns: 50% 1px 50%;
+    margin-top:102px;
+}
+
+.pancakes_wrapper{
+    display:grid;
+    grid-template-columns: 40% 50%;
+    grid-template-rows: 40%;
+}
+
+.pancakesText{
+    
+    grid-column: 2;
+    display:grid;
+    grid-template-columns: auto;
+    margin-left: 25%;
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 16px;
+    grid-template-rows: repeat(5,min-content);
+    margin-top: 5%;
+}
+
+.pancakesTitle{
+    padding-left: 18%;
+    background-color:#FCBD10;
+    border-radius: 10px;
+    font-family: Roboto;
+    font-style: normal;
+    color:#02435A;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 21.7244px;
+    line-height: 25px;
+    height:43%;
+    padding-top:5px;
+    align-self: end;
+}
+
+.pancakesText_spacer{
+    border-bottom: solid 1px black;
+    width:70%
+}
+
+.pancakesText_line{
+    margin: 10px 0 10px 0;
+}
+
+.pancakesImage{
+    height: 200px;
+    z-index: 10;
+    position: relative;
+    justify-self: center;
+}
+
+.nuggetImage{
+    margin-left:-20px;
+    height:200px;
+}
+
+.nugget_wrapper{
+    justify-self: self-end;
+    display:grid;
+    grid-template-columns: 60% 40%;
+    grid-template-rows: 40%;
+}
+
+.othersSplitter{
+    border-right: solid 1px black;
+}
+
+.nuggetTitle{
+    background-color:#FCBD10;
+    border-radius: 10px;
+    font-family: Roboto;
+    font-style: normal;
+    color:#02435A;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 21.7244px;
+    line-height: 25px;
+    height:43%;
+    padding-top:5px;
+    align-self: end;
+    margin-left: 16.6%;
+    padding-left: 10px;
+    padding-right: 15px;
+}
+
+.nuggetText_spacer{
+    border-bottom: solid 1px black;
+    width:70%
+}
+
+.nuggetText{
+    display:grid;
+    grid-template-columns: auto;
+    margin-left: 22%;
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 16px;
+    grid-template-rows: repeat(5,min-content);
+    align-content: space-between;
+    margin-top: 5%;
+    margin-bottom: 10%;
+}
+
+@media screen and (max-width: 1000px) {
+    .others{
+        grid-template-columns: auto;
+    }
+
+    .othersSplitter{
+        display: none;
+    }
+
+    .pancakesImage_wrapper{
+        width: min-content;
+        justify-self: end;
+        margin-right: -20px;
+    }
+
+    @media screen and (max-width: 462px){
+        .others{
+            width: fit-content;
+        }
+        .pancakesImage_wrapper{
+            grid-row: 2;
+            margin-left: 112px;
+            margin-bottom: 50px;
+
+        }
+
+        .pancakesImage{
+            margin-left: 0px;
+        }
+        
+        .pancakes_wrapper{
+            grid-template-columns: unset;
+            grid-template-columns: 40% 60%;
+            margin-left: 2px;
+            height: fit-content;
+        }
+
+        .pancakesText{
+            grid-row: 2;
+            margin: 0 0 0 0;
+            margin-left: 20px;
+            width: fit-content;
+        }
+
+        .pancakesTitle{
+            grid-column: span 2;
+            padding-left: 10px;
+            height: fit-content;
+            padding-right: 5px;
+            justify-self: start;
+        }
+
+        .nugget_wrapper{
+            
+            grid-template-columns: 45% 55%;
+            margin-left: 2px;
+
+        }
+
+        .nuggetTitle{
+            grid-column: span 2;
+            margin: 0 0 0 0;
+            justify-self: start;
+            padding-right: 5px; 
+            height:fit-content;   
+            width: 90%;      
+            
+        }
+
+        .nuggetImage, .pancakesImage{
+            height: 180px;
+        }
+
+        .nuggetText{
+            grid-row: 2;
+            margin-left: 5px;
+            height: 150px;
+            width: 90%;
+        }
+
+        .nuggetImage_wrapper{
+            grid-row: 2;
+            grid-column: 2;
+            justify-self: start;
+            margin-bottom: 50px;
+        }
+
+        
+        
+    }
+}
+
+
+
