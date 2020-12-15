@@ -1,6 +1,13 @@
 import React from "react";
 import Pizza from "../components/Pizza";
 export default [
+    <Pizza src="images/pizzas/Pyragas.png"
+        title="PICOS PYRAGAS"
+        ingredients="švž. kalėdų dvasia, šiaurinė žvaigždė, konservuotas dovanų sarašas."
+        expensive={true}
+        naujiena={true}
+        key="Pyragas" />,
+
     <Pizza src="images/pizzas/KebabuPica.png"
         title="KEBABŲ PICA"
         ingredients="česnakinis aliejus, sūris, ant iešmo kepta vištiena, švž. pomidorai, konservuoti agurkėliai, konservuota paprika, garstyčių padažas, švž. svogūnų laiškai."

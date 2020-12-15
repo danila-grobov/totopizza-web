@@ -3,12 +3,12 @@
     display: grid;
     row-gap: 50px;
     column-gap: 32px;
-    grid-template-rows: repeat(3,1fr);
-    grid-auto-flow: column;
+    grid-template-columns: 1;
+    grid-auto-flow: row;
     margin: 0 auto;
-    overflow-x: scroll;
+    overflow-x: hidden;
     margin-top: 47px;
-    overflow-y: hidden;
+    overflow-y: scroll;
     padding-bottom: 20px;
     filter: drop-shadow(0px 2px 1px rgba(0, 0, 0, 0.14)) drop-shadow(0px 1px 1px rgba(0, 0, 0, 0.14)) drop-shadow(0px 1px 3px rgba(0,0,0,.12));
 }
