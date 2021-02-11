@@ -1,11 +1,46 @@
 import React from "react";
 import Pizza from "../components/Pizza";
 export default [
+    <Pizza src="images/pizzas/Anciuviu.png"
+        title="ANČIUVIŲ"
+        ingredients="pomidorų padažas, MOZZARELLA sūris, ančiuvių filė, marinuoti kaparėliai, gražgarstės."
+        nauja={true}
+        naujiena={true}
+        key="Anciuviu"
+        priceSmall="6,95€"
+        priceLarge="8,95€" />,
+
+        <Pizza src="images/pizzas/Kaimiska.png"
+        title="KAIMIŠKA"
+        ingredients="pomidorų padažas, MOZZARELLA sūris, malta kiauliena, šoninė, konservuoti svoguneliai, agurkų garstyčių salotos, SALSA padažas."
+        nauja={true}
+        naujiena={true}
+        key="Kaimiska"
+        priceSmall="6,95€"
+        priceLarge="8,95€" />,
+
+        <Pizza src="images/pizzas/4Suriu.png"
+        title="4 SŪRIŲ"
+        ingredients="pomidorų padažas, MOZZARELLA sūris, fermentins sūris, parmezano sūrio skiedrelės, kedro riešutai, bazilikų pesto padažas, gražgarstės."
+        nauja={true}
+        naujiena={true}
+        key="4Suriu"
+        priceSmall="6,95€"
+        priceLarge="8,95€" />,
+
+        <Pizza src="images/pizzas/Verona.png"
+        title="VERONA"
+        ingredients="grietinės padažas, MOZZARELLA sūris, vištiena, mėlynieji svogunai, saulėje džiovinti pomidorai, alyvuogės, kedro riešutai, gražgarstės."
+        nauja={true}
+        naujiena={true}
+        key="Verona"
+        priceSmall="6,95€"
+        priceLarge="8,95€" />,
+    
     <Pizza src="images/pizzas/KebabuPica.png"
         title="KEBABŲ PICA"
         ingredients="česnakinis aliejus, sūris, ant iešmo kepta vištiena, švž. pomidorai, konservuoti agurkėliai, konservuota paprika, garstyčių padažas, švž. svogūnų laiškai."
-        expensive={true}
-        naujiena={true}
+        naujiena={false}
         key="Kebabu"
         priceSmall="5,99€"
         priceLarge="7,99€" />,
@@ -15,7 +50,7 @@ export default [
         ingredients="pomidorų padažas, sūris, ant iešmo kepta vištiena, gruzdintos bulvytės, BBQ padažas, švž. svogūnų laiškai."
         priceSmall="5,99€"
         priceLarge="7,99€"
-        naujiena={true}
+        naujiena={false}
         key="Studentu" />,
 
     <Pizza src="images/pizzas/VezuvijausPica.png"
@@ -23,7 +58,7 @@ export default [
         ingredients="grietinės padažas, sūris, k/r šoninė, vištiena, artišokai, BBQ padažas, garstyčių padažas."
         priceSmall="5,99€"
         priceLarge="7,99€"
-        naujiena={true}
+        naujiena={false}
         key="Vezuvijaus" />,
 
     <Pizza src="images/pizzas/MilanoPica.png"
@@ -31,7 +66,7 @@ export default [
         ingredients="pomidorų padažas, sūris, saliamis, kiaulienos kumpis, artišokai, saulėje džiovinti pomidorai, svogūnai, garstyčių padažas."
         priceSmall="5,99€"
         priceLarge="7,99€"
-        naujiena={true}
+        naujiena={false}
         key="Milano" />,
 
     <Pizza src="images/pizzas/SuGrybaisIrSonine.png"

@@ -24,7 +24,7 @@
     overflow: hidden;
 }
 
-.pizza__image{
+.pizza__image, .pizza__imageNew{
     margin-left: 31.62px;
     height: 186px;
 }
@@ -132,6 +132,10 @@
 }
 
 @media screen and (max-width: 950px) {
+
+    .pizza__imageNew{
+        margin-left: 100px;
+    }
     .pizza__smallSize, .pizza__largeSize {
         font-size: 14px;
     }
@@ -201,6 +205,9 @@
     }
     .pizza:nth-child(4) {
         display: none;
+    }
+    .pizza__imageNew{
+        margin-left: 170px;
     }
 }
 

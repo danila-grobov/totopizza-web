@@ -98,6 +98,13 @@
 
 
 @media screen and (max-width: 1000px) {
+    .sandwiches__title{
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        margin: 0px;
+    }
     .sandwichinfo__orangeBlob{
         display: unset;
         background-color: #FCBD10;

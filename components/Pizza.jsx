@@ -2,7 +2,7 @@ import React from 'react';
 
 export default class App extends React.Component {
     render() {
-        const { src, title, ingredients, priceSmall, priceLarge, spiceLvl, vegie , naujiena} = this.props;
+        const { src, title, ingredients, priceSmall, priceLarge, spiceLvl, vegie , naujiena, nauja} = this.props;
         let modifiers = [];
         let imageMods = [];
         if (spiceLvl == 1) {
@@ -34,7 +34,7 @@ export default class App extends React.Component {
                     <div className="pizza__imageModifiers">
                         {imageMods}
                     </div>
-                    <img className="pizza__image" src={src} />
+                    <img className={this.props.nauja? "pizza__imageNew":"pizza__image"} src={src} />
                 </div>
                 <div className="pizza__info">
                     <span className="pizza__infoTitle">{title}</span>
