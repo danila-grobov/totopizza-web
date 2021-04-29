@@ -21,7 +21,7 @@ export default [
 
         <Pizza src="images/pizzas/4Suriu.png"
         title="4 SŪRIŲ"
-        ingredients="pomidorų padažas, MOZZARELLA sūris, fermentins sūris, parmezano sūrio skiedrelės, kedro riešutai, bazilikų pesto padažas, gražgarstės."
+        ingredients="pomidorų padažas, MOZZARELLA sūris, fermentins sūris, čederio sūris, parmezano sūrio skiedrelės, kedro riešutai, bazilikų pesto padažas, gražgarstės."
         nauja={true}
         naujiena={true}
         key="4Suriu"

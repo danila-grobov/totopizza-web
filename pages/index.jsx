@@ -1,4 +1,5 @@
 import React from 'react';
+import Popup from "../components/Popup";
 import PizzaList from "../components/PizzaList"
 import Header from '../components/Header';
 import PizzaRolls from '../components/PizzaRolls';
@@ -28,6 +29,7 @@ export default class Index extends React.Component {
     render() {
         return (
             <div className={this.getMenuStatus() ? "app app--fixed" : "app"}>
+                <Popup/>
                 <Header getMenuStatus={this.getMenuStatus} closeMenu={this.closeMenu} />
                 <div className="app__backgroudImage" />
                 <div className="app__blob app__blob--white">
