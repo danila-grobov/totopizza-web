@@ -162,9 +162,7 @@
     }
     .pizza__image {
         width: auto;
-        height: 143px;
-        margin-left: -114px;
-        margin-top: 13px;
+        margin-left: 100px;
     }
     .pizza__info {
         grid-template-rows: 35px auto min-content;

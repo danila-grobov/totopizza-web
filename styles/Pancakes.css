@@ -178,12 +178,15 @@
             justify-self: start;
             padding-right: 5px; 
             height: 50xp;  
-            width: 90%;      
+            width: 90% ;      
             
         }
 
         .nuggetImage, .pancakesImage{
             height: 180px;
+        }
+        .pancakesImage{
+            margin-left: 10px;
         }
 
         .nuggetText{

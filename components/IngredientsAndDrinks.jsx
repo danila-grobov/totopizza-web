@@ -1,8 +1,8 @@
 import React from 'react';
 import Drinks from "./Drinks.jsx"
 
-const Tea = "images/arbata.png";
-const ColdDrinks = "images/gaivieji gerimai.png";
+const Tea = "images/arbata.webp";
+const ColdDrinks = "images/gaivieji gerimai.webp";
 
 export default class IngredientsAndDrinks extends React.Component {
 

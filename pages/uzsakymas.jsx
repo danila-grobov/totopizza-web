@@ -14,7 +14,7 @@ class uzsakymas extends Component {
                 <div className="app__blob app__blob--granite">
                     <div className="orderInfo">
                         <div className="orderInfo__car">
-                            <img src="images/Tacka.png" className="orderInfo__carImage"/>
+                            <img src="images/Tacka.webp" className="orderInfo__carImage"/>
                         </div>
                         <Payment />
                         <PhoneInfo />

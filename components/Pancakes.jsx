@@ -1,7 +1,7 @@
 import React from 'react';
 
-const nuggets = "images/nuggets_round.png";
-const pancakes = "images/pancakes_round.png";
+const nuggets = "images/nuggets_round.webp";
+const pancakes = "images/pancakes_round.webp";
 
 export default class Pancakes extends React.Component {
 

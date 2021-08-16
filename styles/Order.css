@@ -2,7 +2,7 @@
 .app__blob--granite {
     background-size: cover;
     background-color: #d4d4d4;
-    background-image: url("../public/images/granite.jpg"),linear-gradient(rgba(60, 60, 60, 1), rgba(60, 60, 60, 1));
+    background-image: url("../public/images/granite.webp"),linear-gradient(rgba(60, 60, 60, 1), rgba(60, 60, 60, 1));
     background-blend-mode: overlay;
 }
 

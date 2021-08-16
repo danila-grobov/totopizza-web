@@ -24,7 +24,7 @@ export default class App extends React.Component {
         }
         if(naujiena){
             imageMods = [ ...imageMods,
-                <img src="images/naujiena.png" alt="naujiena" className="pizza__imageModIcon" />
+                <img src="images/naujiena.webp" alt="naujiena" className="pizza__imageModIcon" />
             ]
         }
 

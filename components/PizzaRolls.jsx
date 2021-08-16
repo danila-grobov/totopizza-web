@@ -6,7 +6,7 @@ class PizzaRolls extends Component {
         return (
             <div className="pizzaRolls">
                 <div className="pizzaRolls__preview">
-                    <img src="images/suktinukai.png" className="pizzaRolls__rollImg" />
+                    <img src="images/suktinukai.webp" className="pizzaRolls__rollImg" />
                 </div>
                 <div className="pizzaRolls__Info">
                     <span className="pizzaRolls__title">PICŲ SUKTINUKAI (2 vnt.) 3,89€</span>

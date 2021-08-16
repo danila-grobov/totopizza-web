@@ -7,7 +7,7 @@ body{
     position: fixed;
     width: 100%;
     height: 100%;
-    background-image: url("../public/images/pizzaBackground.png");
+    background-image: url("../public/images/pizzaBackground.webp");
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -34,7 +34,7 @@ body{
     max-width: 100%;
     padding-top: 60%;
     display: block;
-    background-image: url(../public/images/logo.png);
+    background-image: url(../public/images/logo.webp);
     background-size: 100%;
     background-repeat: no-repeat;
     margin: 0 6%;
