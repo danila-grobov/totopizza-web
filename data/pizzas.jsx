@@ -163,12 +163,6 @@ export default [
         priceSmall="5,49€"
         priceLarge="7,49€"
         key="SuMaltaKiaulienaIrSaliama" />,
-    <Pizza src="images/pizzas/laikina.webp"
-        title="SU LAŠIŠA"
-        ingredients="pomidorų padažas, sūris, rūkyta lašiša, švž.pomidorai"
-        priceSmall="5,49€"
-        priceLarge="7,49€"
-        key="SuLasisa" />,
     <Pizza src="images/pizzas/TUNO.webp"
         title="SU TUNU"
         ingredients="pomidorų padažas, sūris, konservuotas tunas, konservuoti kukurūzai"
