@@ -9,8 +9,13 @@ export default class Drinks extends React.Component {
                 <p className="drinks__title">{this.props.title}</p>
                 <div className="drinks__prices">
                     <div className="drinks__small">
-                        <p className="drinks__smallSize">0.5L</p>
+                        <p className="drinks__smallSize">0.25L</p>
                         <p className="drinks__smallPrice">{this.props.priceSmall}</p>
+                    </div>
+                    <div className="drinks__spacer" />
+                    <div className="drinks__medium">
+                        <p className="drinks__mediumSize">0.5L</p>
+                        <p className="drinks__mediumPrice">{this.props.priceMedium}</p>
                     </div>
                     <div className="drinks__spacer" />
                     <div className="drinks__large">

@@ -25,22 +25,22 @@
 
 .drinks__prices{
     display: grid;
-    grid-template-columns: auto 29.95px auto;
+    grid-template-columns: auto 15px auto 15px auto;
 }
 
-.drinks__title, .drinks__smallSize, .drinks__smallPrice, .drinks__largeSize, .drinks__largePrice{
+.drinks__title, .drinks__smallSize, .drinks__smallPrice, .drinks__mediumPrice, .drinks__mediumSize, .drinks__largeSize, .drinks__largePrice{
     justify-self: center;
     align-self: center;
     text-align: center;
 }
-.drinks__smallSize,.drinks__largeSize{
+.drinks__smallSize,.drinks__largeSize, .drinks__mediumSize{
     font-family: 'Roboto', sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 14px;
 }
 
-.drinks__smallPrice,.drinks__largePrice{
+.drinks__smallPrice,.drinks__largePrice, .drinks__mediumPrice{
     font-family: 'Roboto', sans-serif;
     font-style: normal;
     font-weight: 900;
@@ -54,7 +54,7 @@
     width: 1px;
     border-right: solid 1px black;
 }
-.drinks__small, .drinks__large{
+.drinks__small, .drinks__medium, .drinks__large{
     height: min-content;
     align-self: center;
 }
@@ -72,7 +72,7 @@
         grid-row: 2;
         width: 55px;
     }
-    .drinks__smallSize, .drinks__largeSize{
+    .drinks__smallSize, .drinks__mediumSize,.drinks__largeSize{
         margin-top: 9px;
     }
     .drinks{

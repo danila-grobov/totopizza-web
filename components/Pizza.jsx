@@ -7,12 +7,18 @@ export default class App extends React.Component {
         let imageMods = [];
         if (spiceLvl == 1) {
             modifiers = [ ...modifiers,
-                <img src="images/hot.svg" alt="aštru" className="pizza__modifierIcon" />,
-                <img src="images/hot_empty.svg" alt="aštru tuščia" className="pizza__modifierIcon" />
+                <img src="images/hot.svg" alt="aštru" className="pizza__modifierIcon" />
             ]
         }
         if (spiceLvl == 2) {
             modifiers = [ ...modifiers,
+                <img src="images/hot.svg" alt="aštru" className="pizza__modifierIcon" />,
+                <img src="images/hot.svg" alt="aštru" className="pizza__modifierIcon" />
+            ]
+        }
+        if (spiceLvl == 3) {
+            modifiers = [ ...modifiers,
+                <img src="images/hot.svg" alt="aštru" className="pizza__modifierIcon" />,
                 <img src="images/hot.svg" alt="aštru" className="pizza__modifierIcon" />,
                 <img src="images/hot.svg" alt="aštru" className="pizza__modifierIcon" />
             ]
