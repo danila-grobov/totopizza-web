@@ -10,6 +10,7 @@ import "../styles/Drinks.css";
 import "../styles/Footer.css";
 import "../styles/Sandwiches.css";
 import "../styles/Pancakes.css"
+import "../styles/Extras.css";
 import React from 'react';
 
 export default function MyApp({ Component, pageProps }) {

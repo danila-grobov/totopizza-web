@@ -32,6 +32,7 @@
     "next": "^9.5.5",
     "react": "^16.14.0",
     "react-dom": "^16.14.0",
+    "react-icons": "^4.3.1",
     "react-meta-tags": "^1.0.1"
   }
 }

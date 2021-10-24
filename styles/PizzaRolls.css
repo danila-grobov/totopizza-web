@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto:900&display=swap');
 .pizzaRolls {
-    height: 300px;
+    height: fit-content;
     margin: 0 auto;
     margin-top: 46px;
     display: grid;
@@ -27,15 +27,18 @@
     height: 252px;
 }
 
-.pizzaRolls__title {
+.pizzaRolls__title-pc, .pizzaRolls__title-komp {
     font-family: "Roboto";
     font-style: normal;
     font-weight: 900;
     font-size: 22px;
     color: #02435A;
 }
+.pizzaRolls__title-mobile{
+    display: none;
+}
 
-.pizzaRolls__title--space-after {
+.pizzaRolls__title-pc--space-after {
     margin-bottom: 10px;
     display: block;
 }
@@ -55,13 +58,15 @@
     }
 
     .pizzaRolls__preview {
-        grid-row: 2;
+        grid-row: 1;
         width: 100%;
         margin: 0 auto;
         padding-top: 46%; 
+        background-color: unset;
         position: relative;
         height: 0;
         border-radius: 10px;
+        margin-bottom: 10px;
     }
 
     .pizzaRolls__rollImg{
@@ -71,12 +76,23 @@
         height: auto;
         margin-top: 0;
     }
+    .pizzaRolls__title-pc{
+        display: none;
+    }
 
-    .pizzaRolls__title {
+    .pizzaRolls__title-mobile{
+        display: unset;
+        position: absolute;
         font-family: Roboto;
         font-style: normal;
         font-weight: 900;
         font-size: 18px;
         margin-bottom: 32px;
+        top: 10px;
+        left: 0px;
+        padding: 5px;
+        background-color: #F1C300;
+        border-radius: 10px 0px 10px 0px;
+
     }
 }

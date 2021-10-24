@@ -1,8 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto:300,700&display=swap');
-.RollInfoTable__vSpacer {
-    height: 92%;
-    align-self: center;
-    border-left: solid 1px black;
+.RollInfoTable__hWrapper{
+    height: fit-content;
 }
 
 .RollInfoTable__hWrapper {
@@ -18,27 +16,20 @@
     margin-top:12px;
     margin-bottom:12px;
     border-bottom: solid 1px black;
+    margin-top: 0px;
 }
 
-.rollInfo {
-    display: grid;
-    grid-template-columns: max-content auto;
-    align-items: center;
-    column-gap: 6px;
-}
-.rollInfo--vertical {
-    grid-template-columns: none;
-    width: 100%;
-    align-items: unset;
-    grid-template-rows: min-content auto;
-    row-gap: 8px;
-}
+
 
 .rollInfo__title {
     font-family: "Roboto";
     font-style: normal;
     font-weight: bold;
     font-size: 13px;
+}
+
+.rollInfo__price{
+    display: none;
 }
 
 .rollInfo__content {
@@ -49,23 +40,10 @@
     line-height: 160%;
 }
 
-@media screen and (max-width: 950px) {
-    .rollInfo{
-        grid-template-columns: none;
-        width: 100%;
-        align-items: unset;
-        grid-template-rows: min-content auto;
-        row-gap: 8px;
-        margin-bottom: 25px;
-    }
-
-    .rollInfo--vertical{
-        margin-bottom: 15px;
-    }
 
     .RollInfoTable__hWrapper {
         display: grid;
-        grid-template-rows: repeat(5, auto);
+        grid-template-rows: repeat(6, auto);
         grid-template-columns: 100%;
         justify-content: space-between;
     }
@@ -81,16 +59,54 @@
         font-size: 12px;
     }
 
-    .rollInfo__title{
+    
+    .pizzaRolls__title--space-after{
+        margin-bottom: 3px;
+    }
+
+.rollInfo {
+    display: grid;
+    grid-template-columns: none;
+    width: 100%;
+    align-items: unset;
+    grid-template-rows: min-content auto;
+    row-gap: 8px;
+    margin-bottom: 25px;
+}
+
+.rollInfo__noExtra{
+    display: none;
+}
+@media screen and (max-width: 950px) {
+    .rollInfo{
+        grid-template-columns: min-content 10fr min-content;
+    }
+    .rollInfo__content{
+        grid-column-start: 1;
+        grid-column-end: 3;
+    }
+    .rollInfo__spacer{
+        border-bottom: 1px solid;
+        border-style: dotted;
+        border-top: none;
+        border-left: none;
+        border-right: none;
+    }
+    .rollInfo__price{
+        display:unset;
         font-family: Roboto;
         font-style: normal;
         font-weight: bold;
         font-size: 14px;
     }
-    .RollInfoTable__hSpacer {
-        margin-top: 0px;
+    .rollInfo__price::first-letter{
+        color: #F1C300;
     }
-    .pizzaRolls__title--space-after{
-        margin-bottom: 3px;
+    .rollInfo__title{
+        white-space: nowrap;
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 14px;
     }
 }

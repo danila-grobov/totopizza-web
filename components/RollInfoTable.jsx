@@ -8,32 +8,38 @@ class RollInfoTable extends Component {
                     <RollInfo
                         title="SU KUMPIU"
                         content="pomidorų padažas, sūris, kiaulienos kumpis, pievagrybiai, konservuoti kukurūzai"
-                        vertical={true} />
+                        extraPrice={true}
+                        price="€3,95"/>
                     <div className="RollInfoTable__vSpacer" />
                     <RollInfo
-                        title="SU MALTA KIAULIENA"
+                        title="SU FARŠU"
                         content="pomidorų padažas, sūris, malta kiauliena, jelapenas, BBQ padažas"
-                        vertical={true} />
+                        extraPrice={true}
+                        price="€3,95"/>
                     <div className="RollInfoTable__vSpacer" />
                     <RollInfo
                         title="SU JAUTIENA"
-                        content="pomidorų padažas, sūris, rūkyta jautiena,
-                        pievagrybiai, švž. paprika"
-                        vertical={true} />
+                        content="pomidorų padažas, sūris, rūkyta jautiena, pievagrybiai, švž. paprika"
+                        extraPrice={true}
+                        price="€3,95"/>
                     <div className="RollInfoTable__vSpacer" />
-
-                </div>
-                <div className="RollInfoTable__hSpacer" />
-                <div className="RollInfoTable__hWrapper RollInfoTable__hWrapper--3c">
                     <RollInfo
                         title="VEGETARIŠKAS"
                         content="pomidorų padažas, sūris, pievagrybiai, konservuoti kukurūzai, svogūnai, švž.paprika"
-                        vertical={true} />
+                        extraPrice={true}
+                        price="€3,95"/>
                     <div className="RollInfoTable__vSpacer" />  
                     <RollInfo
                         title="SU VIŠTIENA"
                         content="pomidorų padažas, sūris, vištiena, pievagrybiai, švž. paprika"
-                        vertical={true} />
+                        extraPrice={true}
+                        price="€3,95"/>
+                    <div className="RollInfoTable__vSpacer" /> 
+                     <RollInfo
+                        title="KEBABŲ"
+                        content="pomidorų padažas, sūris, ant iešmo vištiena/vištienos jautienos mix, mėlynieji svogūnai, garstyčių padažas"
+                        extraPrice={true}
+                        price="€3,95"/>
                 </div>
             </div>
         );

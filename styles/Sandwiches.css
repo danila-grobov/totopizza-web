@@ -96,80 +96,41 @@
     display:none;
 }
 
+.right-arrow, .left-arrow, .slider{display: none;}
+
+
 
 @media screen and (max-width: 1000px) {
-    .sandwiches__title{
+    .sandwiches__wrapper{
+        justify-content: center;
+        align-items: center;
+    }
+    .slider{
+        margin-top: 20px;
+        position: relative;
         display: flex;
-        text-align: center;
         justify-content: center;
-        flex-wrap: wrap;
-        margin: 0px;
+        align-items: center;
     }
-    .sandwichinfo__orangeBlob{
+
+    .right-arrow, .left-arrow{
         display: unset;
-        background-color: #FCBD10;
-        height: 55px;
-        width: 133px;
-        align-self: start;
+        position: absolute;
+        top: 50%;
+        font-size: 3rem;
+        color: black;
+        z-index: 10;
+        cursor: pointer;
+        user-select: none;
     }
 
-    .sandwichInfo__titlewrapper{
-        align-self: start;
+    .left-arrow{
+       left: 20px;
     }
 
-    .sandwichInfo__title{
-        margin-top: 9px;
-        margin-bottom: 26px;
-        font-size: 18px;
-        line-height: 21px;
+    .right-arrow{
+        right: 20px;
     }
-    
-    .sandwichInfo__desc{
-        text-align: right;
-        padding: 21px 28px 5px 0px;
-    }
+    .sandwiches__wrapper{display: none;}
 
-    .sandwiches__wrapper {
-        grid-template-columns: unset;
-        grid-template-rows: repeat(4, min-content);
-        align-content: space-between;
-        justify-content: center;
-        row-gap: 10px;
-    }
-
-    .sandwichInfo{
-        width: 313px;
-        height: auto;
-        grid-template-columns: repeat(2,50% );
-        align-content: space-between;
-        grid-template-rows:unset;
-
-    }
-    .sandwichInfo__img{
-        width:100%;
-        margin-top: -8%;
-    }
-    
-    .sandwichInfo__imgWrapper{
-        grid-column-start: 1;
-        grid-column-end: span 2;
-        overflow: hidden;
-    }
-    .sandwichInfo__wave{
-
-        display:none;
-    }
-    .sandwiches__spacer{
-        display: unset;
-        width: 100%;
-        border-bottom: 1px solid #000000;
-    }
-    
-    .sandwiches__bg{
-        display: none;
-    }
-
-    .sandwichInfo{
-        box-shadow: 0px 0.384911px 12.8px rgba(0, 0, 0, 0.17);
-    }
 }

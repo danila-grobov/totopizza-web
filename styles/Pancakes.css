@@ -6,7 +6,7 @@
     margin-top:102px;
 }
 
-.pancakes_wrapper{
+.pancakes_wrapper{ 
     display:grid;
     grid-template-columns: 40% 50%;
     grid-template-rows: 40%;
@@ -116,6 +116,7 @@
 @media screen and (max-width: 1000px) {
     .others{
         grid-template-columns: auto;
+        align-items: center;
     }
 
     .othersSplitter{
@@ -125,6 +126,7 @@
     .pancakesImage_wrapper{
         width: min-content;
         justify-self: end;
+        grid-template-columns: 50% 50%;
         margin-right: -20px;
     }
 
@@ -136,7 +138,6 @@
             grid-row: 2;
             margin-left: 112px;
             margin-bottom: 50px;
-
         }
 
         .pancakesImage{
@@ -145,9 +146,10 @@
         
         .pancakes_wrapper{
             grid-template-columns: unset;
-            grid-template-columns: 40% 60%;
+            grid-template-columns: 50% 50%;
             margin-left: 2px;
             height: fit-content;
+            justify-content: center;
         }
 
         .pancakesText{
@@ -160,9 +162,10 @@
         .pancakesTitle{
             grid-column: span 2;
             padding-left: 10px;
-            height: 50xp;
+            height: fit-content;
             padding-right: 5px;
             justify-self: start;
+            width: 90% ;
         }
 
         .nugget_wrapper{
@@ -177,16 +180,21 @@
             margin: 0 0 0 0;
             justify-self: start;
             padding-right: 5px; 
-            height: 50xp;  
+            height: fit-content;  
             width: 90% ;      
             
         }
 
         .nuggetImage, .pancakesImage{
-            height: 180px;
+            height:120px;
+        }
+        .nuggetImage{
+            margin-left: 10px;
+
         }
         .pancakesImage{
             margin-left: 10px;
+            right:25%;
         }
 
         .nuggetText{

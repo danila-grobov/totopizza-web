@@ -1,8 +1,20 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 
 export default class App extends React.Component {
+    constructor(props) {
+        super(props);
+        this.state = {
+          possTooltip: true
+        };
+      }
+    onHowerIn = (event) => {
+        if(event.target.getBoundingClientRect().top < window.innerHeight/2){ this.setState({ possTooltip: true});}
+        else{ this.setState({ possTooltip: false});}
+    }
     render() {
         const { src, title, ingredients, priceSmall, priceLarge, spiceLvl, vegie , naujiena, nauja} = this.props;
+        const upStyle = { top: '100%', bottom: 'unset'};
+        const downStyle = { bottom: '100%', top: 'unset'};
         let modifiers = [];
         let imageMods = [];
         if (spiceLvl == 1) {
@@ -36,11 +48,12 @@ export default class App extends React.Component {
 
         return (
             <div className="pizza">
-                <div className="pizza__imageBlob">
+                <div className="pizza__imageBlob" onMouseEnter={this.onHowerIn}>
                     <div className="pizza__imageModifiers">
                         {imageMods}
                     </div>
                     <img className={this.props.nauja? "pizza__imageNew":"pizza__image"} src={src} />
+                    <span className="pizza__imageIngredients" style={this.state.possTooltip ? upStyle : downStyle}>{ingredients}</span>
                 </div>
                 <div className="pizza__info">
                     <span className="pizza__infoTitle">{title}</span>

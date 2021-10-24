@@ -1,0 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+.extras{
+    margin-top: 20px;
+}
+
+.extras__title{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 18px;
+    background-color: #F1C300;
+    border-radius: 10px 0px 10px 0px;
+    padding: 5px;
+}
+.extras__table{
+    margin: 20px 20px 0px 20px;
+}

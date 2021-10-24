@@ -12,7 +12,7 @@
 
 .pizza__orderDetails {
     display: grid;
-    grid-template-columns: 2fr 50px 3fr;
+    grid-template-columns: 2fr 50px 2fr;
     height: 100%;
 }
 
@@ -131,89 +131,78 @@
     margin-top: 10px;
 }
 
+
 @media screen and (max-width: 950px) {
-
-    .pizza__imageNew{
-        margin-left: 100px;
-    }
-    .pizza__smallSize, .pizza__largeSize {
-        font-size: 14px;
-    }
-    .pizza__smallPrice, .pizza__largePrice {
-        font-size: 16px;
-    }
-    .pizza {
-        height: max-content;
-        width: 301px;
-        grid-template-columns: 100%;
-        grid-template-rows: 109px min-content min-content;
-        display: none;
-    }
-    .pizza:first-child,.pizza:nth-child(2),.pizza:nth-child(3),.pizza:nth-child(4) {
+    .pizza{
+        justify-self: center;
+        padding-top: 0px;
+        width: min-content;
+        height: min-content;
         display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: min-content min-content min-content;
+        border-radius: 10px;
+        background: white;
     }
-    .pizza__infoIngredients {
-        margin-bottom: 0px;
-    }
-    .pizza__imageBlob {
-        width: 100%;
-        height: 100%;
-        border-radius: 10px 10px 0px 0px;
-    }
-    .pizza__image {
-        width: auto;
-        margin-left: 100px;
-    }
-    .pizza__info {
-        grid-template-rows: 35px auto min-content;
-        height: 100%;
-        margin-left: 20px;
-    }
-    .pizza__modifierIcon {
-        margin-bottom: 0;
-        margin-top: 11px;
-    }
-    .pizza__infoTitle {
-        margin-top: 16px;
-        margin-bottom: 0px;
-        font-size: 16px;
-    }
-    .pizza__orderDetails {
-        height: max-content;
-        grid-template-columns: repeat(3, min-content);
-        column-gap: 15px;
-        margin-left: 20px;
-        margin-top: 15px;
-        margin-bottom: 22px;
-    }
-    .pizza__small, .pizza__large, .pizza__spacer {
-        height: 38.28px;
-    }
-    .pizza__largeSize, .pizza__largePrice, .pizza__smallPrice, .pizza__smallSize {
-        margin: 0px;
-    }
-    .pizza__small, .pizza__large {
-        row-gap: 6.4px;
-    }
-}
-@media screen and (max-width: 660px) {
-    .pizza {
-        width: 100%;
-        max-width: 401px;
-    }
-    .pizza:nth-child(4) {
-        display: none;
-    }
-    .pizza__imageNew{
-        margin-left: 170px;
-    }
-}
 
-@media screen and (max-width: 340px) {
-    .pizza {
-        width: 100%;
+    .pizza__imageBlob{
+        background-color: rgba(0,0,0,0);
+
+        width: fit-content;
+        height: fit-content;
+        border-radius: 10px 0px 0px 10px;
+        overflow: unset;
     }
-}
-.pizzaList--expanded .pizza {
-    display: grid;
+
+    .pizza__image{
+        margin-left: 0px;
+        height: 200px;
+    }
+    .pizza__infoTitle{
+        align-self: center;
+        justify-self: center;
+    }
+    .pizza__infoIngredients{display:none;}
+    .pizza__orderDetails{justify-self: center;}
+    .pizza__info{
+        
+        margin-left: 0px;
+        grid-template-columns: auto min-content;
+        grid-template-rows: 1fr;
+    }
+    .pizza__modifiers {
+        display: grid;
+        grid-template-rows: 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+        overflow: visible;
+        width: 1px;
+        direction: rtl;
+    }
+
+    .pizza__imageBlob {
+        position: relative;
+        display: inline-block;
+    }
+
+    .pizza__imageBlob .pizza__imageIngredients {
+        visibility: hidden;
+        width: 200px;
+        left: 50%;
+        margin-left: -100px;
+        background-color: black;
+        color: #fff;
+        text-align: center;
+        padding: 5px 0;
+        border-radius: 6px;
+        
+        /* Position the tooltip text - see examples below! */
+        position: absolute;
+        z-index: 1;
+        opacity: 0;
+        transition: opacity 1s;
+    }
+    .pizza__imageBlob:hover .pizza__imageIngredients {
+        visibility: visible;
+        opacity: 0.7;
+    }
 }
