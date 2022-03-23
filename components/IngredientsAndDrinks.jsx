@@ -14,11 +14,11 @@ export default class IngredientsAndDrinks extends React.Component {
                     <div className="ingredientsAndDrinks__extraS">
                         <div className="smallText">
                             <p className="smallText__name">Daržoves</p>
-                            <p className="smallText__price">1€</p>
+                            <p className="smallText__price">0.75/1.50€</p>
                         </div>
                         <div className="smallText">
                             <p className="smallText__name">Mėsos gaminiai, rūkyta lašiša, jūros gėrybės, sūris</p>
-                            <p className="smallText__price">2€</p>
+                            <p className="smallText__price">1.10/2.20€</p>
                         </div>
                         <div className="smallText">
                             <p className="smallText__name">Padažai</p>

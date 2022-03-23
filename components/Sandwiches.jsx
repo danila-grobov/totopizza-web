@@ -9,7 +9,7 @@ export default () => {
     return (
         <React.Fragment>
             <div className="sandwiches">
-                <span className="sandwiches__title">PICŲ SUMUŠTINIAI 4,95€<br /></span>
+                <span className="sandwiches__title">PICŲ SUMUŠTINIAI 5,40€<br /></span>
                 <div className="sandwiches__bg" />
                 <div className="app__elementWrapper sandwiches__wrapper">
                     <SandwichInfo src="images/sandwich_vistiena.webp"
