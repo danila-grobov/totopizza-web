@@ -6,26 +6,6 @@
     grid-template-columns: 327.41px auto 513.85px;
 }
 
-.ingredientsAndDrinks__extraTitle {
-    margin-bottom: 21.15px;
-    margin-top: auto;
-    font-family: 'Roboto', sans-serif;
-    font-style: normal;
-    font-weight: 900;
-    font-size: 21.7244px;
-    color: #02435A;
-}
-
-.ingredientsAndDrinks__extra {
-    height: 146.02px;
-    align-self: center;
-}
-
-.ingredientsAndDrinks__extraS {
-    display: grid;
-    grid-template-rows: min-content min-content min-content;
-    row-gap: 11.5px;
-}
 
 .smallText {
     display: grid;
@@ -55,6 +35,7 @@
     display: grid;
     grid-template-columns: 260.54px auto;
     justify-content: space-between;
+    column-gap: 100px;
 }
 
 .ingredientsAndDrinks__spacer {
@@ -65,7 +46,17 @@
     border-right: solid 1px black;
 }
 
+.coldDrinks_kava{
+    display: grid;
+    grid-template-columns: auto auto;
+    column-gap: 10px;
+    grid-template-rows:  min-content min-content min-content;
+}
+
 @media screen and (max-width: 950px) {
+    .ingredientsAndDrinks{
+        grid-template-columns: unset;
+    }
     .ingredientsAndDrinks__spacer {
         display: none;
     }
@@ -95,13 +86,15 @@
         width: 100%;
         grid-template-columns: min-content min-content;
         justify-content: space-between;
+        column-gap: unset;
     }
 }
 
-@media screen and (max-width: 370px) {
+@media screen and (max-width: 500px) {
     .drinkChoices {
         max-width: 270px;
         grid-template-columns: 100%;
         justify-content: center;
     }
+    
 }

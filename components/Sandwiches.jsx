@@ -49,7 +49,7 @@ export default () => {
     return (
         <React.Fragment>
             <div className="sandwiches">
-                <span className="sandwiches__title">PICŲ SUMUŠTINIAI {(month >= 4 && month <= 9)?"4,95€":"(gaminami balandžio - rugsėjo mėn)"}<br /></span>
+                <span className="sandwiches__title">PICŲ SUMUŠTINIAI 4,95€<br /></span>
                 <div className="sandwiches__bg" />
                 
                     <section className="slider">

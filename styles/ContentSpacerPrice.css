@@ -1,38 +1,24 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto:300,700&display=swap');
-.RollInfoTable__hWrapper{
-    height: fit-content;
-}
-
-.RollInfoTable__hWrapper {
+.template {
     display: grid;
-    grid-template-columns: 140px min-content 140px min-content 140px;
-    justify-content: space-between;
-}
-.RollInfoTable__hWrapper--3c{
-    grid-template-columns: 250px min-content 180px;
-}
-.RollInfoTable__hSpacer {
+    grid-template-columns: none;
     width: 100%;
-    margin-top:12px;
-    margin-bottom:12px;
-    border-bottom: solid 1px black;
-    margin-top: 0px;
+    align-items: unset;
+    grid-template-rows: min-content auto;
+    row-gap: 8px;
 }
-
-
-
-.rollInfo__title {
+.template__title {
     font-family: "Roboto";
     font-style: normal;
     font-weight: bold;
     font-size: 13px;
 }
 
-.rollInfo__price{
+.template__price{
     display: none;
 }
 
-.rollInfo__content {
+.template__content {
     font-family: "Roboto";
     font-style: normal;
     font-weight: 300;
@@ -41,40 +27,20 @@
 }
 
 
-    .RollInfoTable__hWrapper {
-        display: grid;
-        grid-template-rows: repeat(6, auto);
-        grid-template-columns: 100%;
-        justify-content: space-between;
-    }
-
-    .RollInfoTable__vSpacer {
-        display: none;
-    }
-
-    .pizzaRolls__title--space-after{
-        margin-bottom: 3px;
-    }
-
-.rollInfo {
-    display: grid;
-    grid-template-columns: none;
-    width: 100%;
-    align-items: unset;
-    grid-template-rows: min-content auto;
-    row-gap: 8px;
-    margin-bottom: 25px;
+.template__content {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 160%;
 }
 
-.rollInfo__noExtra{
+
+.template__noExtra{
     display: none;
 }
 
-.rollInfo__contentNoExtra{
-    display: none;
-}
-
-.rollInfo__contentPrice{
+.template__contentPrice{
     grid-row:2;
     display:unset;
     font-family: Roboto;
@@ -83,7 +49,7 @@
     font-size: 14px;
 }
 
-.rollInfo__contentSpacer{
+.template__contentSpacer{
     grid-row:2;
     border-bottom: 1px solid;
     border-style: dotted;
@@ -92,7 +58,7 @@
     border-right: none;
 }
 
-.rollInfo__titleBold{
+.template__titleBold{
     font-family:  'Roboto', sans-serif;
     font-style: normal;
     font-weight: 900;
@@ -103,16 +69,18 @@
 
 }
 
+
+
 @media screen and (max-width: 950px) {
-    .rollInfo{
+    .template{
         grid-template-columns: min-content 10fr min-content;
     }
-    .rollInfo__content{
+    .template__content{
         grid-column-start: 1;
         grid-column-end: 3;
     }
 
-    .rollInfo__contentSmall{
+    .template__contentSmall{
         grid-row:2;
         font-family: Roboto;
         font-style: normal;
@@ -121,24 +89,24 @@
         justify-self: end;
         align-self: end;
     }
-    .rollInfo__spacer{
+    .template__spacer{
         border-bottom: 1px solid;
         border-style: dotted;
         border-top: none;
         border-left: none;
         border-right: none;
     }
-    .rollInfo__price{
+    .template__price{
         display:unset;
         font-family: Roboto;
         font-style: normal;
         font-weight: bold;
         font-size: 14px;
     }
-    .rollInfo__price::first-letter, .rollInfo__contentPrice::first-letter{
+    .template__price::first-letter, .template__contentPrice::first-letter{
         color: #F1C300;
     }
-    .rollInfo__title{
+    .template__title{
         white-space: nowrap;
         font-family: Roboto;
         font-style: normal;

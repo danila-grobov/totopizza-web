@@ -3,7 +3,7 @@ import React from 'react';
 export default class Drinks extends React.Component {
 
     render() {
-        return (
+        return ( 
             <div className="drinks">
                 <img className="drinks__image" src={this.props.src} />
                 <p className="drinks__title">{this.props.title}</p>
