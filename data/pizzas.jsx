@@ -36,7 +36,7 @@ export default [
         title="BOLONIJA"
         ingredients="pomidorų padažas, sūris, malta kiauliena, mėlynieji svogūnai, alyvuogės, chalapos paprika"
         priceSmall="6.45€"
-        priceLarge="6.45€"
+        priceLarge="8.45€"
         spiceLvl={1}
         key="SuJelapenu" />,
     <Pizza src="images/pizzas/VEGETARISKA.webp"
@@ -93,7 +93,7 @@ export default [
     <Pizza src="images/pizzas/TUNO.webp"
         title="TUNO"
         ingredients="pomidorų padažas, sūris, konservuotas tunas, mėlynieji svogūnai, alyvuogės"
-        priceSmall="6.55€"
+        priceSmall="6.45€"
         priceLarge="8.45€"
         key="SuTunu" />,
     <Pizza src="images/pizzas/POMPEJA.webp"
