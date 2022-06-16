@@ -1,13 +1,14 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto:300,700&display=swap');
 .template {
     display: grid;
-    grid-template-columns: none;
+    grid-template-columns: auto auto;
     width: 100%;
     align-items: unset;
     grid-template-rows: min-content auto;
     row-gap: 8px;
 }
 .template__title {
+    display: none;
     font-family: "Roboto";
     font-style: normal;
     font-weight: bold;
@@ -19,6 +20,14 @@
 }
 
 .template__content {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 160%;
+}
+
+.template__contentSmall {
     font-family: "Roboto";
     font-style: normal;
     font-weight: 300;
@@ -41,8 +50,9 @@
 }
 
 .template__contentPrice{
-    grid-row:2;
+    grid-row:unset;
     display:unset;
+    justify-self: end;
     font-family: Roboto;
     font-style: normal;
     font-weight: bold;
@@ -50,6 +60,7 @@
 }
 
 .template__contentSpacer{
+    display: none;
     grid-row:2;
     border-bottom: 1px solid;
     border-style: dotted;
@@ -68,7 +79,9 @@
     white-space: nowrap;
 
 }
-
+.template__price::first-letter, .template__contentPrice::first-letter{
+    color: #F1C300;
+}
 
 
 @media screen and (max-width: 950px) {
@@ -79,7 +92,9 @@
         grid-column-start: 1;
         grid-column-end: 3;
     }
-
+    .template__contentSpacer{
+        display: unset;
+    }
     .template__contentSmall{
         grid-row:2;
         font-family: Roboto;
@@ -103,9 +118,13 @@
         font-weight: bold;
         font-size: 14px;
     }
+    .template__contentPrice{
+        grid-row:2;
+    }
     .template__price::first-letter, .template__contentPrice::first-letter{
         color: #F1C300;
     }
+    
     .template__title{
         white-space: nowrap;
         font-family: Roboto;

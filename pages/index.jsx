@@ -27,12 +27,13 @@ export default class Index extends React.Component {
                 <div className="app__backgroudImage" />
                 <div className="app__blob app__blob--white">
                     <div className="app__elementWrapper">
-                        <div className="app__logoImage" />
+                        <div className="app__logoImage" ref={this.pizzaref}/>
                     </div>
-                    <div className="app__elementWrapper" ref={this.pizzaref}>
+                    <div className="app__elementWrapper" >
                         <PizzaList />
                     </div>
-                    <div className="app__elementWrapper" ref={this.otherref}>
+                    <div ref={this.otherref}/>
+                    <div className="app__elementWrapper" >
                         <PizzaRolls />
                     </div>
                     <div className="app__elementWrapper">

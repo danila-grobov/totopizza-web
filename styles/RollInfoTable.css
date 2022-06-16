@@ -26,11 +26,11 @@
     font-style: normal;
     font-weight: bold;
     font-size: 13px;
+    grid-row: 1;
+    grid-column: 1;
+    white-space: nowrap;
 }
 
-.rollInfo__price{
-    display: none;
-}
 
 .rollInfo__content {
     font-family: "Roboto";
@@ -38,31 +38,37 @@
     font-weight: 300;
     font-size: 12px;
     line-height: 160%;
+    grid-row: 2;
+    grid-column-start: 1;
+    grid-column-end: 3;
 }
 
 
-    .RollInfoTable__hWrapper {
-        display: grid;
-        grid-template-rows: repeat(6, auto);
-        grid-template-columns: 100%;
-        justify-content: space-between;
-    }
+.RollInfoTable__hWrapper {
+    margin-top: 40px;
+    display: grid;
+    grid-template-rows: repeat(6, auto);
+    grid-template-columns: 1fr 1fr;
+    column-gap: 10px;
+    justify-content: space-between;
+}
 
-    .RollInfoTable__vSpacer {
-        display: none;
-    }
+.RollInfoTable__vSpacer {
+    display: none;
+}
 
-    .pizzaRolls__title--space-after{
-        margin-bottom: 3px;
-    }
+.pizzaRolls__title--space-after{
+    margin-bottom: 3px;
+}
 
 .rollInfo {
     display: grid;
-    grid-template-columns: none;
     width: 100%;
     align-items: unset;
+    grid-template-columns: min-content auto;
     grid-template-rows: min-content auto;
     row-gap: 8px;
+    column-gap: 10px;
     margin-bottom: 25px;
 }
 
@@ -100,11 +106,46 @@
     line-height: 19px;
     color: #02435A;
     white-space: nowrap;
-
+    grid-row: 1;
+    grid-column: 1;
 }
 
+.rollInfo__price{
+    display:unset;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    grid-row:1;
+    grid-column: 2;
+}
+.rollInfo__price::first-letter, .rollInfo__contentPrice::first-letter{
+    color: #F1C300;
+}
+
+
 @media screen and (max-width: 950px) {
-    .rollInfo{
+    .RollInfoTable__hWrapper{
+        grid-template-columns: 100%;
+        margin-top: unset;
+    }
+    .rollInfo__titleBold{
+        grid-row: unset;
+        grid-column: unset;
+    }
+    .rollInfo__title {
+        grid-row: unset;
+        grid-column: unset;
+    }
+    .rollInfo__content {
+        grid-row: unset;
+    }
+    .rollInfo__price{
+        grid-row:unset;
+        grid-column: unset;
+    }
+    .rollInfo {
+        column-gap: unset;
         grid-template-columns: min-content 10fr min-content;
     }
     .rollInfo__content{
