@@ -12,13 +12,15 @@ class Header extends Component {
                         <a href="/uzsakymas" className="header__link header__link--highlighted">Užsisakyk</a>
                     </div>
                 </div>
+                {refs != null ?
                 <div className = "header__nav">
                     <div className = "header__nav__wrapper">
+                        
                         {refs.map((value, index)=>{
                             return <button onClick = {() => value.reff.current.scrollIntoView()} key={index} className = "header__nav__button">{refNames[index]}</button>
                         })}
                     </div>
-                </div>
+                </div>: <div/>}
             </div>
         );
     }
