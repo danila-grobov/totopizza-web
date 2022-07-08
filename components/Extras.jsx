@@ -20,20 +20,6 @@ class Extras extends Component {
                     <span className="extras__title">NAMŲ STILIAUS BULVYTĖS (CHIPS)</span>
                     <div className="extras__table">
                         <RollInfo
-                            title="CHIPS + ŽUVIES FILE DIDELE PORCIJA"
-                            extraPrice={true}
-                            content="2 File + chips(200g)"
-                            price="€5,80"
-                            />
-                        <div className="RollInfoTable__vSpacer" />
-                        <RollInfo
-                            title="CHIPS + ŽUVIES FILE MAŽA PORCIJA"
-                            extraPrice={true}
-                            content="1 File + chips(150g)"
-                            price="€4,80"
-                            />
-                        <div className="RollInfoTable__vSpacer" />
-                        <RollInfo
                             title="CHIPS + ŠONINĖ IR MOZZARELLA"
                             extraPrice={true}
                             price="€5,50"
