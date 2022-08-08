@@ -11,7 +11,7 @@ class Extras extends Component {
                             title="GRUZDINTI KOLDŪNAI SU SŪRIU"
                             extraPrice={true}
                             content="su vištienos įdaru"
-                            price="€4,20"
+                            price="€4,95"
                             />
                         <div className="RollInfoTable__vSpacer" />
                     </div>
@@ -22,19 +22,19 @@ class Extras extends Component {
                         <RollInfo
                             title="CHIPS + ŠONINĖ IR MOZZARELLA"
                             extraPrice={true}
-                            price="€5,50"
+                            price="€5,95"
                             />
                         <div className="RollInfoTable__vSpacer" />
                         <RollInfo
                             title="CHIPS + SALIAMI IR MOZZARELLA"
                             extraPrice={true}
-                            price="€5,50"
+                            price="€5,95"
                             />
                         <div className="RollInfoTable__vSpacer" />
                         <RollInfo
                             title="CHIPS + MOZZARELLA SŪRIS"
                             extraPrice={true}
-                            price="€3,50"
+                            price="€3,95"
                             />
                         <div className="RollInfoTable__vSpacer" />
                     </div>
@@ -46,14 +46,14 @@ class Extras extends Component {
                             title="BULVYTĖS FRI"
                             extraPrice={true}
                             content="250g"
-                            price="€2,00"
+                            price="€2,45"
                             />
                         <div className="RollInfoTable__vSpacer" />
                         <RollInfo
                             title="MOZZARELLA SŪRIO LAZDELĖS"
                             extraPrice={true}
                             content="10 vnt."
-                            price="€4,50"
+                            price="€4,45"
                             />
                     </div>
                 </div>

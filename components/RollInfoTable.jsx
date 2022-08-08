@@ -9,37 +9,37 @@ class RollInfoTable extends Component {
                         title="SU KUMPIU"
                         content="pomidorų padažas, sūris, kiaulienos kumpis, pievagrybiai, konservuoti kukurūzai"
                         extraPrice={true}
-                        price="€3,95"/>
+                        price="€4,70"/>
                     <div className="RollInfoTable__vSpacer" />
                     <RollInfo
                         title="SU FARŠU"
                         content="pomidorų padažas, sūris, malta kiauliena, jelapenas, BBQ padažas"
                         extraPrice={true}
-                        price="€3,95"/>
+                        price="€4,70"/>
                     <div className="RollInfoTable__vSpacer" />
                     <RollInfo
                         title="SU JAUTIENA"
                         content="pomidorų padažas, sūris, rūkyta jautiena, pievagrybiai, švž. paprika"
                         extraPrice={true}
-                        price="€3,95"/>
+                        price="€4,70"/>
                     <div className="RollInfoTable__vSpacer" />
                     <RollInfo
                         title="VEGETARIŠKAS"
                         content="pomidorų padažas, sūris, pievagrybiai, konservuoti kukurūzai, svogūnai, švž.paprika"
                         extraPrice={true}
-                        price="€3,95"/>
+                        price="€4,70"/>
                     <div className="RollInfoTable__vSpacer" />  
                     <RollInfo
                         title="SU VIŠTIENA"
                         content="pomidorų padažas, sūris, vištiena, pievagrybiai, švž. paprika"
                         extraPrice={true}
-                        price="€3,95"/>
+                        price="€4,70"/>
                     <div className="RollInfoTable__vSpacer" /> 
                      <RollInfo
                         title="KEBABŲ"
                         content="pomidorų padažas, sūris, ant iešmo vištiena/vištienos jautienos mix, mėlynieji svogūnai, garstyčių padažas"
                         extraPrice={true}
-                        price="€3,95"/>
+                        price="€4,70"/>
                 </div>
             </div>
         );

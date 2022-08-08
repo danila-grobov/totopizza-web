@@ -12,7 +12,7 @@
 
 .pizza__orderDetails {
     display: grid;
-    grid-template-columns: 2fr 50px 2fr;
+    grid-template-columns: 2fr 35px 2fr;
     height: 100%;
 }
 
