@@ -174,12 +174,6 @@ export default [
         priceSmall="7.95€"
         priceLarge="9.95€"
         key="SuVytintu" />,
-    <Pizza src="images/pizzas/PUSRYCIU.webp"
-        title="PUSRYČIŲ"
-        ingredients="pomidorų padažas, MOZZARELLA sūris, šoninė, kiaušinio plakinys, švieži česnakai, vyšniniai pomidorai, svogūnų laiškai"
-        priceSmall="6.45€"
-        priceLarge="8.45€"
-        key="SuJautienaIrKiausiniais" />,
     <Pizza src="images/pizzas/CHORIZO.webp"
         title="CHORIZO"
         ingredients="pomidorų padažas, sūris, chorizo saliami, konservuotos aitriosios paprikos"
@@ -227,12 +221,6 @@ export default [
         title="KEBABŲ PICA"
         ingredients="česnakinis aliejus, sūris, ant iešmo kepta vištiena/vištiena-jautienos mix, švieži pomidorai, konservuoti agurkėliai, konservuota paprika, garstyčių padažas, švieži svogūnų laiškai."
         key="Kebabu"
-        priceSmall="7.95€"
-        priceLarge="9.95€" />,
-    <Pizza src="images/pizzas/ANCIUVIU.webp"
-        title="ANČIUVIŲ"
-        ingredients="pomidorų padažas, MOZZARELLA sūris, ančiuvių filė, marinuoti kaparėliai, gražgarstės"
-        key="anciuviu"
         priceSmall="7.95€"
         priceLarge="9.95€" />,
     <Pizza src="images/pizzas/KORNO.webp"
