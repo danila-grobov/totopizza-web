@@ -36,9 +36,9 @@ export default class Index extends React.Component {
                     <div className="app__elementWrapper" >
                         <PizzaRolls />
                     </div>
-                    <div className="app__elementWrapper">
+                    {/*<div className="app__elementWrapper">
                         <Sandwiches />
-                    </div>
+                    </div>*/}
                     <div className="app__elementWrapper">
                         <Pancakes/>
                     </div>
