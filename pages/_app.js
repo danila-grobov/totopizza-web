@@ -12,6 +12,7 @@ import "../styles/Sandwiches.css";
 import "../styles/Pancakes.css"
 import "../styles/Extras.css";
 import "../styles/ContentSpacerPrice.css";
+import "../styles/Popup.css";
 import React from 'react';
 
 export default function MyApp({ Component, pageProps }) {
