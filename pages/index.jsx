@@ -24,11 +24,11 @@ export default class Index extends React.Component {
     render() {
         return (
             <div className= "app">
-                <div className="popup-parent" >
-                    <Popup trigger={true} className="popup">
-                        <img src="images/closed.jpg" className="popup-closed-img" />
+                {/*<div className="popup-parent" >
+                    <Popup trigger={false} className="popup">
+                        <img src="images/closed.png" className="popup-closed-img" />
                     </Popup>
-                </div>
+        </div>*/}
                 <Header refs = {[{reff : this.pizzaref},{reff : this.otherref},{reff : this.drinksref}]} refNames = {["PICOS", "KITI PATIEKALAI", "GĖRIMAI"]} />
                 <div className="app__backgroudImage" />
                 <div className="app__blob app__blob--white">

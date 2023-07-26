@@ -12,7 +12,7 @@ export default class Pancakes extends React.Component {
                     <div className="pancakesImage_wrapper">
                         <img className="pancakesImage" src= {pancakes}/>
                     </div>
-                    <div className="pancakesTitle">AMERIKIETIŠKI BLYNELIAI - 4,25€</div>
+                    <div className="pancakesTitle">AMERIKIETIŠKI BLYNELIAI - 4.50€</div>
                     <div className="pancakesText">
                         <div className="pancakesText_line">+ klevų sirupas</div>
                         <div className="pancakesText_spacer"/>
@@ -28,9 +28,9 @@ export default class Pancakes extends React.Component {
                         <img className="nuggetImage" src= {nuggets}/>
                     </div>
                     <div className="nuggetText">
-                        <div className="nuggetText_line">Traški vištienos filė su bulvytėmis fri(200g+200g) - 5,95€</div>
+                        <div className="nuggetText_line">Traški vištienos filė su bulvytėmis fri - 6.45€</div>
                         <div className="nuggetText_spacer"/>
-                        <div className="nuggetText_line">Traški vištienos filė su bulvytėmis fri(150g+150g) - 4,95€</div>
+                        <div className="nuggetText_line">Traški vištienos filė su bulvytėmis fri - 5.45€</div>
                     </div>
                 </div>
             </div>

@@ -103,6 +103,7 @@
         font-size: 12px;
         justify-self: end;
         align-self: end;
+        white-space: nowrap;
     }
     .template__spacer{
         border-bottom: 1px solid;
