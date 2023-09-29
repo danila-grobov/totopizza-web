@@ -12,7 +12,7 @@ class Extras extends Component {
                     </div>
                 </div>
                 <div className="extras__grouping2">
-                    <span className="extras__title">NAMŲ STILIAUS BULVYTĖS - €5,95</span>
+                    <span className="extras__title">BULVYTĖS CHIPS - €5,95</span>
                     <div className="extras__table">
                         <div className="extras__">
                             <ContentSpacerPrice className="extrasContent" content="- su Šonine" />   

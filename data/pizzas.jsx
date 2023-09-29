@@ -3,14 +3,14 @@ import Pizza from "../components/Pizza";
 export default [
 
     <Pizza src="images/pizzas/PALERMO.webp"
-        title="PALERMO"
+        title="SICILIJOS"
         ingredients="pomidorų padažas, mozzarella sūris, plėšyta jautiena, kelmučiai, špinatai, čipotle BBQ padažas"
         priceSmall="13.95€"
         priceLarge="15.95€"
         key="Palermo" 
         naujiena={true}/>,
     <Pizza src="images/pizzas/SICILIJOS.webp"
-        title="SICILIJOS"
+        title="PALERMO"
         ingredients="pomidorų padažas, sūris, plėšyta jautiena, pievagrybiai, artišokai, mėlynieji svogūnai, čipotle BBQ padažas"
         priceSmall="13.95€"
         priceLarge="15.95€"
