@@ -7,12 +7,12 @@ class Extras extends Component {
         return (
             <div className="extras">
                 <div className="extras__grouping1">
-                    <span className="extras__title">GRUZDINTI KOLDŪNAI - €5.00</span>
+                    <span className="extras__title">GRUZDINTI KOLDŪNAI - €5.50</span>
                     <div className="extras__table">
                     </div>
                 </div>
                 <div className="extras__grouping2">
-                    <span className="extras__title">BULVYTĖS CHIPS - €5,95</span>
+                    <span className="extras__title">BULVYTĖS CHIPS - €6,45</span>
                     <div className="extras__table">
                         <div className="extras__">
                             <ContentSpacerPrice className="extrasContent" content="- su Šonine" />   
@@ -27,9 +27,9 @@ class Extras extends Component {
                 <div className="extras__grouping3">
                     <span className="extras__title">KITA</span>
                     <div className="extras__table">
-                        <ContentSpacerPrice className="extrasContent" content="BULVYTĖS FRI" extraPriceSmall={true} price="€2.65"/>
+                        <ContentSpacerPrice className="extrasContent" content="BULVYTĖS FRI" extraPriceSmall={true} price="€3.00"/>
                         <div className="extras__spacer" />
-                        <ContentSpacerPrice className="extrasContent" content="MOZZARELLA SŪRIO LAZDELĖS" extraPriceSmall={true} price="€4.65"/>
+                        <ContentSpacerPrice className="extrasContent" content="MOZZARELLA SŪRIO LAZDELĖS" extraPriceSmall={true} price="€5.00"/>
                     </div>
                 </div>
 

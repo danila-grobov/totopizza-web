@@ -9,7 +9,7 @@ export default () => {
                     UŽSAKYMŲ TELEFONAS
                 </span>
                 <span className="phoneInfo__text phoneInfo__text--bold">
-                    8 639 99399
+                    +370 639 99399
                 </span>
             </div>
             <div className="phoneInfo__spacer" />

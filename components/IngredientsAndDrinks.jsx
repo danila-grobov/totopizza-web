@@ -22,7 +22,6 @@ export default class IngredientsAndDrinks extends React.Component {
                             <ContentSpacerPrice className="coldDrinks" content="CAPPUCINO" extraPriceSmall={true} price="€3,20"/>
                             <ContentSpacerPrice className="coldDrinks" content="ESPRESSO" extraPriceSmall={true} price="€2,50"/>
                             <ContentSpacerPrice className="coldDrinks" content="JUODA" extraPriceSmall={true} price="€2,80"/>
-                            <ContentSpacerPrice className="coldDrinks" content="AMERICANO" extraPriceSmall={true} price="€1,70"/>    
                         </div> 
                     </div>
                     <Drinks className="coldDrinks" src={ColdDrinks} title="GAIVIEJI GĖRIMAI" priceLarge="2,90€" priceMedium="1.90€" priceSmall="1,50€"/>
