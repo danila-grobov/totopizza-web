@@ -117,6 +117,7 @@
     .others{
         grid-template-columns: auto;
         align-items: center;
+        margin-bottom: 100px;
     }
 
     .othersSplitter{

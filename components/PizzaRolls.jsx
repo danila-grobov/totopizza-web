@@ -13,7 +13,7 @@ class PizzaRolls extends Component {
                     <span className="pizzaRolls__title-pc">PICŲ SUKTINUKAI</span>
                     <RollInfoTable />
                     <div className="pizzaRolls__komplektas">
-                        <span className="pizzaRolls__title-komp pizzaRolls__title-pc--space-after">KOMPLEKTAS 7.90€</span>
+                        <span className="pizzaRolls__title-komp pizzaRolls__title-pc--space-after">KOMPLEKTAS 8.40€</span>
                         <RollInfo
                             title="SUKTINUKAI + GĖRIMAS"
                             content="(0,5l Cola/Fanta/Sprite/Arbata)"
