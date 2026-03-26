@@ -56,6 +56,16 @@
     margin: 0;
    padding: 0;
 }
+.popup-close-button{
+    position: fixed;
+    top: 10%;
+    right: 5%;
+    background-color: rgba(0, 0, 0, 0.0);
+    border-color: rgba(0, 0, 0, 0.0);
+    -webkit-text-fill-color: rgb(242, 248, 255);
+    scale: 200%;
+}
+
 
 @media screen and (max-width: 1000px) {
     .popup-inner{
@@ -67,4 +77,27 @@
         max-width:640px;
         scale: 80%;
     }
+    .popup-close-button{
+        position: fixed;
+        top: 5%;
+        right: 5%;
+    }
+    
+    @media screen and (max-width: 500px) {
+        .popup-close-button{
+            position: fixed;
+            top: 15%;
+            right: 5%;
+            scale: 100%;
+        }
+    
+        @media screen and (max-width: 350px) {
+            .popup-close-button{
+                position: fixed;
+                top: 5%;
+                right: 5%;
+            }
+        }
+    }
+    
 }

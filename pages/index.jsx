@@ -32,6 +32,7 @@ export default class Index extends React.Component {
             <div className= "app">
                 <div className="popup-parent"  onClick={this.closePopup}>
                     <Popup trigger={this.state.isPopupOpen} className="popup" >
+                        <button onClick={this.closePopup} className="popup-close-button">Uždaryti</button>
                         <div className="popup-content" onClick={(e) => e.stopPropagation()}>
                             <img src="images/ribs.png" className="popup-closed-img" />
                         </div>
