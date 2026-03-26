@@ -8,7 +8,21 @@ class Extras extends Component {
             <div className="extras">
                 <div className="extras__grouping1">
                     <span className="extras__title">GRUZDINTI KOLDŪNAI - €6.00</span>
+                    <div className="extras__table"></div>
+                    <span className="extras__title">BBQ ŠONKAULIUKAI - €12.95</span>
                     <div className="extras__table">
+                        <div className="extras__">
+                            <ContentSpacerPrice className="extrasContent" content='Picos paplotėlis'  />   
+                            <div className="extras__spacer" />
+                            <ContentSpacerPrice className="extrasContent" content='Bulvytės "CHIPS"' />   
+                            <div className="extras__spacer" />
+                            <ContentSpacerPrice className="extrasContent" content='Bulvytės "FRI"' />   
+                            <div className="extras__spacer" />
+                            <ContentSpacerPrice className="extrasContent" content='Papildomai' />
+                            <ContentSpacerPrice className="extrasContent" content='+ Marinuoti agurkėliai - 0,50€' />
+                            <ContentSpacerPrice className="extrasContent" content='+ Vyšniniai pomidorai - 0,50€' />
+                            <div className="RollInfoTable__vSpacer" />
+                        </div>
                     </div>
                 </div>
                 <div className="extras__grouping2">

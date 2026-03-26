@@ -31,10 +31,6 @@ export default class Pancakes extends React.Component {
                         <div className="nuggetText_line">Traški vištienos filė su bulvytėmis fri (D) - 7.45€</div>
                         <div className="nuggetText_spacer"/>
                         <div className="nuggetText_line">Traški vištienos filė su bulvytėmis fri (M) - 6.45€</div>
-                        <div className="nuggetText_spacer"/>
-                        <div className="nuggetText_line">Sparneliai su bulvytėmis fri (D) - 7.45€</div>
-                        <div className="nuggetText_spacer"/>
-                        <div className="nuggetText_line">Sparneliai su bulvytėmis fri (M) - 6.45€</div>
                     </div>
                 </div>
             </div>

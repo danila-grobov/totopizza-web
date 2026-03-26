@@ -1,4 +1,7 @@
-open totopizza
+option batch abort
+option confirm off
+open ftp://u239793883:GlobalResponseAccess:UN3481@ftp.totopizza.lt
+cd /public_html
 rm *
 put out\*
 put .htaccess

@@ -1,4 +1,4 @@
-import React, { useRef } from 'react';
+import React, { useRef , useState} from 'react';
 import PizzaList from "../components/PizzaList"
 import Header from '../components/Header';
 import PizzaRolls from '../components/PizzaRolls';
@@ -16,6 +16,12 @@ export default class Index extends React.Component {
         this.pizzaref = React.createRef();
         this.otherref = React.createRef();
         this.drinksref = React.createRef();
+        this.state = {
+            isPopupOpen: true
+        }
+    }
+    closePopup = () =>{
+        this.setState({isPopupOpen : false});
     }
     componentDidMount() {
         document.title = "TotoPizza | Šilutė"
@@ -24,11 +30,13 @@ export default class Index extends React.Component {
     render() {
         return (
             <div className= "app">
-                {/*<div className="popup-parent" >
-                    <Popup trigger={true} className="popup">
-                        <img src="images/vacation.png" className="popup-closed-img" />
+                <div className="popup-parent"  onClick={this.closePopup}>
+                    <Popup trigger={this.state.isPopupOpen} className="popup" >
+                        <div className="popup-content" onClick={(e) => e.stopPropagation()}>
+                            <img src="images/ribs.png" className="popup-closed-img" />
+                        </div>
                     </Popup>
-                </div>*/}
+                </div>
                 <Header refs = {[{reff : this.pizzaref},{reff : this.otherref},{reff : this.drinksref}]} refNames = {["PICOS", "KITI PATIEKALAI", "GĖRIMAI"]} />
                 <div className="app__backgroudImage" />
                 <div className="app__blob app__blob--white">
